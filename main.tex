@@ -1,0 +1,412 @@
+% !TeX root = main.tex
+
+%% This is the "preamble" of the document. This is where the format options get set.
+%% Pro-tip: things following the % mark will not be compiled by LaTeX. I'll be using them extensively to explain things as we go.
+%% Note: not to scare you off of LaTeX, but it's normal to have problems. And ya girl has been having some. I've included the copyright info at the bottom of the document from the guy who wrote this package, because his documentation doesn't entirely match how it's actually used. So this is a combination of his working preamble along with my added commentary or explanation. 
+%%% 
+%
+%
+%%\documentclass[man,12pt,floatsintext]{apa7}
+%% Document class input explanation ________________
+%% LaTeX files need to start with the document class, so it knows what it's using
+%% - This file is using the apa7 document class, as it has a lot of the formatting built in
+%% There are two sets of brackets in LaTeX, for each command (the things that start with the slash \ )
+%% - The squiggle brackets {} are mandatory for executing the command
+%% - The square brackets [] are options for that command. There can be more than one set of square brackets for some commands
+%% Options used in this document (general note - for each of these, if you want to use the other options, swap it out in that spot in the square brackets):
+%% - stu: this sets the `document mode' as the "student paper" version. Other options are jou (journal), man (manuscript, for journal submission), and doc (a plain document)
+%% --- The student setting includes things like 'duedate', 'course', and 'professor' on the title page. If these aren't wanted/needed, use the 'man' setting. It also defaults to including the tables and figures at the end of the document. This can be changed by including the 'floatsintext' option, as I have for you. If the instructor wants those at the end, remove that from the square brackets.
+%% --- The manuscript setting is roughly what you would use to submit to a journal, so uses 'date' instead of 'duedate', and doesn't include the 'course' or 'professor' info. As with 'stu', it defaults to putting the tables and figures at the end rather than in text. The same option will bump those images in text.
+%% --- Journal ('jou') outputs something similar to a common journal format - double columned text and figurs in place. This can be fun, especially if you are sumbitting this as a writing sample in applications.
+%% --- Document ('doc') outputs single columned, single spaced text with figures in place. Another option for producing a more polished looking document as a writing sample.
+%% - 12pt: sets the font size to 12pt. Other options are 10pt or 11pt
+%% - floatsintext: makes it so tables and figures will appear in text rather than at the end. Unforunately, not having this option set breaks the whole document, and I haven't been able to figure out why. IT's GREAT WHEN THINGS WORK LIKE THEY'RE SUPPOSED TO.
+%
+%\usepackage[american]{babel}
+%
+%\usepackage{csquotes} % One of the things you learn about LaTeX is at some level, it's like magic. The references weren't printing as they should without this line, and the guy who wrote the package included it, so here it is. Because LaTeX reasons.
+%\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+%\addbibresource{references.bib} % This is the companion file to the main one you're writing. It contains all of the bibliographic info for your references. It's a little bit of a pain to get used to, but once you do, it's the best. Especially if you recycle references between papers. You only have 
+%% biblatex: loads the package that will handle the bibliographic info. Other option is natbib, which allows for more customization
+%% - style=apa: sets the reference format to use apa (albeit the 6th edition)
+%\DeclareLanguageMapping{american}{american-apa} % Gotta make sure we're patriotic up in here. Seriously, though, there can be local variants to how citations are handled, this sets it to the American idiosyncrasies  to get the pieces in the holes once.`
+%
+%\usepackage[T1]{fontenc} 
+%\usepackage{mathptmx} % This is the Times New Roman font, which was the norm back in my day. If you'd like to use a different font, the options are laid out here: https://www.overleaf.com/learn/latex/Font_typefaces
+%% Alternately, you can comment out or delete these two commands and just use the Overleaf default font. So many choices!
+
+
+%% Title page stuff _____________________
+%\title{Some Title} % The big, long version of the title for the title page
+%\shorttitle{Some Short title} % The short title for the header
+%\author{Tejas Savalia}
+%\date{\today}
+%% \date{January 17, 2024} The student version doesn't use the \date command, for whatever reason
+%\affiliation{UMass Amherst}
+%%\course{PSY 4321} % LaTeX gets annoyed (i.e., throws a grumble-error) if this is blank, so I put something here. However, if your instructor will mark you off for this being on the title page, you can leave this entry blank (delete the PSY 4321, but leave the command), and just make peace with the error that will happen. It won't break the document.
+%\professor{Dr. Professor}  % Same situation as for the course info. Some instructors want this, some absolutely don't and will take off points. So do what you gotta.
+%
+%\abstract{This is the abstract for this paper, wherein the main points of the introduction, method, results, and discussion are quickly talked about. Probably in more than one sentence, though. Dare I guess, more than two? There is a page break before starting the Introduction.}
+%
+%%\keywords{APA style, demonstration} % If you need to have keywords for your paper, delete the % at the start of this line
+%
+%\begin{document}
+%\maketitle % This tells LaTeX to make the title page
+
+% \section{Introduction} This command is commented out, because I was taught it was redundant to have the paper's title and introduction together. If your instructor wants it to say "Introduction", delete the % at the start
+
+
+%% 
+%% This is a sample doctoral dissertation.  It shows the appropriate
+%% structure for your dissertation.  It should handle most of the
+%% strange requirements imposed by the Grad school; like the different
+%% handling of titles of one/many appendices.  It will automatically
+%% handle the linespacing changes.  The body default is double-spaced
+%% (except when you use the singlespace or condensed options).  The
+%% default for quotations is single-space, and the default for tabular
+%% environments is also single-space.  
+%%
+%% This class adds the following commands and environments to the
+%% report class, upon which it is based:
+%% Commands
+%% ------------
+%% \degree{name}{abbrv} -- Sets the name and abbreviation for the degree.
+%%                         These default to ``Doctor of Philosopy''
+%%                         and ``Ph.D.'', respectively.
+%% \copyrightyear{year} -- for the copyright page.
+%% \bachelors{degree}{institution} -- for the abstract
+%% \masters{degree}{institution}   --  "
+%%     if you have other degrees you may use
+%% \secondbachelors{degree}{institution}
+%% \thirdbachelors{degree}{institution}
+%% \secondmasters{degree}{institution}
+%% \thirdmasters{degree}{institution}
+%% \priordoctorate{degree}{institution}
+%%
+%% \committeechair{name}           -- for the signature page
+%% or, if you have two co-chairs:
+%% \cochairs{first name}{second name}
+%%
+%% \firstreader{name}              --  "
+%% \secondreader{name}             --  "
+%% \thirdreader{name}              -- (optional)
+%% \fourthreader{name}             --  "
+%% \fifthreader{name}              --  "
+%% \sixthreader{name}              --  "
+%% \departmentchair{name}          -- for the signature page
+%% \departmentname{name}           --  "
+%%
+%% \copyrightpage                  -- produces the copyright page
+%% \signaturepage                  -- produces the signature page
+%%
+%% \frontmatter                    -- these are required in their various
+%% \mainmatter                     -- appropriate locations
+%% \backmatter                     --
+%%
+%% \unnumberedchapter[toc]{name}   -- like \chapter, except that it
+%%                                    produces an unnumbered chapter;
+%%                                    alternatively, like \chapter*,
+%%                                    except that it lists the chapter
+%%                                    in the table of contents.
+%%
+%% New environments:
+%%   dedication  -- for the dedication
+%%   abstract    -- for the abstract
+%%
+%% The thesis documentclass is built on top of the report document class.
+%% It accepts all of the options that the report class accepts, plus the
+%% following:
+%%     doublespace -- the default, indicates double spacing as per U.Mass.
+%%                    requirements.  You will need this when you do your
+%%                    final copy.
+%%     singlespace -- for earlier work, not acceptable to the Grad school
+%%     condensed   -- for earlier work, not acceptable to the Grad school,
+%%                    creates condensed versions of the frontmatter. 
+%%                    Condensed implies singlespace.
+%%     dissertation - the default, indicates that this document is a
+%%                    dissertation.
+%%     proposal    -- indicates that this document is a dissertation proposal,
+%%                    rather than a dissertation.  This will only change the
+%%                    wording on the title and signature pages.
+%%     thesis      -- indicates that this document is a Master's thesis 
+%%                    rather than a doctoral dissertation.  This also changes
+%%                    the default for \degree to Master of Science, M.S.
+%%     allowlisthypenation -- (the default), allows hyphenation of words in
+%%                    the table of contents, the list of figures, and the list
+%%                    of tables.  I believe that this is acceptable to the 
+%%                    Graduate School.
+%%     nolisthyphenation -- disallows hyphenation of words in the table of
+%%                    contents and the list of figures and tables.  Use this 
+%%                    option if the Grad School doesn't like your hyphenation.
+%%     nicerdraft  -- relaxes some of the Grad School's rules for working with
+%%                    drafts -- has no effect when doublespace is in effect
+%%     nonicerdraft -- the default, leaves things in draft as they will be in
+%%                     the final version
+%% umassthesis changes the default font size to 12pt, but you may specify 10pt or
+%%   11pt in the options.
+\documentclass[dissertation]{umassthesis}          % for Ph.D. dissertation or proposal
+% \documentclass[thesis]{umassthesis}  % for Master's thesis
+
+%%
+%% If you have enough figures or tables that you run out of space for their
+%% numbers in the List of Tables or List of figures, you can use the following
+%% command to adjust the space left for numbers.  The default is shown:
+%%
+%% \setlength{\tablenumberwidth}{2.3em}
+
+%% Use the hyperref package if you're producing a version for online
+%% distribution and you want hyperlinks.  Note that the Grad School doesn't want
+%% their PDF viewers to colorize or otherwise highlight the links; use the
+%% hidelinks option to hyperref to avoid decorating links.
+%\usepackage[hidelinks]{hyperref}
+
+%% One way of formatting the epigraph/frontispiece is to use this package.
+%\usepackage{epigraph}
+% \usepackage{biblatex}
+\usepackage{amsmath}
+\usepackage{hyperref}
+% \bibliographystyle{umassthesis}
+%\usepackage{apa7}
+
+\begin{document}
+	
+%%
+%% You must fill in all of these appropriately
+\title{Investigating the Role of Predictive Representations in Implicit Event Boundaries, Statistical Learning, and Categorization.}
+\author{Tejas Savalia}
+\date{September 2024} % The date you'll actually graduate -- must be
+% February, May, or September
+\copyrightyear{2024}
+\bachelors{B.E.}{Gujarat Technological University}
+\masters{M.S.}{International Institute of Information Technology, Hyderabad}
+\secondmasters{M.S.}{University of Massachusetts Amherst}
+%\priordoctorate{M.D.}{University of Never-never-land}
+\committeechair{Andrew Cohen}
+%\cochairs{B. B. Bahh}{I. M. A. Wolf}
+\firstreader{Jeffrey Starns}
+\secondreader{Youngbin Kwak}
+\thirdreader{Meghan Huber}
+%\fourthreader{}   % Optional
+%\fifthreader{}            % Optional
+%\sixthreader{}            % Optional
+\departmentchair[Chair]{Maureen Perry-Jenkins} % Default uses "Department Chair" as the title. To
+% use an alternate title, such as "Chair", use \departmentchair[Chair]{Pete Shearer}
+% CICS uses "Chair of the Faculty" as of 2019.
+\departmentname{Psychological and Brain Sciences}
+% \departmentname{Robert and Donna Manning College of \\Information and Computer Sciences}
+
+
+%% If your degree is something other than a Ph.D. (for a dissertation), or
+%% an M.S. (for a thesis), you will need to uncomment the appropriate
+%% following line:
+%%
+%% \degree{Doctor of Education}{Ed.D.}
+%% \degree{Doctor of Philosophy}{Ph.D.}
+%%
+%% \degree{Master of Arts}{M.A.}
+%% \degree{Master of Arts in Teaching}{M.A.T.}
+%% \degree{Master of Business Administration}{M.B.A.}
+%% \degree{Master of Education}{M.Ed.}
+%% \degree{Master of Fine Arts}{M.F.A.}
+%% \degree{Master of Landscape Architecture}{M.L.A.}
+%% \degree{Master of Music}{M.M.}
+%% \degree{Master of Public Administration}{M.P.A.}
+%%\degree{Master of Public Health}{M.P.H.}
+%% \degree{Master of Regional Planning}{M.R.P.}
+%% \degree{Master of Science}{M.S.}
+%% \degree{Master of Science in Accounting}{M.S. Acctg.}
+%% \degree{Master of Science in Chemical Engineering}{M.S. Ch.E.}
+%% \degree{Master of Science in Civil Engineering}{M.S.C.E.}
+%% \degree{Master of Science in Electrical and Computer Engineering}{M.S.E.C.E.}
+%% \degree{Master of Science in Engineering Management}{M.S. Eng. Mgt.}
+%% \degree{Master of Science in Environmental Engineering}{M.S. Env. E.}
+%% \degree{Master of Science in Industrial Engineering and Operations Research}{M.S.I.E.O.R.}
+%% \degree{Master of Science in Manufacturing Engineering}{M.S. Mfg. Eng.}
+%% \degree{Master of Science in Mechanical Engineering}{M.S.M.E.}
+%%
+%% \degree{Professional Master of Business Administration}{P.M.B.A.}
+
+
+%%
+%% These lines produce the title, copyright, and signature pages.
+%% They are Mandatory; except that you could leave out the copyright page
+%% if you were preparing an M.S. thesis instead of a PhD dissertation.
+\frontmatter
+\maketitle
+\copyrightpage     %% not required for an M.S. thesis
+\signaturepage
+
+%%
+%% Dedication is optional -- but this is how you create it
+\begin{dedication}              % Dedication page
+\begin{center}
+	\emph{To those little lost sheep.}
+\end{center}
+\end{dedication}
+
+%%
+%% Epigraph (aka frontispiece) is also optional, but this is one way you
+%% can create it
+%\begin{frontispiece}
+%  %% Format to your liking -- see documentation of epigraph package
+%  \setlength{\epigraphrule}{0pt}
+%
+%  \begin{epigraphs}
+%    \qitem{%
+	%      \itshape
+	%      Mary had a little lamb,\\
+	%      Her fleece was white as snow.\\
+	%      \vspace{\baselineskip}
+	%      And everywhere that Mary went\\
+	%      The lamb was sure to go.
+	%      \vspace{\baselineskip}}
+%    {Sarah Josepha Hale}
+%
+%    \vspace{2\baselineskip}
+%    \qitem{%
+	%      \itshape
+	%      Baa, baa, black sheep,\\
+	%      Have you any wool?\\
+	%      Yes, sir, yes, sir,\\
+	%      Three bags full;\\
+	%      One for the master,\\
+	%      And one for the dame,\\
+	%      And one for the little boy\\
+	%      Who lives down the lane.
+	%      \vspace{\baselineskip}}
+%    {English Nursery Rhyme}
+%
+%  \end{epigraphs}
+%\end{frontispiece}
+
+%%
+%% Acknowledgements are optional...yeah, right.
+\chapter{Acknowledgments}             % Acknowledgements page
+Thanks to all those fine shepherds. Not to mention all the great
+border collies and suchlike fine animals.
+
+%%
+%% Abstract is MANDATORY. -- Except for MS theses
+\begin{abstract}                % Abstract
+Sheep like grass.  Why?  Let me tell you.  Sheep are ruminants, like
+cattle, deer, and horses.  They have stomachs that are specialized...
+\end{abstract}
+
+%%
+%% Preface goes here...would be just like Acknowledgements -- optional
+%% \chapter{Preface} 
+%% ...
+
+
+%%
+%% Table of contents is mandatory, lists of tables and figures are 
+%% mandatory if you have any tables or figures; must be in this order.
+\tableofcontents                % Table of contents
+\listoftables                   % List of Tables
+\listoffigures                  % List of Figures
+
+%%
+%% We don't handle List of Abbreviations
+%% We don't handle Glossary
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Time for the body of the dissertation
+\mainmatter   %% <-- This line is mandatory
+
+
+\chapter{Introduction}
+\label{introduction}
+\input{introduction}
+
+\newpage
+
+\chapter{Quality of Environmental Exposure modulates statistical learning}
+\input{chapter_2}
+
+\newpage
+
+\chapter{Chapter 4: Category Learning Through Temporal Abstraction}
+\label{chapter-4-category-learning-through-temporal-abstraction}
+\input{chapter_4}
+
+\chapter{Discussion}
+
+
+\interlinepenalty=10000  % prevent split bibliography entries
+
+\bibliography{references}
+\bibliographystyle{umassthesis}
+
+	
+% \printbibliography
+
+\end{document}
+
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Daniel A. Weiss.
+%% 
+%% This work consists of the file  apa7.dtx
+%% and the derived files           apa7.ins,
+%%                                 apa7.cls,
+%%                                 apa7.pdf,
+%%                                 README,
+%%                                 APA7american.txt,
+%%                                 APA7british.txt,
+%%                                 APA7dutch.txt,
+%%                                 APA7english.txt,
+%%                                 APA7german.txt,
+%%                                 APA7ngerman.txt,
+%%                                 APA7greek.txt,
+%%                                 APA7czech.txt,
+%%                                 APA7turkish.txt,
+%%                                 APA7endfloat.cfg,
+%%                                 Figure1.pdf,
+%%                                 shortsample.tex,
+%%                                 longsample.tex, and
+%%                                 bibliography.bib.
+%% 
+%%
+%%
+%% This is file `./samples/shortsample.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% apa7.dtx  (with options: `shortsample')
+%% ----------------------------------------------------------------------
+%% 
+%% apa7 - A LaTeX class for formatting documents in compliance with the
+%% American Psychological Association's Publication Manual, 7th edition
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% ----------------------------------------------------------------------

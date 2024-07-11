@@ -1,0 +1,253 @@
+\begin{thebibliography}{10}
+
+\bibitem{aslin2012statistical}
+Aslin, Richard~N, and Newport, Elissa~L.
+\newblock Statistical learning: From acquiring specific items to forming general rules.
+\newblock {\em Current directions in psychological science 21}, 3 (2012), 170--176.
+
+\bibitem{baldwin2008segmenting}
+Baldwin, Dare, Andersson, Annika, Saffran, Jenny, and Meyer, Meredith.
+\newblock Segmenting dynamic human action via statistical structure.
+\newblock {\em Cognition 106}, 3 (2008), 1382--1407.
+
+\bibitem{billman1996unsupervised}
+Billman, Dorrit, and Knutson, James.
+\newblock Unsupervised concept learning and value systematicitiy: A complex whole aids learning the parts.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 22}, 2 (1996), 458.
+
+\bibitem{brady2008statistical}
+Brady, Timothy~F, and Oliva, Aude.
+\newblock Statistical learning using real-world scenes: Extracting categorical regularities without conscious intent.
+\newblock {\em Psychological science 19}, 7 (2008), 678--685.
+
+\bibitem{carvalho2014putting}
+Carvalho, Paulo~F, and Goldstone, Robert~L.
+\newblock Putting category learning in order: Category structure and temporal arrangement affect the benefit of interleaved over blocked study.
+\newblock {\em Memory \& cognition 42\/} (2014), 481--495.
+
+\bibitem{carvalho2017sequence}
+Carvalho, Paulo~F, and Goldstone, Robert~L.
+\newblock The sequence of study changes what information is attended to, encoded, and remembered during category learning.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 43}, 11 (2017), 1699.
+
+\bibitem{cleeremans1991learning}
+Cleeremans, Axel, and McClelland, James~L.
+\newblock Learning the structure of event sequences.
+\newblock {\em Journal of Experimental Psychology: General 120}, 3 (1991), 235.
+
+\bibitem{clewett2019transcending}
+Clewett, David, DuBrow, Sarah, and Davachi, Lila.
+\newblock Transcending time in the brain: How event memories are constructed from experience.
+\newblock {\em Hippocampus 29}, 3 (2019), 162--183.
+
+\bibitem{cohen2001category}
+Cohen, Andrew~L, Nosofsky, Robert~M, and Zaki, Safa~R.
+\newblock Category variability, exemplar similarity, and perceptual classification.
+\newblock {\em Memory \& Cognition 29}, 8 (2001), 1165--1175.
+
+\bibitem{dayan1993improving}
+Dayan, Peter.
+\newblock Improving generalization for temporal difference learning: The successor representation.
+\newblock {\em Neural computation 5}, 4 (1993), 613--624.
+
+\bibitem{dehaene2015neural}
+Dehaene, Stanislas, Meyniel, Florent, Wacongne, Catherine, Wang, Liping, and Pallier, Christophe.
+\newblock The neural representation of sequences: from transition probabilities to algebraic patterns and linguistic trees.
+\newblock {\em Neuron 88}, 1 (2015), 2--19.
+
+\bibitem{fiser2002statistical}
+Fiser, J{\'o}zsef, and Aslin, Richard~N.
+\newblock Statistical learning of higher-order temporal structure from visual shape sequences.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 28}, 3 (2002), 458.
+
+\bibitem{gabay2015incidental}
+Gabay, Yafit, Dick, Frederic~K, Zevin, Jason~D, and Holt, Lori~L.
+\newblock Incidental auditory category learning.
+\newblock {\em Journal of Experimental Psychology: Human Perception and Performance 41}, 4 (2015), 1124.
+
+\bibitem{gershman2018successor}
+Gershman, Samuel~J.
+\newblock The successor representation: its computational logic and neural substrates.
+\newblock {\em Journal of Neuroscience 38}, 33 (2018), 7193--7200.
+
+\bibitem{glenberg1979component}
+Glenberg, Arthur~M.
+\newblock Component-levels theory of the effects of spacing of repetitions on recall and recognition.
+\newblock {\em Memory \& Cognition 7}, 2 (1979), 95--112.
+
+\bibitem{howard2005temporal}
+Howard, Marc~W, Fotedar, Mrigankka~S, Datey, Aditya~V, and Hasselmo, Michael~E.
+\newblock The temporal context model in spatial navigation and relational learning: toward a common explanation of medial temporal lobe function across domains.
+\newblock {\em Psychological review 112}, 1 (2005), 75.
+
+\bibitem{kahn2018network}
+Kahn, Ari~E, Karuza, Elisabeth~A, Vettel, Jean~M, and Bassett, Danielle~S.
+\newblock Network constraints on learnability of probabilistic motor sequences.
+\newblock {\em Nature human behaviour 2}, 12 (2018), 936--947.
+
+\bibitem{karuza2022value}
+Karuza, Elisabeth~A.
+\newblock The value of statistical learning to cognitive network science.
+\newblock {\em Topics in Cognitive Science 14}, 1 (2022), 78--92.
+
+\bibitem{karuza2019human}
+Karuza, Elisabeth~A, Kahn, Ari~E, and Bassett, Danielle~S.
+\newblock Human sensitivity to community structure is robust to topological variation.
+\newblock {\em Complexity 2019}, 1 (2019), 8379321.
+
+\bibitem{karuza2017process}
+Karuza, Elisabeth~A, Kahn, Ari~E, Thompson-Schill, Sharon~L, and Bassett, Danielle~S.
+\newblock Process reveals structure: How a network is traversed mediates expectations about its architecture.
+\newblock {\em Scientific reports 7}, 1 (2017), 12733.
+
+\bibitem{knowlton1992intact}
+Knowlton, Barbara~J, Ramus, Seth~J, and Squire, Larry~R.
+\newblock Intact artificial grammar learning in amnesia: Dissociation of classification learning and explicit memory for specific instances.
+\newblock {\em Psychological science 3}, 3 (1992), 172--179.
+
+\bibitem{kornell2008learning}
+Kornell, Nate, and Bjork, Robert~A.
+\newblock Learning concepts and categories: Is spacing the “enemy of induction”?
+\newblock {\em Psychological science 19}, 6 (2008), 585--592.
+
+\bibitem{kornell2010spacing}
+Kornell, Nate, Castel, Alan~D, Eich, Teal~S, and Bjork, Robert~A.
+\newblock Spacing as the friend of both memory and induction in young and older adults.
+\newblock {\em Psychology and aging 25}, 2 (2010), 498.
+
+\bibitem{kruschke2020alcove}
+Kruschke, John~K.
+\newblock Alcove: An exemplar-based connectionist model of category learning.
+\newblock In {\em Connectionist Psychology}. Psychology Press, 2020, pp.~107--138.
+
+\bibitem{love2002comparing}
+Love, Bradley~C.
+\newblock Comparing supervised and unsupervised category learning.
+\newblock {\em Psychonomic bulletin \& review 9}, 4 (2002), 829--835.
+
+\bibitem{love2004sustain}
+Love, Bradley~C, Medin, Douglas~L, and Gureckis, Todd~M.
+\newblock Sustain: a network model of category learning.
+\newblock {\em Psychological review 111}, 2 (2004), 309.
+
+\bibitem{lynn2020humans}
+Lynn, Christopher~W, and Bassett, Danielle~S.
+\newblock How humans learn and represent networks.
+\newblock {\em Proceedings of the National Academy of Sciences 117}, 47 (2020), 29407--29415.
+
+\bibitem{lynn2020abstract}
+Lynn, Christopher~W, Kahn, Ari~E, Nyema, Nathaniel, and Bassett, Danielle~S.
+\newblock Abstract representations of events arise from mental errors in learning and memory.
+\newblock {\em Nature communications 11}, 1 (2020), 2313.
+
+\bibitem{lynn2020human}
+Lynn, Christopher~W, Papadopoulos, Lia, Kahn, Ari~E, and Bassett, Danielle~S.
+\newblock Human information processing in complex networks.
+\newblock {\em Nature Physics 16}, 9 (2020), 965--973.
+
+\bibitem{mack2015dynamics}
+Mack, Michael~L, and Palmeri, Thomas~J.
+\newblock The dynamics of categorization: Unraveling rapid categorization.
+\newblock {\em Journal of Experimental Psychology: General 144}, 3 (2015), 551.
+
+\bibitem{medin1994presentation}
+Medin, Douglas~L, and Bettger, Jeffrey~G.
+\newblock Presentation order and recognition of categorically related examples.
+\newblock {\em Psychonomic bulletin \& review 1}, 2 (1994), 250--254.
+
+\bibitem{medin1987family}
+Medin, Douglas~L, Wattenmaker, William~D, and Hampson, Sarah~E.
+\newblock Family resemblance, conceptual cohesiveness, and category construction.
+\newblock {\em Cognitive psychology 19}, 2 (1987), 242--279.
+
+\bibitem{momennejad2017successor}
+Momennejad, Ida, Russek, Evan~M, Cheong, Jin~H, Botvinick, Matthew~M, Daw, Nathaniel~Douglass, and Gershman, Samuel~J.
+\newblock The successor representation in human reinforcement learning.
+\newblock {\em Nature human behaviour 1}, 9 (2017), 680--692.
+
+\bibitem{nissen1987attentional}
+Nissen, Mary~Jo, and Bullemer, Peter.
+\newblock Attentional requirements of learning: Evidence from performance measures.
+\newblock {\em Cognitive psychology 19}, 1 (1987), 1--32.
+
+\bibitem{nosofsky1986attention}
+Nosofsky, Robert~M.
+\newblock Attention, similarity, and the identification--categorization relationship.
+\newblock {\em Journal of experimental psychology: General 115}, 1 (1986), 39.
+
+\bibitem{nosofsky2011generalized}
+Nosofsky, Robert~M.
+\newblock The generalized context model: An exemplar model of classification.
+\newblock {\em Formal approaches in categorization\/} (2011), 18--39.
+
+\bibitem{nosofsky1994comparing}
+Nosofsky, Robert~M, Gluck, Mark~A, Palmeri, Thomas~J, McKinley, Stephen~C, and Glauthier, Paul.
+\newblock Comparing modes of rule-based classification learning: A replication and extension of shepard, hovland, and jenkins (1961).
+\newblock {\em Memory \& cognition 22}, 3 (1994), 352--369.
+
+\bibitem{roark2018task}
+Roark, Casey~L, and Holt, Lori~L.
+\newblock Task and distribution sampling affect auditory category learning.
+\newblock {\em Attention, Perception, \& Psychophysics 80\/} (2018), 1804--1822.
+
+\bibitem{roark2022representational}
+Roark, Casey~L, Lehet, Matthew~I, Dick, Frederic, and Holt, Lori~L.
+\newblock The representational glue for incidental category learning is alignment with task-relevant behavior.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 48}, 6 (2022), 769.
+
+\bibitem{romberg2010statistical}
+Romberg, Alexa~R, and Saffran, Jenny~R.
+\newblock Statistical learning and language acquisition.
+\newblock {\em Wiley Interdisciplinary Reviews: Cognitive Science 1}, 6 (2010), 906--914.
+
+\bibitem{schapiro2013neural}
+Schapiro, Anna~C, Rogers, Timothy~T, Cordova, Natalia~I, Turk-Browne, Nicholas~B, and Botvinick, Matthew~M.
+\newblock Neural representations of events arise from temporal community structure.
+\newblock {\em Nature neuroscience 16}, 4 (2013), 486--492.
+
+\bibitem{shepard1961learning}
+Shepard, Roger~N, Hovland, Carl~I, and Jenkins, Herbert~M.
+\newblock Learning and memorization of classifications.
+\newblock {\em Psychological monographs: General and applied 75}, 13 (1961), 1.
+
+\bibitem{stachenfeld2017hippocampus}
+Stachenfeld, Kimberly~L, Botvinick, Matthew~M, and Gershman, Samuel~J.
+\newblock The hippocampus as a predictive map.
+\newblock {\em Nature neuroscience 20}, 11 (2017), 1643--1653.
+
+\bibitem{turk2008multidimensional}
+Turk-Browne, Nicholas~B, Isola, Phillip~J, Scholl, Brian~J, and Treat, Teresa~A.
+\newblock Multidimensional visual statistical learning.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 34}, 2 (2008), 399.
+
+\bibitem{unger2022ready}
+Unger, Layla, and Sloutsky, Vladimir~M.
+\newblock Ready to learn: Incidental exposure fosters category learning.
+\newblock {\em Psychological Science 33}, 6 (2022), 999--1019.
+
+\bibitem{unger2023without}
+Unger, Layla, Weichart, Emily~R, Reardon, Noah, and Sloutsky, Vladimir.
+\newblock Without even trying: How incidental exposure shapes category learning.
+\newblock In {\em Proceedings of the Annual Meeting of the Cognitive Science Society\/} (2023), vol.~45.
+
+\bibitem{vlach2008spacing}
+Vlach, Haley~A, Sandhofer, Catherine~M, and Kornell, Nate.
+\newblock The spacing effect in children’s memory and category induction.
+\newblock {\em Cognition 109}, 1 (2008), 163--167.
+
+\bibitem{wahlheim2011spacing}
+Wahlheim, Christopher~N, Dunlosky, John, and Jacoby, Larry~L.
+\newblock Spacing enhances the learning of natural concepts: An investigation of mechanisms, metacognition, and aging.
+\newblock {\em Memory \& cognition 39\/} (2011), 750--763.
+
+\bibitem{whitehead2021transfer}
+Whitehead, Peter~S, Zamary, Amanda, and Marsh, Elizabeth~J.
+\newblock Transfer of category learning to impoverished contexts.
+\newblock {\em Psychonomic Bulletin \& Review\/} (2021), 1--10.
+
+\bibitem{zacks2007event}
+Zacks, Jeffrey~M, and Swallow, Khena~M.
+\newblock Event segmentation.
+\newblock {\em Current directions in psychological science 16}, 2 (2007), 80--84.
+
+\end{thebibliography}
