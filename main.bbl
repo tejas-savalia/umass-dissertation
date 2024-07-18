@@ -10,15 +10,30 @@ Baldwin, Dare, Andersson, Annika, Saffran, Jenny, and Meyer, Meredith.
 \newblock Segmenting dynamic human action via statistical structure.
 \newblock {\em Cognition 106}, 3 (2008), 1382--1407.
 
+\bibitem{bera2021motor}
+Bera, Krishn, Shukla, Anuj, and Bapi, Raju~S.
+\newblock Motor chunking in internally guided sequencing.
+\newblock {\em Brain Sciences 11}, 3 (2021), 292.
+
 \bibitem{billman1996unsupervised}
 Billman, Dorrit, and Knutson, James.
 \newblock Unsupervised concept learning and value systematicitiy: A complex whole aids learning the parts.
 \newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 22}, 2 (1996), 458.
 
+\bibitem{botvinick2012hierarchical}
+Botvinick, Matthew~Michael.
+\newblock Hierarchical reinforcement learning and decision making.
+\newblock {\em Current opinion in neurobiology 22}, 6 (2012), 956--962.
+
 \bibitem{brady2008statistical}
 Brady, Timothy~F, and Oliva, Aude.
 \newblock Statistical learning using real-world scenes: Extracting categorical regularities without conscious intent.
 \newblock {\em Psychological science 19}, 7 (2008), 678--685.
+
+\bibitem{brunec2018boundaries}
+Brunec, Iva~K, Moscovitch, Morris, and Barense, Morgan~D.
+\newblock Boundaries shape cognitive representations of spaces and events.
+\newblock {\em Trends in cognitive sciences 22}, 7 (2018), 637--650.
 
 \bibitem{carvalho2014putting}
 Carvalho, Paulo~F, and Goldstone, Robert~L.
@@ -55,6 +70,31 @@ Dehaene, Stanislas, Meyniel, Florent, Wacongne, Catherine, Wang, Liping, and Pal
 \newblock The neural representation of sequences: from transition probabilities to algebraic patterns and linguistic trees.
 \newblock {\em Neuron 88}, 1 (2015), 2--19.
 
+\bibitem{dezfouli2012habits}
+Dezfouli, Amir, and Balleine, Bernard~W.
+\newblock Habits, action sequences and reinforcement learning.
+\newblock {\em European Journal of Neuroscience 35}, 7 (2012), 1036--1051.
+
+\bibitem{dezfouli2014habits}
+Dezfouli, Amir, Lingawi, Nura~W, and Balleine, Bernard~W.
+\newblock Habits as action sequences: hierarchical action control and changes in outcome value.
+\newblock {\em Philosophical Transactions of the Royal Society B: Biological Sciences 369}, 1655 (2014), 20130482.
+
+\bibitem{dolan2013goals}
+Dolan, Ray~J, and Dayan, Peter.
+\newblock Goals and habits in the brain.
+\newblock {\em Neuron 80}, 2 (2013), 312--325.
+
+\bibitem{dubrow2013influence}
+DuBrow, Sarah, and Davachi, Lila.
+\newblock The influence of context boundaries on memory for the sequential order of events.
+\newblock {\em Journal of Experimental Psychology: General 142}, 4 (2013), 1277.
+
+\bibitem{ezzyat2014similarity}
+Ezzyat, Youssef, and Davachi, Lila.
+\newblock Similarity breeds proximity: pattern similarity within and across contexts is related to later mnemonic judgments of temporal proximity.
+\newblock {\em Neuron 81}, 5 (2014), 1179--1189.
+
 \bibitem{fiser2002statistical}
 Fiser, J{\'o}zsef, and Aslin, Richard~N.
 \newblock Statistical learning of higher-order temporal structure from visual shape sequences.
@@ -70,10 +110,30 @@ Gershman, Samuel~J.
 \newblock The successor representation: its computational logic and neural substrates.
 \newblock {\em Journal of Neuroscience 38}, 33 (2018), 7193--7200.
 
+\bibitem{gershman2012successor}
+Gershman, Samuel~J, Moore, Christopher~D, Todd, Michael~T, Norman, Kenneth~A, and Sederberg, Per~B.
+\newblock The successor representation and temporal context.
+\newblock {\em Neural Computation 24}, 6 (2012), 1553--1568.
+
+\bibitem{gershman2010learning}
+Gershman, Samuel~J, and Niv, Yael.
+\newblock Learning latent structure: carving nature at its joints.
+\newblock {\em Current opinion in neurobiology 20}, 2 (2010), 251--256.
+
 \bibitem{glenberg1979component}
 Glenberg, Arthur~M.
 \newblock Component-levels theory of the effects of spacing of repetitions on recall and recognition.
 \newblock {\em Memory \& Cognition 7}, 2 (1979), 95--112.
+
+\bibitem{hahamy2023human}
+Hahamy, Avital, Dubossarsky, Haim, and Behrens, Timothy~EJ.
+\newblock The human brain reactivates context-specific past information at event boundaries of naturalistic experiences.
+\newblock {\em Nature neuroscience 26}, 6 (2023), 1080--1089.
+
+\bibitem{heusser2018perceptual}
+Heusser, Andrew~C, Ezzyat, Youssef, Shiff, Ilana, and Davachi, Lila.
+\newblock Perceptual boundaries cause mnemonic trade-offs between local boundary processing and across-trial associative binding.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 44}, 7 (2018), 1075.
 
 \bibitem{howard2005temporal}
 Howard, Marc~W, Fotedar, Mrigankka~S, Datey, Aditya~V, and Hasselmo, Michael~E.
@@ -120,6 +180,11 @@ Kruschke, John~K.
 \newblock Alcove: An exemplar-based connectionist model of category learning.
 \newblock In {\em Connectionist Psychology}. Psychology Press, 2020, pp.~107--138.
 
+\bibitem{lositsky2016neural}
+Lositsky, Olga, Chen, Janice, Toker, Daniel, Honey, Christopher~J, Shvartsman, Michael, Poppenk, Jordan~L, Hasson, Uri, and Norman, Kenneth~A.
+\newblock Neural pattern change during encoding of a narrative predicts retrospective duration estimates.
+\newblock {\em elife 5\/} (2016), e16070.
+
 \bibitem{love2002comparing}
 Love, Bradley~C.
 \newblock Comparing supervised and unsupervised category learning.
@@ -160,6 +225,11 @@ Medin, Douglas~L, Wattenmaker, William~D, and Hampson, Sarah~E.
 \newblock Family resemblance, conceptual cohesiveness, and category construction.
 \newblock {\em Cognitive psychology 19}, 2 (1987), 242--279.
 
+\bibitem{michelmann2023evidence}
+Michelmann, Sebastian, Hasson, Uri, and Norman, Kenneth~A.
+\newblock Evidence that event boundaries are access points for memory retrieval.
+\newblock {\em Psychological Science 34}, 3 (2023), 326--344.
+
 \bibitem{momennejad2017successor}
 Momennejad, Ida, Russek, Evan~M, Cheong, Jin~H, Botvinick, Matthew~M, Daw, Nathaniel~Douglass, and Gershman, Samuel~J.
 \newblock The successor representation in human reinforcement learning.
@@ -185,6 +255,16 @@ Nosofsky, Robert~M, Gluck, Mark~A, Palmeri, Thomas~J, McKinley, Stephen~C, and G
 \newblock Comparing modes of rule-based classification learning: A replication and extension of shepard, hovland, and jenkins (1961).
 \newblock {\em Memory \& cognition 22}, 3 (1994), 352--369.
 
+\bibitem{ostlund2009evidence}
+Ostlund, Sean~B, Winterbauer, Neil~E, and Balleine, Bernard~W.
+\newblock Evidence of action sequence chunking in goal-directed instrumental conditioning and its dependence on the dorsomedial prefrontal cortex.
+\newblock {\em Journal of Neuroscience 29}, 25 (2009), 8280--8287.
+
+\bibitem{radvansky2017event}
+Radvansky, Gabriel~A, and Zacks, Jeffrey~M.
+\newblock Event boundaries in memory and cognition.
+\newblock {\em Current opinion in behavioral sciences 17\/} (2017), 133--140.
+
 \bibitem{roark2018task}
 Roark, Casey~L, and Holt, Lori~L.
 \newblock Task and distribution sampling affect auditory category learning.
@@ -200,6 +280,21 @@ Romberg, Alexa~R, and Saffran, Jenny~R.
 \newblock Statistical learning and language acquisition.
 \newblock {\em Wiley Interdisciplinary Reviews: Cognitive Science 1}, 6 (2010), 906--914.
 
+\bibitem{rouhani2018dissociable}
+Rouhani, Nina, Norman, Kenneth~A, and Niv, Yael.
+\newblock Dissociable effects of surprising rewards on learning and memory.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 44}, 9 (2018), 1430.
+
+\bibitem{rouhani2020reward}
+Rouhani, Nina, Norman, Kenneth~A, Niv, Yael, and Bornstein, Aaron~M.
+\newblock Reward prediction errors create event boundaries in memory.
+\newblock {\em Cognition 203\/} (2020), 104269.
+
+\bibitem{savalia2016unified}
+Savalia, Tejas, Shukla, Anuj, and Bapi, Raju~S.
+\newblock A unified theoretical framework for cognitive sequencing.
+\newblock {\em Frontiers in psychology 7\/} (2016), 1821.
+
 \bibitem{schapiro2013neural}
 Schapiro, Anna~C, Rogers, Timothy~T, Cordova, Natalia~I, Turk-Browne, Nicholas~B, and Botvinick, Matthew~M.
 \newblock Neural representations of events arise from temporal community structure.
@@ -210,10 +305,35 @@ Shepard, Roger~N, Hovland, Carl~I, and Jenkins, Herbert~M.
 \newblock Learning and memorization of classifications.
 \newblock {\em Psychological monographs: General and applied 75}, 13 (1961), 1.
 
+\bibitem{shiffrin1997model}
+Shiffrin, Richard~M, and Steyvers, Mark.
+\newblock A model for recognition memory: Rem—retrieving effectively from memory.
+\newblock {\em Psychonomic bulletin \& review 4\/} (1997), 145--166.
+
+\bibitem{smith2016habit}
+Smith, Kyle~S, and Graybiel, Ann~M.
+\newblock Habit formation.
+\newblock {\em Dialogues in clinical neuroscience 18}, 1 (2016), 33--43.
+
+\bibitem{sols2017event}
+Sols, Ignasi, DuBrow, Sarah, Davachi, Lila, and Fuentemilla, Llu{\'\i}s.
+\newblock Event boundaries trigger rapid memory reinstatement of the prior events to promote their representation in long-term memory.
+\newblock {\em Current Biology 27}, 22 (2017), 3499--3504.
+
 \bibitem{stachenfeld2017hippocampus}
 Stachenfeld, Kimberly~L, Botvinick, Matthew~M, and Gershman, Samuel~J.
 \newblock The hippocampus as a predictive map.
 \newblock {\em Nature neuroscience 20}, 11 (2017), 1643--1653.
+
+\bibitem{swallow2009event}
+Swallow, Khena~M, Zacks, Jeffrey~M, and Abrams, Richard~A.
+\newblock Event boundaries in perception affect memory encoding and updating.
+\newblock {\em Journal of Experimental Psychology: General 138}, 2 (2009), 236.
+
+\bibitem{tremblay2010movement}
+Tremblay, Pierre-Luc, Bedard, Marc-Andre, Langlois, Dominic, Blanchet, Pierre~J, Lemay, Martin, and Parent, Maxime.
+\newblock Movement chunking during sequence learning is a dopamine-dependant process: a study conducted in parkinson’s disease.
+\newblock {\em Experimental brain research 205\/} (2010), 375--385.
 
 \bibitem{turk2008multidimensional}
 Turk-Browne, Nicholas~B, Isola, Phillip~J, Scholl, Brian~J, and Treat, Teresa~A.
@@ -244,6 +364,11 @@ Wahlheim, Christopher~N, Dunlosky, John, and Jacoby, Larry~L.
 Whitehead, Peter~S, Zamary, Amanda, and Marsh, Elizabeth~J.
 \newblock Transfer of category learning to impoverished contexts.
 \newblock {\em Psychonomic Bulletin \& Review\/} (2021), 1--10.
+
+\bibitem{zacks2020event}
+Zacks, Jeffrey~M.
+\newblock Event perception and memory.
+\newblock {\em Annual review of psychology 71}, 1 (2020), 165--191.
 
 \bibitem{zacks2007event}
 Zacks, Jeffrey~M, and Swallow, Khena~M.

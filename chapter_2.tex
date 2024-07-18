@@ -10,6 +10,13 @@ More commonly, global-scale structure acquisition has been attributed to respons
 
 This slowdown across module edges appears to be mediated by the nature of the walk experienced across the community structure where random and Eulerian walk (a walk where each edge of the graph is visited exactly once before repeats) experiences continue to show this slowdown whereas a Hamiltonian walk (a walk were each node of the graph is visited exactly once before repeats) experience does not \cite{karuza2017process}. Thus it appears that the kind of experience through the graph alters the knowledge of underlying statistical patterns. Similarly, the topographical structure of a graph in motor skill learning tasks also appears to alter structural knowledge \cite{lynn2020abstract, lynn2020human, lynn2020humans} where modular graphs like in Figure \ref{fig:modular_graph} produce the largest dip in reaction times when responding to boundary items.
 
+\begin{figure}
+	\centering
+	\caption{Modular graph structure used in \cite{schapiro2013neural}. Locally, each node is connected to four nodes with each edge equally probable. However, globally, the graph structure consists of three sub-modules interconnected through `boundary nodes'}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/modular_graph.png}
+	\label{fig:modular_graph}
+\end{figure}
+
 Why do we slow down at boundary nodes that lead to the adjacent module even when the local probability of that particular transition is the same as any other transitions? Understanding this particular property of human behavior may provide deeper insights into what leads to global-scale structure acquisition; after all the only difference between the boundary node and other non-boundary nodes is in context of the global structure of the graph. Event boundary literature (where boundaries are typically operationalized through explicit changes in context) suggests that boundaries alter the predictability of future events and this predictability leads to event segmentation \cite{zacks2007event, clewett2019transcending}. Thus, in implicitly operationalized boundaries such as in serial reaction time tasks, the slowdown at the boundary node may imply a similarly increased uncertainty at boundary nodes leading to slowed responses. Prior work aimed at understanding human representation of graph structures indeed points to an the `cross-entropy' between a learner's estimate of the transition probability and the true transition probability of the environment \cite{lynn2020abstract, lynn2020humans, lynn2020human}. 
 
 %In addition to being uncertain about the immediate next stimulus, participants are also uncertain about switching to a neighboring cluster or staying within the same cluster.
@@ -31,7 +38,24 @@ Briefly, the SR model represents each state in the actionable space as a predict
 where $\delta(., .)$ equates to 1 if both arguments are equal otherwise it equates to 0. Thus, the matrix increases the probability of visiting a state $j$ from state $i$ if state $j$ is visited in the current experience and it decreases the probability of visiting all other states from state $i$. Parameter $\alpha$ is a learning rate parameter that determines how much of the previous estimate of visiting state $j$ from $i$ is factored into the current update. Parameter $\gamma$ is a future discount parameter that dictates how much in the future the agent sees -- specifically, a higher value of $\gamma$ indicates future visitations to state $j$ are weighed high in the current update.
 
 \subsection{Temporal Context Model}
-The Temporal Context Model (TCM) was devised to explain the primacy and recency effects in human recall and recognition memory \cite{howard2005temporal}. The TCM model assumes that the items maintain a temporal context as they get encoded thus allowing items presented close to the previous items to share such temporal context. 
+The Temporal Context Model (TCM) was devised to explain the primacy and recency effects in human recall and recognition memory \cite{howard2005temporal}. The TCM model assumes that the items maintain a temporal context as they get encoded thus allowing items presented close to the previous items to share such temporal context. Briefly, the TCM can be formalized as \cite{gershman2012successor}:
+
+\begin{equation}
+	\begin{aligned}
+		t_n = \rho * t_{n-1} + f_n \\ 
+		\hat{M}_{i, j} \leftarrow \hat{M}_{i, j} + \alpha f_{n+1} t_{n, i}			
+	\end{aligned}
+\end{equation}
+
+where $t_n$ is said to be a `context' vector for item $n$. The context drift parameter $\rho$ determines the proportion of the previous elements's context that gets incorporated in the current context. $f_n$ is a one-hot encoded vector for item $n$. The learning rate parameter $\alpha$ determines what proportion of the currently experienced state binds with the existing context. 
+
+The key difference between the two models of temporal context is two fold: (1) SR Relies on error-based learning whereas TCM relies on hebbian, assosciative learning and (2) Through the future discount parameter $\gamma$, SR also learns the predictability observing states in the near future based on the locally experienced transitions \cite{gershman2012successor}.
+
+\subsection{Model Simulations}
+The models described above can be used to simulate expected behavior as a function of a range of exposure. Figure \ref{fig:model_simulations} shows the context matrix representation after the models have been simulated for a random walk through the graph structure in \ref{fig:modular_graph} as a result of a random walk, a Hamiltonian walk and an Eulerian walk after 1000 trials. Previous work has shown that participants acquire the global structure of the graph for both the random and Eulerian walk but \textit{not} when exposed to the temporal graph via a Hamiltonian walk. 
+
+To model the observed differences in reaction times and link them to the apparent differences shown in Figure \ref{fig:model_simulations}, we apply principles of information theory. Specifically, we assume that response time for each stimulus is a function of the uncertainty in its surrounding context. Measures of information entropy have previously been used to explain RT differences in various conditions \cite{lynn2020abstract, lynn2020human,lynn2020humans}. 
+
 
 %The SR model, while underlies the reinforcement learning principle does not rely on the availability of explicit rewards at the end to build a predictive representation for each step. For this dissertation, I will similarly assume that predictive representations are learned from experience through the environment without the need for an explicit goal state.
 
