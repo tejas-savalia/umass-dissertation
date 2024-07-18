@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1721266384.55207 "main.aux" "main.bbl" "main" 1721266385.86482 0
+["bibtex main"] 1721325926.96499 "main.aux" "main.bbl" "main" 1721325928.19591 0
   "./references.bib" 1721159065 28115 8b09917ec699d2558fbd2416dac1d80b ""
   "./umassthesis.bst" 1720733246 19148 ebf5fad6788232d5bb0231e012cd5c54 ""
-  "main.aux" 1721266385 12470 ccbd91d18d99e006331b44a557aa5c6b "pdflatex"
+  "main.aux" 1721325927 12625 6c0f68d0f9cc44744237d2f8fe13c17b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1721266384.66882 "c:/Users/tejas/Documents/umass-dissertation/main.tex" "main.pdf" "main" 1721266385.86554 0
+["pdflatex"] 1721325927.11132 "c:/Users/tejas/Documents/umass-dissertation/main.tex" "main.pdf" "main" 1721325928.19654 0
   "c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1720509304 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1720509296 1004 54797486969f23fa377b128694d548df ""
   "c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1720509296 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -85,17 +85,17 @@
   "c:/Users/tejas/AppData/Roaming/TinyTeX/texmf.cnf" 1720509276 903 164c5b127cd0d6dc91abad2f62421ea2 ""
   "c:/Users/tejas/Documents/umass-dissertation/main.tex" 1721249481 20286 ab29839b90d3162a1029c8e29af87413 ""
   "chapter_2.tex" 1721159073 11728 ebae907e543483117e435f1750dc095b ""
-  "chapter_3.tex" 1721266380 6000 3c1ad5519353f3027e47d5728e845868 ""
+  "chapter_3.tex" 1721325922 6266 4be519917a0dc633cf68d22d1fa5777e ""
   "chapter_4.tex" 1720732924 8671 1d1d8e17b449b4a22e245631c99dee45 ""
   "chapter_notebooks/chapter_2/figures/modular_graph.png" 1720902582 41592 82e3652f8ab7a45b993adb8226c5e704 ""
   "introduction.tex" 1720732924 8083 967e8e970a041ea558bd23cdb8f79563 ""
-  "main.aux" 1721266385 12470 ccbd91d18d99e006331b44a557aa5c6b "pdflatex"
-  "main.bbl" 1721266384 18103 59df56d2cf8abfe24f6769d404d2da73 "bibtex main"
-  "main.lof" 1721266385 501 7ea285784bda58fcce400e5efa4858a8 "pdflatex"
-  "main.lot" 1721266385 180 4fcb58b8a35e71f8ad1873924b86ddc9 "pdflatex"
-  "main.out" 1721266385 3871 8d47fad468d70f95ba2462c35a2fdc99 "pdflatex"
+  "main.aux" 1721325927 12625 6c0f68d0f9cc44744237d2f8fe13c17b "pdflatex"
+  "main.bbl" 1721325927 18103 59df56d2cf8abfe24f6769d404d2da73 "bibtex main"
+  "main.lof" 1721325927 501 7ea285784bda58fcce400e5efa4858a8 "pdflatex"
+  "main.lot" 1721325927 180 4fcb58b8a35e71f8ad1873924b86ddc9 "pdflatex"
+  "main.out" 1721325927 4057 3d077c6a1dc5b85d21211ec72a8e5699 "pdflatex"
   "main.tex" 1721249481 20286 ab29839b90d3162a1029c8e29af87413 ""
-  "main.toc" 1721266385 2181 14109b224bf552de73600eafdeba9066 "pdflatex"
+  "main.toc" 1721325927 2267 4e94eac16b504d18d01d80c03aa3fa9d "pdflatex"
   "umassthesis.cls" 1720733246 25871 372c0961d5d3ab1dbc2915d1789050c3 ""
   "umth12pt.clo" 1720733246 545 e35da8c22c00585b5e2845898ba621b3 ""
   "umthstd.clo" 1720733246 4314 d52c76fcb0f430f9d60dbaa6fa33c5bd ""
