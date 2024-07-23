@@ -5,6 +5,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Modular graph structure used in \cite {schapiro2013neural}. Locally, each node is connected to four nodes with each edge equally probable. However, globally, the graph structure consists of three sub-modules interconnected through `boundary nodes'}}{8}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Successor Representation and Temporal Context Model representations of context following a random walk through the modular graph structure.}}{11}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Model prediction of context representations for SR and TCM models across different walk lengths. Both models seemingly predict that the modular structure of the original graph is increasingly recovered with longer walk lengths.}}{13}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Model Predictions for differences in reaction time comparing across cluster transitions to within cluster transitions across walk lengths. Both models predict that cross cluster surprisal effect will increase with walk length leading to an increased reaction time.}}{14}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Model prediction differences between the SR and the TCM after different walk lengths. SR predicts that entropy of boundary nodes will scale with walk lengths whereas TCM does not.}}{15}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Rescaled SR and TCM matrices depict differences between context representations of the two models. Boundaries in SR incorporate more information than those in TCM.}}{16}{figure.2.6}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Simulated recognition memory test performances for walk lengths of 1 and walk lengths of 1000 on modular graph in Figure \ref {fig:modular_graph}. On average, recognition memory performance is expected to be better for boundary items than non-boundary items.}}{22}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The Drift Diffusion Model of Choice Response Times for Old/New recognition memory tasks.}}{23}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Two module graph used for distance judgments.}}{25}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces SR predictions of distances across boundaries relative to distances within boundaries for nodes at true distance of 1, 2, and 3 and different parameter combinations.}}{26}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces SR predictions of distances across boundaries when boosted by node entropies relative to distances within boundaries for nodes at true distance of 1, 2, and 3 and different parameter combinations.}}{26}{figure.3.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

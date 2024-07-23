@@ -1,18 +1,118 @@
 \section{Introduction}
 We receive a continuous stream of sensory information in our daily lives. In order to make sense of it, we often parse it into meaningful chunks for storage, retrieval and comprehension. For example, we may recall our drive to work as a series of discrete events; got into the car, got coffee, picked up a collegue, hit traffic on a particular street, parked, and walked over to the office. What aspects of the incoming stream help us organize continuous temporal information in such discrete chunks? 
-dezfouli2014habits
 Temporal chunking in cognitive psychology has been studied under several domains from event boundaries \cite{clewett2019transcending, zacks2007event, rouhani2020reward,rouhani2018dissociable,dubrow2013influence,baldwin2008segmenting}, language learning, \cite{romberg2010statistical,knowlton1992intact}, categorization \cite{unger2022ready,gabay2015incidental}, and motor sequencing \cite{bera2021motor, tremblay2010movement, savalia2016unified,ostlund2009evidence}. Chunking a repeated sequence of experiences is crucial to abstracting patterns in the environment and formation of habits for quick and efficient interactions with the environment \cite{dezfouli2012habits, smith2016habit,dolan2013goals, dezfouli2014habits, gershman2010learning, botvinick2012hierarchical}. 
 
 Models of temporal event segmentation suggest that the points which lead to temporal segmentation seem to be unique in their properties in both segmenting the continuous stream of information and integration of information across the temporal event. These `event boundaries' are, for example, shown to be remembered better \cite{swallow2009event,rouhani2018dissociable,rouhani2018dissociable, zacks2020event, radvansky2017event, heusser2018perceptual}, serve as points of retrieval \cite{michelmann2023evidence} and replay to promote long term memory \cite{hahamy2023human, sols2017event} and easy parsing, help integrate memory across time \cite{clewett2019transcending}, and separates across boundary events while collapsing within boundary events \cite{clewett2019transcending, lositsky2016neural,ezzyat2014similarity, brunec2018boundaries}. 
 
 In most prior studies, event boundaries have been studied using explicit context shifts. For example, when stream of stimuli are surrounded by colored border, event boundaries are operationalized by first showing the stimuli surrounded by a color and abruptly changing that color\cite{heusser2018perceptual}. In another study, event boundaries were operationalized via explicit context changes by changing the associated stimulus\cite{ezzyat2014similarity}. A pair of images were presented on each trial; one image of the pair, the 'scene' image remained constant for a short sequence of trials whereas the other ('object' or 'face') changed on each trial. Participants were asked to make judgments about the object/face image \cite{ezzyat2014similarity}. Previously, context changes had been operationalized as either perceptual or semantic shift in ongoing set of events by having participants watch clips \cite{swallow2009event}. In more recent work, context change has been operationalized as changes in ongoing reward contingencies associated with each stimulus \cite{rouhani2020reward}. 
 
-Consistent findings across most studies in explicitly operationalized event boundaries show that event boundaries are often remembered better \cite{swallow2009event, radvansky2017event, heusser2018perceptual,clewett2019transcending, rouhani2020reward,ezzyat2014similarity}, and events across boundaries appear to be perceptually farther whereas events within boundaries appear to be perceptually closer \cite{clewett2019transcending,ezzyat2014similarity,brunec2018boundaries,lositsky2016neural}. In recent work, however, it has been shown that event boundaries can also be formed \textit{without} explicit changes in context. After being exposed to a stream of stimuli such that the ordering is controlled by a modular graph shown in figure \ref{fig:modular_graph}, participants seem to recognize across cluster transitions as `natural breaks' more often than within cluster transitions \cite{schapiro2013neural}. In recent work, this finding has been linked to statistical learning of temporal graph structures \cite{karuza2022value,karuza2019human,kahn2018network,kahn2018network,lynn2020abstract,lynn2020human,lynn2020humans} and measured by slowed reaction times across clusters than within clusters. However, past studies where boundaries are operationalized implicitly do not assess the memory representations of these boundaries using the same tests used in explicitly operationalized boundary paradigms. 
+Consistent findings across most studies in explicitly operationalized event boundaries show that event boundaries are often remembered better \cite{swallow2009event, radvansky2017event, heusser2018perceptual,clewett2019transcending, rouhani2020reward,ezzyat2014similarity,baldassano2017discovering}, and events across boundaries appear to be perceptually farther whereas events within boundaries appear to be perceptually closer \cite{clewett2019transcending,ezzyat2014similarity,brunec2018boundaries,lositsky2016neural}. In recent work, however, it has been shown that event boundaries can also be formed \textit{without} explicit changes in context. After being exposed to a stream of stimuli such that the ordering is controlled by a modular graph shown in figure \ref{fig:modular_graph}, participants seem to recognize across cluster transitions as `natural breaks' more often than within cluster transitions \cite{schapiro2013neural}. In recent work, this finding has been linked to statistical learning of temporal graph structures \cite{karuza2022value,karuza2019human,kahn2018network,kahn2018network,lynn2020abstract,lynn2020human,lynn2020humans} and measured by slowed reaction times across clusters than within clusters. However, past studies where boundaries are operationalized implicitly do not assess the memory representations of these boundaries using the same tests used in explicitly operationalized boundary paradigms. 
 
 In this chapter, I present two tests on implicitly operationalized boundaries to assess whether they elicit the same behavioral properties as the explicitly operationalized boundaries. In particular, I use the paradigm and graph structure previously used in Schapiro et al. \cite{schapiro2013neural} to test whether participants recall boundary items better (or worse) than non-boundary items. I then use a two module graph structure in Figure \ref{fig:two_module_graph} to test whether items across the two clusters appear farther than items within a cluster (similar to findings in explicitly operationalized boundary paradigms). 
 
-\section{Modeling Boundary Effects}
-Event segmentation theory suggests that the segmentation of the continuous sensory experience occurs automatically\cite{swallow2009event}. Past work on event boundaries (when operationalized explicitly) provide for a role of 
+\section{Modeling Boundary Memory Benefits}
+Event segmentation theory suggests that the segmentation of the continuous sensory experience occurs automatically and through prediction errors\cite{zacks2007event,zacks2007eventp, swallow2009event}. According to the event segmentation theory, we maintain an ongoing `context' which is predictive of upcoming events. Event boundaries are created when this prediction breaks. More recent work has shown that prediction errors are not necessary for creation of event boundaries; a change in uncertainty of the upcoming events can also produce event boundaries \cite{shin2021structuring}. Prediction errors particularly lose their value in learning new information when the explored environment is uncertain\cite{behrens2007learning}. Nevertheless, under environments with high regularities, prediction errors remain the key mechanisms driving boundary formation. 
 
-\section{Context Modeling and Predictions}
-Chapter \ref{chapter-2-walk-lengths-modulate-statistical-learning} show that context models can be used to estimate representations of implicitly operationalized event boundaries. Particularly, predictive representations such as the SR provide a natural representation of event boundaries which form bottlenecks in transitioning between clusters in modular graphs in figure \ref{fig:modular_graph}. I propose that the same context-representation framework can be used to model memory differences. For the purposes of simulations, I use the REM (Retrieving Effectively from Memory) model in recognition memory\cite{shiffrin1997model}.
+As reviewed above, prediction errors need not be explicitly operationalized for an event boundary to be learned. Prediction errors which imply shifts in ongoing context, similar to implicitly operationalized event boundaries may be implicit. In chapter \ref{chapter-2-walk-lengths-modulate-statistical-learning} show that context models can be used to estimate representations of implicitly operationalized event boundaries. Particularly, predictive representations such as the SR provide a natural representation of event boundaries which form bottlenecks in transitioning between clusters in modular graphs in figure \ref{fig:modular_graph}. I propose that the same predictive context-representation framework using the Successor Representation model of Reinforcement Learning \cite{dayan1993improving, momennejad2017successor, russek2017predictive, momennejad2020learning,gershman2012successor} can be used to model differences in memory representations. 
+
+To simulate a recognition memory task, I employ a simplified version of the exemplar-based Generalized Context Model \cite{nosofsky2011generalized,nosofsky1986attention, nosofsky2011short}. The GCM follows a class of global matching exemplar models where each studied item is stored as an image or an exemplar in memory. At test, the presented test item is matched with memory representations of stored exemplars by computing the psychological similarity between them. It is assumed that if the similarity, summed over all similarities of the test items with exemplars in memory, crosses a criterion (a free parameter), the participant recognizes that item and the `old' response is chosen in the old/new recognition test. Similarly, a `new' response is chosen when the summed similarity of the test item with all stored exemplars falls below the decision criterion. 
+
+The GCM model for recognition memory can be formalized with the following equations \cite{nosofsky2011short}:
+
+\begin{equation}
+    \begin{aligned}
+        d_{ij} = [\sum\limits_{k = 1}^K w_k(x_{ik} - x_{jk})^2]^{1/2} \\
+        s_{ij} = \exp^{-c_jd_{ij}} \\
+        a_{ij} = m_js_{ij}
+    \end{aligned}
+\end{equation}    
+
+where $d_{ij}$ is the psychological distance between test item $i$ and examplar $j$, $w_k$ is the weight a participant may place on the $k^{th}$ dimensions (and $k \in K$). The distance metric is thus computed as an euclidean distance between exemplars in memory and the test item weighted by where each feature is allowed to have a different weight to reflect differentially important features. $s{ij}$ is the similarity between test item $i$ and exemplar $j$ which decreases exponentially with psychological distance. $c_j$ is a scaling factor determining how much the similarity falls off for a unit of distance for each exemplar. $a_{ij}$ is the activation of exemplar $j$ when compared with test item $i$ and is scaled by the memory strength of the exemplar $m_j$. 
+
+To demonstrate the potential role of temporal structure, a few simplifying assumptions are  made to the recognition memory model. Specifically, in simulations presented below, it is assumed that the each feature dimension of the studied (and test) items is weighted equally. Furthermore, the scaling parameter $c$ is assumed to be 1 for all exemplars. To simulate the differences between boundary and non-boundary nodes in memory, it is assumed that the memory strength of an item associated with each node is proportional to the entropy in its successor representation of that node. While evidence for relating memory strength to context based entropy is scarce, past work has shown that entropy (as a measure of uncertainty) has been a helpful factor in motivated learning and is a contributing factor in hippocampal activation \cite{davis2012striatal}. Furthermore, the slow down associated with increased entropy as demonstrated in previous statistical learning tasks \cite{lynn2020abstract,lynn2020human,lynn2020humans} implies that participants at the least spend more time on such high-entropy boundary nodes, thereby allowing for a better chance of remembering these nodes better. 
+
+Given these assumptions, simulating recognition memory on the final SR representation provides an expected comparison of recognition memory acccuracy for old boundary, old non-boundary and new items. Figure \ref{fig:recog_memory_sims_with_criterion} shows the what this modeling approach expects. On average, implicitly operationalized boundaries are expected to be remembered better than non-boundaries. This benefit is expected to be apparent for participants who are exposed to the temporal structure (right panel) relative to participants who are not (left panel).
+
+\begin{figure}[ht]
+    \label{fig:recog_memory_sims_with_criterion}
+    \centering
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png}
+    \caption{Simulated recognition memory test performances for walk lengths of 1 and walk lengths of 1000 on modular graph in Figure \ref{fig:modular_graph}. On average, recognition memory performance is expected to be better for boundary items than non-boundary items.}
+\end{figure}
+
+
+
+\subsection{Methods}
+
+\subsection{Results}
+
+\subsubsection{Diffusion Modeling}
+Preliminary results above reflect that while there are no differences in memorability of boundary items, non-boundary items on the other hand tend to be remembered worse for participants in the structured conditions relative to the structured conditions. However, the model used above fails to account for ceiling effects -- accuracy for old items is near perfect or could have reached an asymptote. Those models also do not account for encoding accuracy during exposure -- participants may fail to recognize old items if they did not study those items well as indicated by the rotation judgement task. 
+
+To be able to account for both ceiling effects and effects of exposure, we can use additional information available in form of response times during the recognition memory task. For example, for participants equally accurate in recognizing boundary and non-boundary participants, being able to recognize boundary items faster may provide additional evidence for better memorability of these items relative to slower recognized non-boundary items. Figure \ref{fig:recognition-rts} shows median response times across three blocks of recognition test. 
+
+To understand recognition memory differences between boundary and non-boundary items in context of response accuracy and response time distributions, we use the Drift Diffusion Model \(DDM\). The DDM, which falls under a class of sequential sampling models, has been a widely successful model in modeling two-choice tasks in recognition memory \cite{ratcliff2004diffusion, ratcliff2022discriminating, starns2014using, starns2014validating, ratcliff2009modeling}. The function of the DDM is depicted in Figure \ref{fig:ddm-model}. 
+
+\begin{figure}[ht]
+    \label{fig:ddm-model}
+    \centering
+    \includegraphics[width = 0.75\textwidth]{chapter_notebooks/chapter_3/figures/ddm.png}
+    \caption{The Drift Diffusion Model of Choice Response Times for Old/New recognition memory tasks.}
+\end{figure}
+
+Briefly, the DDM assumes that at choice time, evidence from two presented options accumulates sequentially over time towards one of the two boundaries. For a previously studied item presented at test, the evidence from the item accumulates slowly towards the `old' boundary whereas for a non-studied item, the evidence accumulates towards the `new' boundary. The rate of evidence accumulation is controlled by the drift rate parameter, `$v$'. Participants may be biased towards making an old or a new response at test; this bias is measured by the starting point parameter, `$z$'. THe boundary separation between the two responses is modeled by a parameter `$a$'. Finally, the observed response consists of cognitive processes not affiliated with decision making (such as time it takes to visually process the test item, time for the motor systems to click the relevant key) which are modeled by a non-decision time parameter `$t_{er}$'. \footnote{Note that this version of the DDM is a simplified model. More complex DDMs account for trial-to-trial variability in each parameters as well.} 
+
+Prior work has shown that memory strength of previously studied items impacts the drift rate towards old/new responses. The drift rate parameter implies that a stronger match to memory leads to a quicker accumulation of evidence towards the `old' response boundary. Similarly, a stronger mis-match to memory allows for a quicker accumulation of evidence towards the `new' response boundary\cite{ratcliff2004diffusion,ratcliff2022discriminating}. 
+
+The DDM thus allows us circumvent ceiling effects by modeling response time distributions and estimate whether if boundary items are indeed a remembered better than non-boundary items in the structured exposure or whether the effect is driven by worse-remembered non-boundary items. 
+
+
+
+\section{Modeling Boundary Distance Effects}
+Another replicated finding in explicitly operationalized event boundary literature is an apparent increased separation of events across boundaries \cite{horner2016role,brunec2018boundaries,dubrow2013influence, ezzyat2011constitutes, heusser2018perceptual}. This separation of events across boundaries helps shape narratives in long term memory \cite{clewett2019transcending}.
+
+It is unknown, however, whether the increased temporal separation across event boundaries generalizes to boundaries operationalized implicitly as well. Context models such as SR provide a mechanism to directly estimate perceived distance between events. Specifically, each cell in the SR matrix $M(s, s')$ indicates the future expected visit probabilities from state $s$ to state $s'$. Under the assumption that states closer to the current state are visited more often in a random walk than state farther, the probability $M(s, s')$ provides a direct estimate of perceived distance from node $s$ to $s'$. 
+
+\begin{figure}[ht]
+    \centering
+    \label{fig:two_module_graph}
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/two_module_graph.png}
+    \caption{Two module graph used for distance judgments.}
+\end{figure}
+
+To test whether cross boundary events are perceived to be farther from each other relative to within-boundary events graph in figure \ref{fig:two_module_graph} is used. The key transitions of interest that are compared in this graph are transitions at equal distances. Below I specify example transitions at 3 different distances however, for simulations and the experiment, all symmetrical transitions at those distances were tested. 
+\begin{itemize}
+    \item $0 \leftrightarrow 4$ vs $1 \leftrightarrow 5$ at shortest distance 3. 
+    \item $1 \leftrightarrow 4$ vs $2 \leftrightarrow 5$ at shortest distance 2. 
+    \item $2 \leftrightarrow 4$ vs $4 \leftrightarrow 4$ at shortest distance 1. 
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \label{fig:SR-distance-estimate}
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/distance_predictions.png}
+    \caption{SR predictions of distances across boundaries relative to distances within boundaries for nodes at true distance of 1, 2, and 3 and different parameter combinations.}
+\end{figure}
+
+SR estimate of distances is shown in figure \ref{fig:SR-distance-estimate}. Simulations predict that while boundary nodes themselves get perceptually farther with increased discount rate, neither of node-pairs at distance 2 or 3 that involve boundary nodes reliably show an increased cross-cluster distance.
+
+\begin{figure}
+    \centering
+    \label{fig:SR-distance-estimate-entropy-boost}
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png}
+    \caption{SR predictions of distances across boundaries when boosted by node entropies relative to distances within boundaries for nodes at true distance of 1, 2, and 3 and different parameter combinations.}
+\end{figure}
+
+However, in a typical experience of the random walk, participants are shown to be slow at responding to boundary nodes; both due to higher entropy at boundary nodes (from chapter \ref{chapter-2-walk-lengths-modulate-statistical-learning}) and previously shown increased response times during transitions across temporal clusters \cite{lynn2020abstract,kahn2018network}. On average, a participant would typically spend more time at boundary nodes than non-boundary nodes thereby leading; thereby leading to increased perceived \textit{time} while crossing boundary nodes relative to staying within the cluster. Following the findings in chapter \ref{chapter-2-walk-lengths-modulate-statistical-learning}, this increased perceived time can be modeled through entropy difference between boundary and non-boundary nodes based on learned SR representations. This slowdown is simulated by multiplying average SR entropy of boundary nodes where they transitions cross boundaries and by multiplying the average SR entropy of non-boundary nodes where transitions stay within a cluster. predictions of differences in perceived distance are shown in figure \ref{fig:SR-distance-estimate-entropy-boost}.
+
+
+Regardless of whether the distance measure is boosted by increased entropy at boundary nodes, it appears that boundary nodes themselves appear farther from each other relative to nodes within a cluster from that cluster's boundary node. Model predictions at other distances are mixed and dependent on parameters of the SR model. The next experiment tests whether the typical finding of increased perceived separation between cross cluster nodes (relative to within cluster nodes) is replicated in implicitly operationalized event boundary paradigms. A rigorous test of this formulation of the SR model is out of the scope of this dissertation. Furthermore, a lack of increased cross-cluster distance will provide no evidence for or against the current formulation of the SR model's role in representing distances between nodes. However, if such an increased cross-cluster distance is found, such an effect will serve as evidence \textit{against} the current formulation of the SR model's role in estimating temporal distances. 
+
+
+
+
+\section{Discussion}
+
+As exemplified above, this modeling approach allows for varying accounts of memory improvement for implicitly operationalized boundary nodes relative to non-boundary nodes. This approach does not allow to differentiate between these accounts. The focus of this chapter is to demonstrate whether implicitly operationalized boundary items are remembered better than non-boundary items similar to findings in explicitly operationalized event boundary literature. The increased memory strength assumption is not
+
+DDM is one model. EBRW is a more direct extension of GCM. Cite cohen. 

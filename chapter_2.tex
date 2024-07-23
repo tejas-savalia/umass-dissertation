@@ -10,7 +10,7 @@ More commonly, global-scale structure acquisition has been attributed to respons
 
 This slowdown across module edges appears to be mediated by the nature of the walk experienced across the community structure where random and Eulerian walk (a walk where each edge of the graph is visited exactly once before repeats) experiences continue to show this slowdown whereas a Hamiltonian walk (a walk were each node of the graph is visited exactly once before repeats) experience does not \cite{karuza2017process}. Thus it appears that the kind of experience through the graph alters the knowledge of underlying statistical patterns. Similarly, the topographical structure of a graph in motor skill learning tasks also appears to alter structural knowledge \cite{lynn2020abstract, lynn2020human, lynn2020humans} where modular graphs like in Figure \ref{fig:modular_graph} produce the largest dip in reaction times when responding to boundary items.
 
-\begin{figure}
+\begin{figure}[ht]
 	\centering
 	\caption{Modular graph structure used in \cite{schapiro2013neural}. Locally, each node is connected to four nodes with each edge equally probable. However, globally, the graph structure consists of three sub-modules interconnected through `boundary nodes'}
 	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/modular_graph.png}
@@ -37,7 +37,7 @@ Briefly, the SR model represents each state in the actionable space as a predict
 
 where $\delta(., .)$ equates to 1 if both arguments are equal otherwise it equates to 0. Thus, the matrix increases the probability of visiting a state $j$ from state $i$ if state $j$ is visited in the current experience and it decreases the probability of visiting all other states from state $i$. Parameter $\alpha$ is a learning rate parameter that determines how much of the previous estimate of visiting state $j$ from $i$ is factored into the current update. Parameter $\gamma$ is a future discount parameter that dictates how much in the future the agent sees -- specifically, a higher value of $\gamma$ indicates future visitations to state $j$ are weighed high in the current update.
 
-\subsection{Temporal Context Model}
+\subsubsection{Temporal Context Model}
 The Temporal Context Model (TCM) was devised to explain the primacy and recency effects in human recall and recognition memory \cite{howard2005temporal}. The TCM model assumes that the items maintain a temporal context as they get encoded thus allowing items presented close to the previous items to share such temporal context. Briefly, the TCM can be formalized as \cite{gershman2012successor}:
 
 \begin{equation}
@@ -52,10 +52,75 @@ where $t_n$ is said to be a `context' vector for item $n$. The context drift par
 The key difference between the two models of temporal context is two fold: (1) SR Relies on error-based learning whereas TCM relies on hebbian, assosciative learning and (2) Through the future discount parameter $\gamma$, SR also learns the predictability observing states in the near future based on the locally experienced transitions \cite{gershman2012successor}.
 
 \subsection{Model Simulations}
-The models described above can be used to simulate expected behavior as a function of a range of exposure. Figure \ref{fig:model_simulations} shows the context matrix representation after the models have been simulated for a random walk through the graph structure in \ref{fig:modular_graph} as a result of a random walk, a Hamiltonian walk and an Eulerian walk after 1000 trials. Previous work has shown that participants acquire the global structure of the graph for both the random and Eulerian walk but \textit{not} when exposed to the temporal graph via a Hamiltonian walk. 
+The models described above can be used to simulate expected behavior as a function of a range of exposure. Figure \ref{fig:SR-TCM-model-simulations} shows the context matrix representation after the models have been simulated for a random walk through the graph structure in \ref{fig:modular_graph} as a result of a random walk after 1000 trials for both models. Previous work has shown that participants acquire the global structure of the graph for a random walk. 
 
-To model the observed differences in reaction times and link them to the apparent differences shown in Figure \ref{fig:model_simulations}, we apply principles of information theory. Specifically, we assume that response time for each stimulus is a function of the uncertainty in its surrounding context. Measures of information entropy have previously been used to explain RT differences in various conditions \cite{lynn2020abstract, lynn2020human,lynn2020humans}. 
+\begin{figure}[!ht]
+	\label{fig:SR-TCM-model-simulations}
+	\centering
+	\includegraphics[width = 0.9\textwidth]{chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png}
+	\caption{Successor Representation and Temporal Context Model representations of context following a random walk through the modular graph structure.}
+\end{figure}
 
+To model the observed differences in reaction times and link them to the apparent differences shown in Figure \ref{fig:SR-TCM-model-simulations}, we apply principles of information theory. Specifically, we assume that response time for each stimulus is a function of the uncertainty in its surrounding context. Measures of information entropy have previously been used to explain RT differences between cluster transitions while traversing similar graph structures \cite{lynn2020abstract, lynn2020human,lynn2020humans}. Formally, 
+
+\begin{equation}
+	\begin{aligned}
+		RT(node) \cong Entropy(node) = \sum_{s' \in S} \hat{M}(s, s') * log(\hat{M}(s, s'))
+	\end{aligned}
+\end{equation}
+
+where $M(s, s')$ is the context representation at node $s$. For SR, this expression evaluates to the expected future visits to state $s'$ from state $s$ whereas for TCM this expression evaluates to the extent to which $s'$ is activated as a result of $s$. 
+
+As noted previously, a common indicator of participants having acquired the global structural knowledge is a slow down in responses when the ongoing stimulus stream crosses a cluster (relative to transitions within a cluster) of the modular graph. Context representations can be used to model the cross cluster transitions by computing a `surprisal' effect. For simulations, the surprisal effect is computed as the Jenson-Shannon distance between the context representations of two nodes. Formally, 
+
+\begin{equation}
+	\begin{aligned}
+		RT(s \rightarrow s') \cong JS(s, s') = \sqrt[2]{\frac{D(M(s, .) || p) + D(M(s', .) || p)}{2}} \\
+	\end{aligned}
+\end{equation}
+
+where $M(s, .)$ is the context representation of node vector $s$, $p$ is the point-wise mean of nodes $s$ and $s'$ and $D(M||p)$ is the Kullback-Leibler divergence between probability distributions $M$ and $p$. 
+
+The formalization of observed response time differences due to surprisal (and node entropy) allows us to simulate expected reaction time distributions for novel walk types. Specifically, to understand the mechanisms behind acquiring the global modular graph pattern following a limited exposure, each model was simulated for random walk with lengths of 0, 3, 6, and 999. A random walk length of 0 translates to a completely random selection of one of the 15 nodes of the modular graph on each trial. Walk length of 3 and 6 translate to a random walk visiting 3 and 6 edges (4 and 7 nodes) respectively before being reset to a random node (similar to visiting the Target store in short bursts to purchase relevant items and checking out without visiting the entire store). Finally, a walk length of 999 translates to visiting 999 edges (with repetition) through their connections on the modular graph. Parameters of the simulations in figure \ref{fig:SR-TCM-walklength-matrices} are determined through a best-fitting grid search procedure. Specifically, for a combination of parameters the euclidean distance between the genearted context matrix (SR or TCM) was computed. A grid search was conducted to determine the parameters which minimized this euclidean distance. 
+
+\begin{figure}
+	\centering
+	\label{fig:SR-TCM-walklength-matrices}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png}
+	\caption{Model prediction of context representations for SR and TCM models across different walk lengths. Both models seemingly predict that the modular structure of the original graph is increasingly recovered with longer walk lengths.}
+\end{figure}
+
+The acquisition of the global structure can be modeled using surprisal as has been done in previous research \cite{lynn2020abstract,lynn2020humans,lynn2020human}. For a subset of parameters in the valid range of 0 to 1, each model was simulated to produce a context matrix. Jensen-Shannon distance was computed between each pairs of nodes and averaged over cross-cluster pair and within cluster pairs. Simulation results below show the transition Jensen-Shannon distances over 100 simulations of the model for each parameter combination. For SR, `param\_a' is the learning rate parameter $\alpha$ and `param\_b' is the discount parameter $\gamma$. For TCM, `param\_a' is the learning rate parameter $\alpha$ and `param\_b' is the context drift parameter $\rho$. 
+\begin{figure}
+	\centering
+	\label{fig:SR-TCM-walklength-transition-sjdist}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png}
+	\caption{Model Predictions for differences in reaction time comparing across cluster transitions to within cluster transitions across walk lengths. Both models predict that cross cluster surprisal effect will increase with walk length leading to an increased reaction time.}
+\end{figure}
+
+Figure \ref{fig:SR-TCM-walklength-transition-sjdist} shows that both context models predict an increased surprisal as walk length through the modular graph gets longer. As walk length increases, context associated with each node increasingly represents neighboring nodes. Since neighbors of the boundary nodes differ more than those between the non-boundary nodes, crossing from a boundary node to another boundary nodes.
+
+The two context models, however, differ in their predictions in the role of a boundary node. Figure \ref{fig:SR-TCM-walklength-boundary-nonboundary-entropydiff} shows that SR predicts an increased entropy in its representation of the boundary nodes with walk length relative to the non-boundary nodes for some values of the $\alpha$ and $\gamma$ parameters. On the other hand the TCM does not predict such increased in Boundary vs Non Boundary entropy differences. 
+\begin{figure}[ht]
+	\centering
+	\label{fig:SR-TCM-walklength-boundary-nonboundary-entropydiff}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png}
+	\caption{Model prediction differences between the SR and the TCM after different walk lengths. SR predicts that entropy of boundary nodes will scale with walk lengths whereas TCM does not.}
+\end{figure}
+
+
+The predictive nature of SR (as modeled by the future discount, $\gamma$ parameter) allows for a representation of nodes in the neighboring cluster to impact entropy on the boundary node of the current cluster that leads to that neighboring cluster. This effect is unique on boundary nodes of a cluster as non-boundary nodes of the second cluster are closer to the immediate neighbor of the current cluster (i.e. the boundary node that serves as an entry point to the second cluster) Since TCM is associative (as opposed to predictive), each node activates its immediate and two-step neighbors with equal weight. associative nature of TCM does not transfer representations of nodes of the neighboring cluster to the boundary node of the current cluster. Rescaled heatmap in figure \ref{fig:zoomed-in-SRTCM-boundary-entropy} presents this effect.
+
+\begin{figure}[ht]
+	\centering
+	\label{fig:zoomed-in-SRTCM-boundary-entropy}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png}
+	\caption{Rescaled SR and TCM matrices depict differences between context representations of the two models. Boundaries in SR incorporate more information than those in TCM.}
+\end{figure}
+
+The SR-based predictive context representation in particular shows that boundary nodes carry more information than non-boundary nodes whereas the associative context representation does not produce this effect. \footnote{The activity in the lower third of both matrices is due to recency; while these are interesting patterns, and seem to indicate that SR can account for the recency effects in memory which was the primary motivation behind introduction of the TCM \cite{gershman2012successor,howard2005temporal}. Investigating recency effects in this implicit statistical learning context is out of scope for this dissertation.}
+
+Thus, both SR and TCM models would predict slow down in cross-cluster transitions relative to within cluster transitions, and that this slow down will increase with walk length. However predictive context representations through SR is unique in predicting the scaled slow down at boundary nodes with random walk length, \textit{independent} of transitions. While lack of a scaled slow down to boundary nodes does not invalidate the SR model (because some values of the parameters allows SR to not scale the slowed reactions with walk length), the presence of such a slow down provides evidence for predictive representations in such statistical learning tasks. The study presented next, thus tests this prediction. 
 
 %The SR model, while underlies the reinforcement learning principle does not rely on the availability of explicit rewards at the end to build a predictive representation for each step. For this dissertation, I will similarly assume that predictive representations are learned from experience through the environment without the need for an explicit goal state.
 

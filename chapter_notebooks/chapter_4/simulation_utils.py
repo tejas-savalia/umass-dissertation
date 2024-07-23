@@ -133,48 +133,6 @@ def hamiltonian_path(graph, path_length):
         complete_path.extend(hamiltonian_path)
     return complete_path
 
-def find_single_euler_path(graph, startpoint):
-    path = []
-     
-    # Loop will run until there is element in the
-    # stack or current edge has some neighbour.
-    cur = startpoint
-    graph_copy = graph.copy()
-    stack = []
-    while (len(stack) > 0 or sum(graph_copy[cur])!= 0):
-        
-        # If current node has not any neighbour
-        # add it to path and pop stack set new 
-        # current to the popped element
-        if (sum(graph_copy[cur]) == 0):
-            path.append(cur)
-            cur = stack[-1]
-            del stack[-1]
-
-        # If the current vertex has at least one
-        # neighbour add the current vertex to stack,
-        # remove the edge between them and set the
-        # current to its neighbour.
-        else:
-            nonzero_vertices = np.nonzero(graph_copy[cur])[0]
-            np.random.shuffle(nonzero_vertices)
-            stack.append(cur)
-            graph_copy[cur][nonzero_vertices[0]] = 0
-            graph_copy[nonzero_vertices[0]][cur] = 0
-            cur = nonzero_vertices[0]
-
-    return path
-
-def find_euler(graph, walk_length=1000):
-    path = []
-    while len(path) < walk_length:
-        if len(path) == 0:
-            start_point = np.random.choice(graph.shape[0])
-        else:
-            start_point = path[-1]
-        path.extend(find_single_euler_path(graph, start_point))
-    return path[:walk_length]
-
 def run_SR(path, graph, alpha = 0.1, gamma = 0.05, plot = True, snapshot_step = 1000):
     SR = np.random.uniform(0, 1, size=graph.shape)
     num_nodes = graph.shape[0]
@@ -269,7 +227,7 @@ def compute_node_entropies(params):
     model = params[5]
     node_entropy = np.zeros(graph.shape[0])
     if model == 'SR':
-        context_matrix = run_SR(random_walk(graph, hop_step=params[3]).astype(int), graph, a, b, plot=False)[0]
+        context_matrix = run_SR(random_walk(graph, hop_step=params[3]), graph, a, b, plot=False)
     else:
         context_matrix = run_tcm(random_walk(graph, hop_step=params[3]).astype(int), graph, a, b, plot=False)
 

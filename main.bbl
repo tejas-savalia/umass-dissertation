@@ -5,10 +5,20 @@ Aslin, Richard~N, and Newport, Elissa~L.
 \newblock Statistical learning: From acquiring specific items to forming general rules.
 \newblock {\em Current directions in psychological science 21}, 3 (2012), 170--176.
 
+\bibitem{baldassano2017discovering}
+Baldassano, Christopher, Chen, Janice, Zadbood, Asieh, Pillow, Jonathan~W, Hasson, Uri, and Norman, Kenneth~A.
+\newblock Discovering event structure in continuous narrative perception and memory.
+\newblock {\em Neuron 95}, 3 (2017), 709--721.
+
 \bibitem{baldwin2008segmenting}
 Baldwin, Dare, Andersson, Annika, Saffran, Jenny, and Meyer, Meredith.
 \newblock Segmenting dynamic human action via statistical structure.
 \newblock {\em Cognition 106}, 3 (2008), 1382--1407.
+
+\bibitem{behrens2007learning}
+Behrens, Timothy~EJ, Woolrich, Mark~W, Walton, Mark~E, and Rushworth, Matthew~FS.
+\newblock Learning the value of information in an uncertain world.
+\newblock {\em Nature neuroscience 10}, 9 (2007), 1214--1221.
 
 \bibitem{bera2021motor}
 Bera, Krishn, Shukla, Anuj, and Bapi, Raju~S.
@@ -60,6 +70,11 @@ Cohen, Andrew~L, Nosofsky, Robert~M, and Zaki, Safa~R.
 \newblock Category variability, exemplar similarity, and perceptual classification.
 \newblock {\em Memory \& Cognition 29}, 8 (2001), 1165--1175.
 
+\bibitem{davis2012striatal}
+Davis, Tyler, Love, Bradley~C, and Preston, Alison~R.
+\newblock Striatal and hippocampal entropy and recognition signals in category learning: simultaneous processes revealed by model-based fmri.
+\newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 38}, 4 (2012), 821.
+
 \bibitem{dayan1993improving}
 Dayan, Peter.
 \newblock Improving generalization for temporal difference learning: The successor representation.
@@ -89,6 +104,11 @@ Dolan, Ray~J, and Dayan, Peter.
 DuBrow, Sarah, and Davachi, Lila.
 \newblock The influence of context boundaries on memory for the sequential order of events.
 \newblock {\em Journal of Experimental Psychology: General 142}, 4 (2013), 1277.
+
+\bibitem{ezzyat2011constitutes}
+Ezzyat, Youssef, and Davachi, Lila.
+\newblock What constitutes an episode in episodic memory?
+\newblock {\em Psychological science 22}, 2 (2011), 243--252.
 
 \bibitem{ezzyat2014similarity}
 Ezzyat, Youssef, and Davachi, Lila.
@@ -134,6 +154,11 @@ Hahamy, Avital, Dubossarsky, Haim, and Behrens, Timothy~EJ.
 Heusser, Andrew~C, Ezzyat, Youssef, Shiff, Ilana, and Davachi, Lila.
 \newblock Perceptual boundaries cause mnemonic trade-offs between local boundary processing and across-trial associative binding.
 \newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 44}, 7 (2018), 1075.
+
+\bibitem{horner2016role}
+Horner, Aidan~J, Bisby, James~A, Wang, Aijing, Bogus, Katrina, and Burgess, Neil.
+\newblock The role of spatial boundaries in shaping long-term event representations.
+\newblock {\em Cognition 154\/} (2016), 151--164.
 
 \bibitem{howard2005temporal}
 Howard, Marc~W, Fotedar, Mrigankka~S, Datey, Aditya~V, and Hasselmo, Michael~E.
@@ -230,6 +255,11 @@ Michelmann, Sebastian, Hasson, Uri, and Norman, Kenneth~A.
 \newblock Evidence that event boundaries are access points for memory retrieval.
 \newblock {\em Psychological Science 34}, 3 (2023), 326--344.
 
+\bibitem{momennejad2020learning}
+Momennejad, Ida.
+\newblock Learning structures: predictive representations, replay, and generalization.
+\newblock {\em Current Opinion in Behavioral Sciences 32\/} (2020), 155--166.
+
 \bibitem{momennejad2017successor}
 Momennejad, Ida, Russek, Evan~M, Cheong, Jin~H, Botvinick, Matthew~M, Daw, Nathaniel~Douglass, and Gershman, Samuel~J.
 \newblock The successor representation in human reinforcement learning.
@@ -255,6 +285,11 @@ Nosofsky, Robert~M, Gluck, Mark~A, Palmeri, Thomas~J, McKinley, Stephen~C, and G
 \newblock Comparing modes of rule-based classification learning: A replication and extension of shepard, hovland, and jenkins (1961).
 \newblock {\em Memory \& cognition 22}, 3 (1994), 352--369.
 
+\bibitem{nosofsky2011short}
+Nosofsky, Robert~M, Little, Daniel~R, Donkin, Christopher, and Fific, Mario.
+\newblock Short-term memory scanning viewed as exemplar-based categorization.
+\newblock {\em Psychological review 118}, 2 (2011), 280.
+
 \bibitem{ostlund2009evidence}
 Ostlund, Sean~B, Winterbauer, Neil~E, and Balleine, Bernard~W.
 \newblock Evidence of action sequence chunking in goal-directed instrumental conditioning and its dependence on the dorsomedial prefrontal cortex.
@@ -264,6 +299,21 @@ Ostlund, Sean~B, Winterbauer, Neil~E, and Balleine, Bernard~W.
 Radvansky, Gabriel~A, and Zacks, Jeffrey~M.
 \newblock Event boundaries in memory and cognition.
 \newblock {\em Current opinion in behavioral sciences 17\/} (2017), 133--140.
+
+\bibitem{ratcliff2022discriminating}
+Ratcliff, Roger, Scharre, Douglas~W, and McKoon, Gail.
+\newblock Discriminating memory disordered patients from controls using diffusion model parameters from recognition memory.
+\newblock {\em Journal of Experimental Psychology: General 151}, 6 (2022), 1377.
+
+\bibitem{ratcliff2009modeling}
+Ratcliff, Roger, and Starns, Jeffrey~J.
+\newblock Modeling confidence and response time in recognition memory.
+\newblock {\em Psychological review 116}, 1 (2009), 59.
+
+\bibitem{ratcliff2004diffusion}
+Ratcliff, Roger, Thapar, Anjali, and McKoon, Gail.
+\newblock A diffusion model analysis of the effects of aging on recognition memory.
+\newblock {\em Journal of Memory and Language 50}, 4 (2004), 408--424.
 
 \bibitem{roark2018task}
 Roark, Casey~L, and Holt, Lori~L.
@@ -290,6 +340,11 @@ Rouhani, Nina, Norman, Kenneth~A, Niv, Yael, and Bornstein, Aaron~M.
 \newblock Reward prediction errors create event boundaries in memory.
 \newblock {\em Cognition 203\/} (2020), 104269.
 
+\bibitem{russek2017predictive}
+Russek, Evan~M, Momennejad, Ida, Botvinick, Matthew~M, Gershman, Samuel~J, and Daw, Nathaniel~D.
+\newblock Predictive representations can link model-based reinforcement learning to model-free mechanisms.
+\newblock {\em PLoS computational biology 13}, 9 (2017), e1005768.
+
 \bibitem{savalia2016unified}
 Savalia, Tejas, Shukla, Anuj, and Bapi, Raju~S.
 \newblock A unified theoretical framework for cognitive sequencing.
@@ -305,10 +360,10 @@ Shepard, Roger~N, Hovland, Carl~I, and Jenkins, Herbert~M.
 \newblock Learning and memorization of classifications.
 \newblock {\em Psychological monographs: General and applied 75}, 13 (1961), 1.
 
-\bibitem{shiffrin1997model}
-Shiffrin, Richard~M, and Steyvers, Mark.
-\newblock A model for recognition memory: Rem—retrieving effectively from memory.
-\newblock {\em Psychonomic bulletin \& review 4\/} (1997), 145--166.
+\bibitem{shin2021structuring}
+Shin, Yeon~Soon, and DuBrow, Sarah.
+\newblock Structuring memory through inference-based event segmentation.
+\newblock {\em Topics in Cognitive Science 13}, 1 (2021), 106--127.
 
 \bibitem{smith2016habit}
 Smith, Kyle~S, and Graybiel, Ann~M.
@@ -324,6 +379,16 @@ Sols, Ignasi, DuBrow, Sarah, Davachi, Lila, and Fuentemilla, Llu{\'\i}s.
 Stachenfeld, Kimberly~L, Botvinick, Matthew~M, and Gershman, Samuel~J.
 \newblock The hippocampus as a predictive map.
 \newblock {\em Nature neuroscience 20}, 11 (2017), 1643--1653.
+
+\bibitem{starns2014using}
+Starns, Jeffrey~J.
+\newblock Using response time modeling to distinguish memory and decision processes in recognition and source tasks.
+\newblock {\em Memory \& cognition 42\/} (2014), 1357--1372.
+
+\bibitem{starns2014validating}
+Starns, Jeffrey~J, and Ratcliff, Roger.
+\newblock Validating the unequal-variance assumption in recognition memory using response time distributions instead of roc functions: A diffusion model analysis.
+\newblock {\em Journal of memory and language 70\/} (2014), 36--52.
 
 \bibitem{swallow2009event}
 Swallow, Khena~M, Zacks, Jeffrey~M, and Abrams, Richard~A.
@@ -369,6 +434,11 @@ Whitehead, Peter~S, Zamary, Amanda, and Marsh, Elizabeth~J.
 Zacks, Jeffrey~M.
 \newblock Event perception and memory.
 \newblock {\em Annual review of psychology 71}, 1 (2020), 165--191.
+
+\bibitem{zacks2007eventp}
+Zacks, Jeffrey~M, Speer, Nicole~K, Swallow, Khena~M, Braver, Todd~S, and Reynolds, Jeremy~R.
+\newblock Event perception: a mind-brain perspective.
+\newblock {\em Psychological bulletin 133}, 2 (2007), 273.
 
 \bibitem{zacks2007event}
 Zacks, Jeffrey~M, and Swallow, Khena~M.
