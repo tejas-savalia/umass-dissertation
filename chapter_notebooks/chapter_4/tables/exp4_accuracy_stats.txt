@@ -1,0 +1,18 @@
+\begin{tabular}{llrr}
+\toprule
+ &  & \multicolumn{2}{r}{test_key_resp.corr} \\
+ &  & mean & std \\
+graph_type & num_feats &  &  \\
+\midrule
+\multirow[t]{4}{*}{structured} & 1.000000 & 0.552 & 0.498 \\
+ & 2.000000 & 0.612 & 0.488 \\
+ & 3.000000 & 0.595 & 0.492 \\
+ & 4.000000 & 0.595 & 0.492 \\
+\cline{1-4}
+\multirow[t]{4}{*}{unstructured} & 1.000000 & 0.543 & 0.499 \\
+ & 2.000000 & 0.506 & 0.501 \\
+ & 3.000000 & 0.534 & 0.500 \\
+ & 4.000000 & 0.523 & 0.500 \\
+\cline{1-4}
+\bottomrule
+\end{tabular}

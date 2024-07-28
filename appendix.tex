@@ -1,0 +1,139 @@
+\chapter{Chapter 2 Modeling Results}
+
+\chapter{Chapter 3 Modeling Results}
+
+\begin{table}
+    \centering
+    \label{tab:exp3-bayesmodel-boundary-sdt}
+    \caption{Bayesian SDT Model results for boundary nodes from experiment 3a. }
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 3\% & hdi 97\% \\
+        \midrule
+        accuracy exposure & -0.805 & 0.716 & -2.088 & 0.591 \\
+        true old|structured & 4.088 & 0.332 & 3.472 & 4.711 \\
+        true old|unstructured & 4.200 & 0.308 & 3.611 & 4.783 \\
+        true old|condition sigma & 5.228 & 2.233 & 1.934 & 9.368 \\
+        \bottomrule
+        \end{tabular}        
+\end{table}
+
+\begin{table}
+    \centering
+    \label{tab:exp3-bayesmodel-nonboundary-sdt}
+    \caption{Bayesian SDT Model results for non boundary nodes from experiment 3a. }
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 3\% & hdi 97\% \\
+        \midrule
+        accuracy exposure & -1.347 & 0.715 & -2.665 & -0.020 \\
+        true old|structured & 3.885 & 0.269 & 3.398 & 4.406 \\
+        true old|unstructured & 4.593 & 0.299 & 4.017 & 5.122 \\
+        true old|condition sigma & 5.156 & 2.002 & 2.010 & 8.873 \\
+        \bottomrule
+        \end{tabular}
+        
+\end{table}
+
+\begin{table}
+    \centering
+    \label{tab:exp3-ddm-params}
+    \caption{Drift diffusion model parameters for experiment 3a.}
+    \begin{tabular}{lrrrrrrrrr}
+        \toprule
+        parameter, condition, block & mean & sd & hdi 3\% & hdi 97\% \\
+        \midrule
+        a structured, 0 & 1.259 & 0.022 & 1.220 & 1.300 \\
+        a structured, 1 & 1.144 & 0.021 & 1.104 & 1.183 \\
+        a structured, 2 & 1.121 & 0.021 & 1.081 & 1.159 \\
+        a unstructured, 0 & 1.306 & 0.023 & 1.263 & 1.349 \\
+        a unstructured, 1 & 1.237 & 0.025 & 1.193 & 1.284 \\
+        a unstructured, 2 & 1.149 & 0.023 & 1.107 & 1.191 \\
+        v boundary, structured, 0 & 0.385 & 0.092 & 0.202 & 0.546 \\
+        v boundary, structured, 1 & 0.476 & 0.096 & 0.294 & 0.653 \\
+        v boundary, structured, 2 & 0.688 & 0.097 & 0.506 & 0.873 \\
+        v boundary, unstructured, 0 & 0.554 & 0.108 & 0.357 & 0.753 \\
+        v boundary, unstructured, 1 & 0.761 & 0.101 & 0.565 & 0.944 \\
+        v boundary, unstructured, 2 & 0.830 & 0.106 & 0.637 & 1.029 \\
+        v new, structured, 0 & -0.733 & 0.062 & -0.848 & -0.618 \\
+        v new, structured, 1 & -1.124 & 0.077 & -1.267 & -0.980 \\
+        v new, structured, 2 & -1.011 & 0.075 & -1.159 & -0.879 \\
+        v new, unstructured, 0 & -0.872 & 0.062 & -0.986 & -0.754 \\
+        v new, unstructured, 1 & -1.414 & 0.081 & -1.560 & -1.259 \\
+        v new, unstructured, 2 & -1.267 & 0.079 & -1.408 & -1.112 \\
+        v nonboundary, structured, 0 & 0.236 & 0.069 & 0.102 & 0.362 \\
+        v nonboundary, structured, 1 & 0.468 & 0.081 & 0.326 & 0.631 \\
+        v nonboundary, structured, 2 & 0.570 & 0.084 & 0.411 & 0.730 \\
+        v nonboundary, unstructured, 0 & 0.619 & 0.079 & 0.471 & 0.768 \\
+        v nonboundary, unstructured, 1 & 0.830 & 0.092 & 0.663 & 1.005 \\
+        v nonboundary, unstructured, 2 & 0.927 & 0.097 & 0.749 & 1.114 \\
+        z 0 & 0.499 & 0.010 & 0.481 & 0.517 \\
+        z 1 & 0.505 & 0.010 & 0.485 & 0.523 \\
+        z 2 & 0.489 & 0.010 & 0.470 & 0.507 \\
+        \bottomrule
+        \end{tabular}
+        
+\end{table}
+
+\begin{table}
+    \centering
+    \label{lab:exp3-bayesmodel-stats}
+    \caption{Bayesian model results for Experiment 3b.}
+    \begin{tabular}{lrrrr}
+        \toprule
+        True Distance, Condition & mean & sd & hdi 3\% & hdi 97\% \\
+        \midrule
+        1, structured & 0.222 & 0.191 & -0.155 & 0.562 \\
+        1, unstructured & 0.096 & 0.224 & -0.338 & 0.496 \\
+        2, structured & -0.026 & 0.205 & -0.401 & 0.358 \\
+        2, unstructured & 0.113 & 0.234 & -0.329 & 0.543 \\
+        3, structured & -0.320 & 0.280 & -0.857 & 0.184 \\
+        3, unstructured & -0.505 & 0.337 & -1.137 & 0.106 \\
+        \bottomrule
+        \end{tabular}
+        
+\end{table}
+
+\chapter{Chapter 4 Modeling Results}
+
+\begin{table}
+    \centering
+    \label{tab:exp4-bayes-model-results}
+    \caption{Bayesian model statistics for experiment 4a}
+    \begin{tabular}{lrrrr}
+        \toprule
+        Num Features, Condition & mean & sd & hdi 3\% & hdi 97\% \\
+        \midrule
+        1.0, structured & 0.324 & 0.308 & -0.240 & 0.927 \\
+        1.0, unstructured & 0.236 & 0.304 & -0.300 & 0.832 \\
+        2.0, structured & 0.661 & 0.309 & 0.077 & 1.253 \\
+        2.0, unstructured & 0.031 & 0.304 & -0.508 & 0.621 \\
+        3.0, structured & 0.563 & 0.311 & -0.004 & 1.152 \\
+        3.0, unstructured & 0.189 & 0.302 & -0.350 & 0.753 \\
+        4.0, structured & 0.564 & 0.306 & -0.017 & 1.138 \\
+        4.0, unstructured & 0.126 & 0.303 & -0.444 & 0.684 \\
+        \bottomrule
+        \end{tabular}
+        
+\end{table}
+
+\begin{table}
+    \centering
+    \label{tab:exp5-bayes-model-results}
+    \caption{Bayesian model statistics for experiment 4b.}
+    \begin{tabular}{lrrrr}
+        \toprule
+         Num Features, Category Determinant & mean & sd & hdi 3\% & hdi 97\% \\
+        \midrule
+        1.0, A & 1.005 & 0.372 & 0.303 & 1.693 \\
+        1.0, B & -1.529 & 0.438 & -2.361 & -0.713 \\
+        2.0, A & 1.338 & 0.378 & 0.620 & 2.036 \\
+        2.0, B & -1.803 & 0.443 & -2.638 & -0.977 \\
+        3.0, A & 1.299 & 0.378 & 0.551 & 1.987 \\
+        3.0, B & -1.709 & 0.439 & -2.508 & -0.848 \\
+        4.0, A & 1.687 & 0.385 & 0.977 & 2.435 \\
+        4.0, B & -1.706 & 0.442 & -2.596 & -0.948 \\
+        \bottomrule
+        \end{tabular}
+        
+\end{table}

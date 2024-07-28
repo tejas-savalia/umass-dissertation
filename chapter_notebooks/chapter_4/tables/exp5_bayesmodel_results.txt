@@ -1,0 +1,14 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & mean & sd & hdi_3% & hdi_97% \\
+\midrule
+C(num_feats):category[1.0, A] & 1.005 & 0.372 & 0.303 & 1.693 \\
+C(num_feats):category[1.0, B] & -1.529 & 0.438 & -2.361 & -0.713 \\
+C(num_feats):category[2.0, A] & 1.338 & 0.378 & 0.620 & 2.036 \\
+C(num_feats):category[2.0, B] & -1.803 & 0.443 & -2.638 & -0.977 \\
+C(num_feats):category[3.0, A] & 1.299 & 0.378 & 0.551 & 1.987 \\
+C(num_feats):category[3.0, B] & -1.709 & 0.439 & -2.508 & -0.848 \\
+C(num_feats):category[4.0, A] & 1.687 & 0.385 & 0.977 & 2.435 \\
+C(num_feats):category[4.0, B] & -1.706 & 0.442 & -2.596 & -0.948 \\
+\bottomrule
+\end{tabular}

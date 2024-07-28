@@ -1,0 +1,18 @@
+\begin{tabular}{llrr}
+\toprule
+ &  & \multicolumn{2}{r}{test_key_resp.corr} \\
+ &  & mean & std \\
+category & num_feats &  &  \\
+\midrule
+\multirow[t]{4}{*}{A} & 1.000000 & 0.685 & 0.465 \\
+ & 2.000000 & 0.739 & 0.440 \\
+ & 3.000000 & 0.732 & 0.444 \\
+ & 4.000000 & 0.790 & 0.408 \\
+\cline{1-4}
+\multirow[t]{4}{*}{B} & 1.000000 & 0.250 & 0.434 \\
+ & 2.000000 & 0.221 & 0.416 \\
+ & 3.000000 & 0.230 & 0.422 \\
+ & 4.000000 & 0.230 & 0.422 \\
+\cline{1-4}
+\bottomrule
+\end{tabular}

@@ -1,0 +1,33 @@
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+ & mean & sd & hdi_3% & hdi_97% & mcse_mean & mcse_sd & ess_bulk & ess_tail & r_hat \\
+\midrule
+a_C(condition):C(block)[structured, 0] & 1.259 & 0.022 & 1.220 & 1.300 & 0.000 & 0.000 & 7492.000 & 2895.000 & 1.000 \\
+a_C(condition):C(block)[structured, 1] & 1.144 & 0.021 & 1.104 & 1.183 & 0.000 & 0.000 & 5885.000 & 3039.000 & 1.000 \\
+a_C(condition):C(block)[structured, 2] & 1.121 & 0.021 & 1.081 & 1.159 & 0.000 & 0.000 & 5927.000 & 2844.000 & 1.000 \\
+a_C(condition):C(block)[unstructured, 0] & 1.306 & 0.023 & 1.263 & 1.349 & 0.000 & 0.000 & 6531.000 & 3094.000 & 1.000 \\
+a_C(condition):C(block)[unstructured, 1] & 1.237 & 0.025 & 1.193 & 1.284 & 0.000 & 0.000 & 5514.000 & 3077.000 & 1.000 \\
+a_C(condition):C(block)[unstructured, 2] & 1.149 & 0.023 & 1.107 & 1.191 & 0.000 & 0.000 & 5481.000 & 2921.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[boundary, structured, 0] & 0.385 & 0.092 & 0.202 & 0.546 & 0.002 & 0.001 & 3504.000 & 2940.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[boundary, structured, 1] & 0.476 & 0.096 & 0.294 & 0.653 & 0.002 & 0.001 & 3235.000 & 2721.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[boundary, structured, 2] & 0.688 & 0.097 & 0.506 & 0.873 & 0.002 & 0.001 & 3311.000 & 3011.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[boundary, unstructured, 0] & 0.554 & 0.108 & 0.357 & 0.753 & 0.002 & 0.001 & 3579.000 & 3161.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[boundary, unstructured, 1] & 0.761 & 0.101 & 0.565 & 0.944 & 0.002 & 0.001 & 3215.000 & 3251.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[boundary, unstructured, 2] & 0.830 & 0.106 & 0.637 & 1.029 & 0.002 & 0.001 & 3278.000 & 2560.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[new, structured, 0] & -0.733 & 0.062 & -0.848 & -0.618 & 0.001 & 0.001 & 1948.000 & 3026.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[new, structured, 1] & -1.124 & 0.077 & -1.267 & -0.980 & 0.002 & 0.001 & 2212.000 & 2762.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[new, structured, 2] & -1.011 & 0.075 & -1.159 & -0.879 & 0.002 & 0.001 & 2223.000 & 2754.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[new, unstructured, 0] & -0.872 & 0.062 & -0.986 & -0.754 & 0.001 & 0.001 & 1968.000 & 2879.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[new, unstructured, 1] & -1.414 & 0.081 & -1.560 & -1.259 & 0.002 & 0.001 & 2252.000 & 2961.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[new, unstructured, 2] & -1.267 & 0.079 & -1.408 & -1.112 & 0.002 & 0.001 & 2136.000 & 2746.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[nonboundary, structured, 0] & 0.236 & 0.069 & 0.102 & 0.362 & 0.001 & 0.001 & 2784.000 & 2942.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[nonboundary, structured, 1] & 0.468 & 0.081 & 0.326 & 0.631 & 0.002 & 0.001 & 2620.000 & 2868.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[nonboundary, structured, 2] & 0.570 & 0.084 & 0.411 & 0.730 & 0.002 & 0.001 & 2534.000 & 2565.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[nonboundary, unstructured, 0] & 0.619 & 0.079 & 0.471 & 0.768 & 0.001 & 0.001 & 2814.000 & 2752.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[nonboundary, unstructured, 1] & 0.830 & 0.092 & 0.663 & 1.005 & 0.002 & 0.001 & 2448.000 & 2905.000 & 1.000 \\
+v_C(node_type):C(condition):C(block)[nonboundary, unstructured, 2] & 0.927 & 0.097 & 0.749 & 1.114 & 0.002 & 0.001 & 2984.000 & 2650.000 & 1.000 \\
+z_C(block)[0] & 0.499 & 0.010 & 0.481 & 0.517 & 0.000 & 0.000 & 5232.000 & 3218.000 & 1.000 \\
+z_C(block)[1] & 0.505 & 0.010 & 0.485 & 0.523 & 0.000 & 0.000 & 3893.000 & 2992.000 & 1.000 \\
+z_C(block)[2] & 0.489 & 0.010 & 0.470 & 0.507 & 0.000 & 0.000 & 4564.000 & 3129.000 & 1.000 \\
+\bottomrule
+\end{tabular}

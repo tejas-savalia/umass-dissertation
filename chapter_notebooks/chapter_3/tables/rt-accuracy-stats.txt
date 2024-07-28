@@ -1,0 +1,53 @@
+\begin{tabular}{llllrrrr}
+\toprule
+ &  &  &  & \multicolumn{2}{r}{accuracy} & \multicolumn{2}{r}{rt} \\
+ &  &  &  & mean & std & mean & std \\
+phase & block & stimulus type type & condition &  &  &  &  \\
+\midrule
+\multirow[t]{12}{*}{exposure} & \multirow[t]{4}{*}{0} & \multirow[t]{2}{*}{boundary} & structured & 0.683 & 0.465 & 1.644 & 1.911 \\
+ &  &  & unstructured & 0.739 & 0.439 & 1.710 & 1.732 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{nonboundary} & structured & 0.669 & 0.471 & 1.619 & 1.728 \\
+ &  &  & unstructured & 0.728 & 0.445 & 1.713 & 1.689 \\
+\cline{2-8} \cline{3-8}
+ & \multirow[t]{4}{*}{1} & \multirow[t]{2}{*}{boundary} & structured & 0.735 & 0.441 & 1.244 & 1.322 \\
+ &  &  & unstructured & 0.796 & 0.403 & 1.283 & 1.243 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{nonboundary} & structured & 0.739 & 0.439 & 1.250 & 1.343 \\
+ &  &  & unstructured & 0.790 & 0.408 & 1.263 & 1.217 \\
+\cline{2-8} \cline{3-8}
+ & \multirow[t]{4}{*}{2} & \multirow[t]{2}{*}{boundary} & structured & 0.757 & 0.429 & 1.168 & 1.657 \\
+ &  &  & unstructured & 0.843 & 0.363 & 1.111 & 1.334 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{nonboundary} & structured & 0.765 & 0.424 & 1.192 & 1.656 \\
+ &  &  & unstructured & 0.838 & 0.369 & 1.085 & 1.546 \\
+\cline{1-8} \cline{2-8} \cline{3-8}
+\multirow[t]{18}{*}{memory} & \multirow[t]{6}{*}{0} & \multirow[t]{2}{*}{boundary} & structured & 0.796 & 0.404 & 1.681 & 1.490 \\
+ &  &  & unstructured & 0.878 & 0.328 & 1.805 & 1.712 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{new} & structured & 0.721 & 0.449 & 1.899 & 1.569 \\
+ &  &  & unstructured & 0.782 & 0.413 & 1.770 & 1.666 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{nonboundary} & structured & 0.782 & 0.414 & 1.715 & 1.602 \\
+ &  &  & unstructured & 0.904 & 0.296 & 1.570 & 1.291 \\
+\cline{2-8} \cline{3-8}
+ & \multirow[t]{6}{*}{1} & \multirow[t]{2}{*}{boundary} & structured & 0.833 & 0.374 & 1.564 & 2.573 \\
+ &  &  & unstructured & 0.911 & 0.285 & 1.212 & 0.959 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{new} & structured & 0.800 & 0.400 & 1.420 & 1.486 \\
+ &  &  & unstructured & 0.873 & 0.333 & 1.338 & 1.056 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{nonboundary} & structured & 0.860 & 0.348 & 1.618 & 1.812 \\
+ &  &  & unstructured & 0.874 & 0.332 & 1.139 & 0.709 \\
+\cline{2-8} \cline{3-8}
+ & \multirow[t]{6}{*}{2} & \multirow[t]{2}{*}{boundary} & structured & 0.907 & 0.291 & 1.196 & 1.194 \\
+ &  &  & unstructured & 0.900 & 0.301 & 1.075 & 0.694 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{new} & structured & 0.751 & 0.433 & 1.454 & 2.322 \\
+ &  &  & unstructured & 0.844 & 0.363 & 1.292 & 1.127 \\
+\cline{3-8}
+ &  & \multirow[t]{2}{*}{nonboundary} & structured & 0.893 & 0.310 & 1.370 & 1.869 \\
+ &  &  & unstructured & 0.926 & 0.262 & 1.045 & 0.729 \\
+\cline{1-8} \cline{2-8} \cline{3-8}
+\bottomrule
+\end{tabular}

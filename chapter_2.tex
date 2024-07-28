@@ -122,6 +122,87 @@ The SR-based predictive context representation in particular shows that boundary
 
 Thus, both SR and TCM models would predict slow down in cross-cluster transitions relative to within cluster transitions, and that this slow down will increase with walk length. However predictive context representations through SR is unique in predicting the scaled slow down at boundary nodes with random walk length, \textit{independent} of transitions. While lack of a scaled slow down to boundary nodes does not invalidate the SR model (because some values of the parameters allows SR to not scale the slowed reactions with walk length), the presence of such a slow down provides evidence for predictive representations in such statistical learning tasks. The study presented next, thus tests this prediction. 
 
+\section{Methods}
+
+\subsection*{Participants}
+113 undergraduate students at the University of Massachusetts Amherst participated in this study for course credit. All study protocols were approved by the university institutional review board. 
+
+\subsection*{Design and Procedure}
+Participants were randomly assigned into one of four between-subject groups. All procedures for participants in all groups remained the same except for experimentally defined walk-lengths. Participants were sat in an isolated room with an LCD computer screen operated by Windows 7. The experiment was designed using Psychopy \cite{peirce2007psychopy}. 
+
+As shown in figure \ref{fig:exp1-design}, at the beginning of the study, participants were instructed to place their right hand on the computer keyboard such that their fingers aligned on the appropriate keys. On each trial, participants were presented with five grey boxes. One or two of the five grey boxes were highlighted using green borders. Participants were instructed to hit the combination of keys corresponding to the highlighted boxes as fast as possible without making any errors. A trial did not end until participants hit the correct combination of keys. Participants were informed of their incorrect key presses and a trial where participants did not hit the correct combination of keys on the first try was marked as an inaccurate trial. The experiment lasted for 1400 trials, or 1 hour, whichever came first. To prevent fatigue, participants were given self-paced breaks after 200 trials. Data from participants who did not complete all 1400 trials was discarded and not used for further analyses. At the end of the study, participants were debriefed about the research question of the study.
+
+\begin{figure}
+	\centering
+	\label{fig:exp1-design}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/exp1_task_design.png}
+	\caption{Task design for experiment 1. \textit{Left panel} modular graph used to generate random walks. \textit{Middle panel} Each node is randomly assigned to a combination of one or two highlighted boxes. \textit{Right panel} Participants place their hands on the keyboard as shown and are instructed to press keys that correspond to highlighted boxes.}
+\end{figure}
+
+Each of the 15 possible key combinations (where one or two of the grey boxes are highlighted) were randomly assigned to a node of the graph in \ref{fig:modular_graph}. Trial sequences were generated based on walk lengths. For all walk lengths, the first trial was selected at random. For walk lengths of 1399 (29 participants), the subsequent trials followed a random walk through the graph structure along the edges with edges connected. For walk lengths of 3 and 6, trials proceeded on a similar random walk for 3 (29 participants) and 6 (29 participants) edges respectively (thus visiting 4 and 7 nodes) before resetting to any of the fifteen nodes. Finally for random walk of length 0 (29 participants), each node of the 15 was picked with equal probability on each trial. 
+
+
+\subsection*{Data Processing and Preliminary analyses}
+All inaccurate trials were removed from further analyses. Furthermore, trials with response times beyond 3 standard deviations of the global response times were removed from further analyses as well. In all, 10\% of the total trials were discarded. 
+
+\section{Results}
+Table \ref{tab:exp1-rt-stats} shows the descriptive statistics of response time for each node and transition types. 
+
+\begin{table}	
+	\centering
+	\label{tab:exp1-rt-stats}
+	\caption{Response time descriptive statistics for experiment 1.}
+	\begin{tabular}{lllrrr}
+		\toprule
+		 &  &  & \multicolumn{3}{r}{rt} \\
+		 &  &  & mean & std & median \\
+		transition type & node type & walk length &  &  &  \\
+		\midrule
+		\multirow[t]{4}{*}{cross cluster} & \multirow[t]{4}{*}{Boundary} & 0 & 0.954 & 0.565 & 0.786 \\
+		 &  & 3 & 0.963 & 0.585 & 0.774 \\
+		 &  & 6 & 0.973 & 0.594 & 0.785 \\
+		 &  & 1399 & 0.990 & 0.596 & 0.802 \\
+		\cline{1-6} \cline{2-6}
+		\multirow[t]{8}{*}{within cluster} & \multirow[t]{4}{*}{Boundary} & 0 & 0.996 & 0.565 & 0.822 \\
+		 &  & 3 & 0.980 & 0.598 & 0.787 \\
+		 &  & 6 & 0.943 & 0.572 & 0.769 \\
+		 &  & 1399 & 0.953 & 0.600 & 0.767 \\
+		\cline{2-6}
+		 & \multirow[t]{4}{*}{Non Boundary} & 0 & 0.963 & 0.565 & 0.790 \\
+		 &  & 3 & 0.936 & 0.545 & 0.772 \\
+		 &  & 6 & 0.985 & 0.616 & 0.790 \\
+		 &  & 1399 & 0.932 & 0.592 & 0.747 \\
+		\cline{1-6} \cline{2-6}
+		\bottomrule
+		\end{tabular}
+	\end{table}
+	
+
+As expected, response times decreased with practice for all nodes in all conditions. The median response times separated by node transition type and node types are shown in figures \ref{fig:rt-walklength-transitions} and \ref{fig:rt-walklength-nodes} respectively. 
+
+\begin{figure}
+	\centering
+	\label{fig:rt-walklength-transitions}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png}
+	\caption{Median response times for each walk length separated by transition types.}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\label{fig:rt-walklength-nodes}
+	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/median_rts_nodetype.png}
+	\caption{Median response times for each walk length separated by node types.}
+\end{figure}
+
+Response time graphs show the overall expected pattern -- cross cluster transitions are slower in longer walk lenghts than within cluster transitions. Similarly, responses to boundary nodes are slower at longer walk lengths than responses to non-boundary nodes. 
+
+\subsection*{Modeling}
+The key question of interest is whether response times to boundary nodes slow down further \textit{after} accounting for slowdowns due to transitions. However the effects of node type (comparing to non boundary nods) will necessarily include effects of transition type since boundary nodes are accessed through both within cluster and across cluster transitions. Therefore, in order to isolate the effects of node type,  
+
+
+\section{Discussion}
+
 %The SR model, while underlies the reinforcement learning principle does not rely on the availability of explicit rewards at the end to build a predictive representation for each step. For this dissertation, I will similarly assume that predictive representations are learned from experience through the environment without the need for an explicit goal state.
 
 

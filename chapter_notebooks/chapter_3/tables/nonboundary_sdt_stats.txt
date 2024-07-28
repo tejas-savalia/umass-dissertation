@@ -1,0 +1,10 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & mean & sd & hdi_3% & hdi_97% \\
+\midrule
+accuracy_exposure & -1.347 & 0.715 & -2.665 & -0.020 \\
+true_old|condition[structured] & 3.885 & 0.269 & 3.398 & 4.406 \\
+true_old|condition[unstructured] & 4.593 & 0.299 & 4.017 & 5.122 \\
+true_old|condition_sigma & 5.156 & 2.002 & 2.010 & 8.873 \\
+\bottomrule
+\end{tabular}

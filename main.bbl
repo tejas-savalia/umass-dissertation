@@ -30,6 +30,11 @@ Billman, Dorrit, and Knutson, James.
 \newblock Unsupervised concept learning and value systematicitiy: A complex whole aids learning the parts.
 \newblock {\em Journal of Experimental Psychology: Learning, Memory, and Cognition 22}, 2 (1996), 458.
 
+\bibitem{bonner2021object}
+Bonner, Michael~F, and Epstein, Russell~A.
+\newblock Object representations in the human brain reflect the co-occurrence statistics of vision and language.
+\newblock {\em Nature communications 12}, 1 (2021), 4081.
+
 \bibitem{botvinick2012hierarchical}
 Botvinick, Matthew~Michael.
 \newblock Hierarchical reinforcement learning and decision making.
@@ -115,6 +120,11 @@ Ezzyat, Youssef, and Davachi, Lila.
 \newblock Similarity breeds proximity: pattern similarity within and across contexts is related to later mnemonic judgments of temporal proximity.
 \newblock {\em Neuron 81}, 5 (2014), 1179--1189.
 
+\bibitem{fengler2022beyond}
+Fengler, Alexander, Bera, Krishn, Pedersen, Mads~L, and Frank, Michael~J.
+\newblock Beyond drift diffusion models: Fitting a broad class of decision and rl models with hddm.
+\newblock {\em bioRxiv\/} (2022), 2022--06.
+
 \bibitem{fiser2002statistical}
 Fiser, J{\'o}zsef, and Aslin, Richard~N.
 \newblock Statistical learning of higher-order temporal structure from visual shape sequences.
@@ -164,6 +174,11 @@ Horner, Aidan~J, Bisby, James~A, Wang, Aijing, Bogus, Katrina, and Burgess, Neil
 Howard, Marc~W, Fotedar, Mrigankka~S, Datey, Aditya~V, and Hasselmo, Michael~E.
 \newblock The temporal context model in spatial navigation and relational learning: toward a common explanation of medial temporal lobe function across domains.
 \newblock {\em Psychological review 112}, 1 (2005), 75.
+
+\bibitem{hunter2007matplotlib}
+Hunter, John~D.
+\newblock Matplotlib: A 2d graphics environment.
+\newblock {\em Computing in science \& engineering 9}, 03 (2007), 90--95.
 
 \bibitem{kahn2018network}
 Kahn, Ari~E, Karuza, Elisabeth~A, Vettel, Jean~M, and Bassett, Danielle~S.
@@ -295,6 +310,11 @@ Ostlund, Sean~B, Winterbauer, Neil~E, and Balleine, Bernard~W.
 \newblock Evidence of action sequence chunking in goal-directed instrumental conditioning and its dependence on the dorsomedial prefrontal cortex.
 \newblock {\em Journal of Neuroscience 29}, 25 (2009), 8280--8287.
 
+\bibitem{peirce2007psychopy}
+Peirce, Jonathan~W.
+\newblock Psychopy—psychophysics software in python.
+\newblock {\em Journal of neuroscience methods 162}, 1-2 (2007), 8--13.
+
 \bibitem{radvansky2017event}
 Radvansky, Gabriel~A, and Zacks, Jeffrey~M.
 \newblock Event boundaries in memory and cognition.
@@ -329,6 +349,11 @@ Roark, Casey~L, Lehet, Matthew~I, Dick, Frederic, and Holt, Lori~L.
 Romberg, Alexa~R, and Saffran, Jenny~R.
 \newblock Statistical learning and language acquisition.
 \newblock {\em Wiley Interdisciplinary Reviews: Cognitive Science 1}, 6 (2010), 906--914.
+
+\bibitem{rouder2004comparing}
+Rouder, Jeffrey~N, and Ratcliff, Roger.
+\newblock Comparing categorization models.
+\newblock {\em Journal of Experimental Psychology: General 133}, 1 (2004), 63.
 
 \bibitem{rouhani2018dissociable}
 Rouhani, Nina, Norman, Kenneth~A, and Niv, Yael.
@@ -400,6 +425,11 @@ Tremblay, Pierre-Luc, Bedard, Marc-Andre, Langlois, Dominic, Blanchet, Pierre~J,
 \newblock Movement chunking during sequence learning is a dopamine-dependant process: a study conducted in parkinson’s disease.
 \newblock {\em Experimental brain research 205\/} (2010), 375--385.
 
+\bibitem{turk2019hippocampus}
+Turk-Browne, Nicholas~B.
+\newblock The hippocampus as a visual area organized by space and time: A spatiotemporal similarity hypothesis.
+\newblock {\em Vision research 165\/} (2019), 123--130.
+
 \bibitem{turk2008multidimensional}
 Turk-Browne, Nicholas~B, Isola, Phillip~J, Scholl, Brian~J, and Treat, Teresa~A.
 \newblock Multidimensional visual statistical learning.
@@ -429,6 +459,11 @@ Wahlheim, Christopher~N, Dunlosky, John, and Jacoby, Larry~L.
 Whitehead, Peter~S, Zamary, Amanda, and Marsh, Elizabeth~J.
 \newblock Transfer of category learning to impoverished contexts.
 \newblock {\em Psychonomic Bulletin \& Review\/} (2021), 1--10.
+
+\bibitem{wixted2014signal}
+Wixted, John~T, and Mickes, Laura.
+\newblock A signal-detection-based diagnostic-feature-detection model of eyewitness identification.
+\newblock {\em Psychological Review 121}, 2 (2014), 262.
 
 \bibitem{zacks2020event}
 Zacks, Jeffrey~M.

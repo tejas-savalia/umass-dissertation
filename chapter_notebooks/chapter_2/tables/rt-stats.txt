@@ -1,0 +1,23 @@
+\begin{tabular}{lllrrr}
+\toprule
+ &  &  & \multicolumn{3}{r}{rt} \\
+ &  &  & mean & std & median \\
+transition type & node type & walk length &  &  &  \\
+\midrule
+\multirow[t]{4}{*}{cross cluster} & \multirow[t]{4}{*}{Boundary} & 0 & 0.954 & 0.565 & 0.786 \\
+ &  & 3 & 0.963 & 0.585 & 0.774 \\
+ &  & 6 & 0.973 & 0.594 & 0.785 \\
+ &  & 1399 & 0.990 & 0.596 & 0.802 \\
+\cline{1-6} \cline{2-6}
+\multirow[t]{8}{*}{within cluster} & \multirow[t]{4}{*}{Boundary} & 0 & 0.996 & 0.565 & 0.822 \\
+ &  & 3 & 0.980 & 0.598 & 0.787 \\
+ &  & 6 & 0.943 & 0.572 & 0.769 \\
+ &  & 1399 & 0.953 & 0.600 & 0.767 \\
+\cline{2-6}
+ & \multirow[t]{4}{*}{Non Boundary} & 0 & 0.963 & 0.565 & 0.790 \\
+ &  & 3 & 0.936 & 0.545 & 0.772 \\
+ &  & 6 & 0.985 & 0.616 & 0.790 \\
+ &  & 1399 & 0.932 & 0.592 & 0.747 \\
+\cline{1-6} \cline{2-6}
+\bottomrule
+\end{tabular}

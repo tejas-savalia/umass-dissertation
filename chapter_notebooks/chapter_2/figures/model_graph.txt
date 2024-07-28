@@ -1,0 +1,49 @@
+\documentclass{report}
+\usepackage{tikz}
+\usepackage{subcaption}
+
+\begin{document}
+\begin{figure}
+  \begin{tikzpicture}
+      \draw
+        (0.0:2) node (nkp_idx){nkp_idx}
+        (20.0:2) node (transition_type_idx){transition_type_idx}
+        (40.0:2) node (trials){trials}
+        (60.0:2) node (participant_idx){participant_idx}
+        (80.0:2) node (lag){lag}
+        (100.0:2) node (alpha_tt){alpha_tt}
+        (120.0:2) node (beta_trial_tt){beta_trial_tt}
+        (140.0:2) node (rt_sigma_intercept){rt_sigma_intercept}
+        (160.0:2) node (skewness){skewness}
+        (180.0:2) node (beta_lag){beta_lag}
+        (200.0:2) node (rt_sigma_slope){rt_sigma_slope}
+        (220.0:2) node (participant_sigma_asymptote){participant_sigma_asymptote}
+        (240.0:2) node (participant_mu_asymptote){participant_mu_asymptote}
+        (260.0:2) node (nkp_trial){nkp_trial}
+        (280.0:2) node (participant_intercept_asymptote){participant_intercept_asymptote}
+        (300.0:2) node (y_hat){y_hat}
+        (320.0:2) node (mu_logrt){mu_logrt}
+        (340.0:2) node (rt_sigma){rt_sigma};
+      \begin{scope}[->]
+        \draw (nkp_idx) to (mu_logrt);
+        \draw (transition_type_idx) to (mu_logrt);
+        \draw (trials) to (mu_logrt);
+        \draw (trials) to (rt_sigma);
+        \draw (participant_idx) to (mu_logrt);
+        \draw (lag) to (mu_logrt);
+        \draw (alpha_tt) to (mu_logrt);
+        \draw (beta_trial_tt) to (mu_logrt);
+        \draw (rt_sigma_intercept) to (rt_sigma);
+        \draw (skewness) to (y_hat);
+        \draw (beta_lag) to (mu_logrt);
+        \draw (rt_sigma_slope) to (rt_sigma);
+        \draw (participant_sigma_asymptote) to (participant_intercept_asymptote);
+        \draw (participant_mu_asymptote) to (participant_intercept_asymptote);
+        \draw (nkp_trial) to (mu_logrt);
+        \draw (participant_intercept_asymptote) to (mu_logrt);
+        \draw (mu_logrt) to (y_hat);
+        \draw (rt_sigma) to (y_hat);
+      \end{scope}
+    \end{tikzpicture}
+\end{figure}
+\end{document}

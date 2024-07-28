@@ -1,0 +1,23 @@
+\begin{tabular}{lllrr}
+\toprule
+ &  &  & \multicolumn{2}{r}{accuracy} \\
+ &  &  & mean & std \\
+phase & node type & condition &  &  \\
+\midrule
+\multirow[t]{4}{*}{exposure} & \multirow[t]{2}{*}{boundary} & structured & 0.725 & 0.446 \\
+ &  & unstructured & 0.793 & 0.405 \\
+\cline{2-5}
+ & \multirow[t]{2}{*}{nonboundary} & structured & 0.724 & 0.447 \\
+ &  & unstructured & 0.785 & 0.411 \\
+\cline{1-5} \cline{2-5}
+\multirow[t]{6}{*}{memory} & \multirow[t]{2}{*}{boundary} & structured & 0.846 & 0.362 \\
+ &  & unstructured & 0.896 & 0.305 \\
+\cline{2-5}
+ & \multirow[t]{2}{*}{new} & structured & 0.757 & 0.429 \\
+ &  & unstructured & 0.833 & 0.373 \\
+\cline{2-5}
+ & \multirow[t]{2}{*}{nonboundary} & structured & 0.845 & 0.362 \\
+ &  & unstructured & 0.901 & 0.299 \\
+\cline{1-5} \cline{2-5}
+\bottomrule
+\end{tabular}
