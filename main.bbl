@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{aslin2012statistical}
 Aslin, Richard~N, and Newport, Elissa~L.
@@ -74,6 +74,11 @@ Clewett, David, DuBrow, Sarah, and Davachi, Lila.
 Cohen, Andrew~L, Nosofsky, Robert~M, and Zaki, Safa~R.
 \newblock Category variability, exemplar similarity, and perceptual classification.
 \newblock {\em Memory \& Cognition 29}, 8 (2001), 1165--1175.
+
+\bibitem{cowell2019roadmap}
+Cowell, Rosemary~A, Barense, Morgan~D, and Sadil, Patrick~S.
+\newblock A roadmap for understanding memory: Decomposing cognitive processes into operations and representations.
+\newblock {\em Eneuro 6}, 4 (2019).
 
 \bibitem{davis2012striatal}
 Davis, Tyler, Love, Bradley~C, and Preston, Alison~R.
@@ -255,6 +260,11 @@ Mack, Michael~L, and Palmeri, Thomas~J.
 \newblock The dynamics of categorization: Unraveling rapid categorization.
 \newblock {\em Journal of Experimental Psychology: General 144}, 3 (2015), 551.
 
+\bibitem{mcdougle2015explicit}
+McDougle, Samuel~D, Bond, Krista~M, and Taylor, Jordan~A.
+\newblock Explicit and implicit processes constitute the fast and slow processes of sensorimotor learning.
+\newblock {\em Journal of Neuroscience 35}, 26 (2015), 9568--9579.
+
 \bibitem{medin1994presentation}
 Medin, Douglas~L, and Bettger, Jeffrey~G.
 \newblock Presentation order and recognition of categorically related examples.
@@ -304,6 +314,16 @@ Nosofsky, Robert~M, Gluck, Mark~A, Palmeri, Thomas~J, McKinley, Stephen~C, and G
 Nosofsky, Robert~M, Little, Daniel~R, Donkin, Christopher, and Fific, Mario.
 \newblock Short-term memory scanning viewed as exemplar-based categorization.
 \newblock {\em Psychological review 118}, 2 (2011), 280.
+
+\bibitem{nosofsky2017learning}
+Nosofsky, Robert~M, Sanders, Craig~A, Gerdom, Alex, Douglas, Bruce~J, and McDaniel, Mark~A.
+\newblock On learning natural-science categories that violate the family-resemblance principle.
+\newblock {\em Psychological science 28}, 1 (2017), 104--114.
+
+\bibitem{nosofsky2018toward}
+Nosofsky, Robert~M, Sanders, Craig~A, Meagher, Brian~J, and Douglas, Bruce~J.
+\newblock Toward the development of a feature-space representation for a complex natural category domain.
+\newblock {\em Behavior research methods 50\/} (2018), 530--556.
 
 \bibitem{ostlund2009evidence}
 Ostlund, Sean~B, Winterbauer, Neil~E, and Balleine, Bernard~W.
@@ -370,6 +390,11 @@ Russek, Evan~M, Momennejad, Ida, Botvinick, Matthew~M, Gershman, Samuel~J, and D
 \newblock Predictive representations can link model-based reinforcement learning to model-free mechanisms.
 \newblock {\em PLoS computational biology 13}, 9 (2017), e1005768.
 
+\bibitem{savalia2024leap}
+Savalia, Tejas, Cowell, Rosemary~A, and Huber, David~E.
+\newblock “leap before you look”: Conditions that suppress explicit, knowledge-based learning during visuomotor adaptation.
+\newblock {\em Journal of Experimental Psychology: Human Perception and Performance\/} (2024).
+
 \bibitem{savalia2016unified}
 Savalia, Tejas, Shukla, Anuj, and Bapi, Raju~S.
 \newblock A unified theoretical framework for cognitive sequencing.
@@ -394,6 +419,11 @@ Shin, Yeon~Soon, and DuBrow, Sarah.
 Smith, Kyle~S, and Graybiel, Ann~M.
 \newblock Habit formation.
 \newblock {\em Dialogues in clinical neuroscience 18}, 1 (2016), 33--43.
+
+\bibitem{smith2006interacting}
+Smith, Maurice~A, Ghazizadeh, Ali, and Shadmehr, Reza.
+\newblock Interacting adaptive processes with different timescales underlie short-term motor learning.
+\newblock {\em PLoS biology 4}, 6 (2006), e179.
 
 \bibitem{sols2017event}
 Sols, Ignasi, DuBrow, Sarah, Davachi, Lila, and Fuentemilla, Llu{\'\i}s.

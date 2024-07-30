@@ -17,7 +17,7 @@ This slowdown across module edges appears to be mediated by the nature of the wa
 	\label{fig:modular_graph}
 \end{figure}
 
-Why do we slow down at boundary nodes that lead to the adjacent module even when the local probability of that particular transition is the same as any other transitions? Understanding this particular property of human behavior may provide deeper insights into what leads to global-scale structure acquisition; after all the only difference between the boundary node and other non-boundary nodes is in context of the global structure of the graph. Event boundary literature (where boundaries are typically operationalized through explicit changes in context) suggests that boundaries alter the predictability of future events and this predictability leads to event segmentation \cite{zacks2007event, clewett2019transcending}. Thus, in implicitly operationalized boundaries such as in serial reaction time tasks, the slowdown at the boundary node may imply a similarly increased uncertainty at boundary nodes leading to slowed responses. Prior work aimed at understanding human representation of graph structures indeed points to an the `cross-entropy' between a learner's estimate of the transition probability and the true transition probability of the environment \cite{lynn2020abstract, lynn2020humans, lynn2020human}. 
+Why do we slow down at boundary nodes that lead to the adjacent module even when the local probability of that particular transition is the same as any other transitions? Understanding this particular property of human behavior may provide deeper insights into the kind of representations that lead to global-scale structure acquisition; after all the only difference between the boundary node and other non-boundary nodes is in context of the global structure of the graph. Event boundary literature (where boundaries are typically operationalized through explicit changes in context) suggests that boundaries alter the predictability of future events and this predictability leads to event segmentation \cite{zacks2007event, clewett2019transcending}. Thus, in implicitly operationalized boundaries such as in serial reaction time tasks, the slowdown at the boundary node may imply a similarly increased uncertainty at boundary nodes leading to slowed responses. Prior work aimed at understanding human representation of graph structures indeed points to an the `cross-entropy' between a learner's estimate of the transition probability and the true transition probability of the environment \cite{lynn2020abstract, lynn2020humans, lynn2020human}. 
 
 %In addition to being uncertain about the immediate next stimulus, participants are also uncertain about switching to a neighboring cluster or staying within the same cluster.
 
@@ -25,7 +25,7 @@ In particular, \cite{lynn2020human} show that algorithms of contextual represent
 
 \subsection{Representations of Temporal Context}
 
-\subsubsection{Successor Representation}\label{successor-representation}
+\subsubsection*{Successor Representation}\label{successor-representation}
 
 The Successor Representation (SR) model of reinforcement learning has been used as a model to understand the generalization of reinforcement learning behavior in large action spaces \cite{dayan1993improving}. In recent work, the SR model has also been shown to be a reliable model for explaining human decision-making behavior in multi-step environments. The model accurately predicted that humans are worse at adapting to changes in the transition probability of a learned environment than to changes in the end-point rewards \cite{momennejad2017successor}. There has been further evidence of SR being represented in the Hippocampal cells which represent space \cite{gershman2018successor, stachenfeld2017hippocampus}.
 
@@ -37,7 +37,7 @@ Briefly, the SR model represents each state in the actionable space as a predict
 
 where $\delta(., .)$ equates to 1 if both arguments are equal otherwise it equates to 0. Thus, the matrix increases the probability of visiting a state $j$ from state $i$ if state $j$ is visited in the current experience and it decreases the probability of visiting all other states from state $i$. Parameter $\alpha$ is a learning rate parameter that determines how much of the previous estimate of visiting state $j$ from $i$ is factored into the current update. Parameter $\gamma$ is a future discount parameter that dictates how much in the future the agent sees -- specifically, a higher value of $\gamma$ indicates future visitations to state $j$ are weighed high in the current update.
 
-\subsubsection{Temporal Context Model}
+\subsubsection*{Temporal Context Model}
 The Temporal Context Model (TCM) was devised to explain the primacy and recency effects in human recall and recognition memory \cite{howard2005temporal}. The TCM model assumes that the items maintain a temporal context as they get encoded thus allowing items presented close to the previous items to share such temporal context. Briefly, the TCM can be formalized as \cite{gershman2012successor}:
 
 \begin{equation}
@@ -55,10 +55,10 @@ The key difference between the two models of temporal context is two fold: (1) S
 The models described above can be used to simulate expected behavior as a function of a range of exposure. Figure \ref{fig:SR-TCM-model-simulations} shows the context matrix representation after the models have been simulated for a random walk through the graph structure in \ref{fig:modular_graph} as a result of a random walk after 1000 trials for both models. Previous work has shown that participants acquire the global structure of the graph for a random walk. 
 
 \begin{figure}[!ht]
-	\label{fig:SR-TCM-model-simulations}
 	\centering
 	\includegraphics[width = 0.9\textwidth]{chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png}
 	\caption{Successor Representation and Temporal Context Model representations of context following a random walk through the modular graph structure.}
+	\label{fig:SR-TCM-model-simulations}
 \end{figure}
 
 To model the observed differences in reaction times and link them to the apparent differences shown in Figure \ref{fig:SR-TCM-model-simulations}, we apply principles of information theory. Specifically, we assume that response time for each stimulus is a function of the uncertainty in its surrounding context. Measures of information entropy have previously been used to explain RT differences between cluster transitions while traversing similar graph structures \cite{lynn2020abstract, lynn2020human,lynn2020humans}. Formally, 
@@ -85,17 +85,17 @@ The formalization of observed response time differences due to surprisal (and no
 
 \begin{figure}
 	\centering
-	\label{fig:SR-TCM-walklength-matrices}
 	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png}
 	\caption{Model prediction of context representations for SR and TCM models across different walk lengths. Both models seemingly predict that the modular structure of the original graph is increasingly recovered with longer walk lengths.}
+	\label{fig:SR-TCM-walklength-matrices}
 \end{figure}
 
 The acquisition of the global structure can be modeled using surprisal as has been done in previous research \cite{lynn2020abstract,lynn2020humans,lynn2020human}. For a subset of parameters in the valid range of 0 to 1, each model was simulated to produce a context matrix. Jensen-Shannon distance was computed between each pairs of nodes and averaged over cross-cluster pair and within cluster pairs. Simulation results below show the transition Jensen-Shannon distances over 100 simulations of the model for each parameter combination. For SR, `param\_a' is the learning rate parameter $\alpha$ and `param\_b' is the discount parameter $\gamma$. For TCM, `param\_a' is the learning rate parameter $\alpha$ and `param\_b' is the context drift parameter $\rho$. 
 \begin{figure}
 	\centering
-	\label{fig:SR-TCM-walklength-transition-sjdist}
 	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png}
 	\caption{Model Predictions for differences in reaction time comparing across cluster transitions to within cluster transitions across walk lengths. Both models predict that cross cluster surprisal effect will increase with walk length leading to an increased reaction time.}
+	\label{fig:SR-TCM-walklength-transition-sjdist}
 \end{figure}
 
 Figure \ref{fig:SR-TCM-walklength-transition-sjdist} shows that both context models predict an increased surprisal as walk length through the modular graph gets longer. As walk length increases, context associated with each node increasingly represents neighboring nodes. Since neighbors of the boundary nodes differ more than those between the non-boundary nodes, crossing from a boundary node to another boundary nodes.
@@ -103,55 +103,55 @@ Figure \ref{fig:SR-TCM-walklength-transition-sjdist} shows that both context mod
 The two context models, however, differ in their predictions in the role of a boundary node. Figure \ref{fig:SR-TCM-walklength-boundary-nonboundary-entropydiff} shows that SR predicts an increased entropy in its representation of the boundary nodes with walk length relative to the non-boundary nodes for some values of the $\alpha$ and $\gamma$ parameters. On the other hand the TCM does not predict such increased in Boundary vs Non Boundary entropy differences. 
 \begin{figure}[ht]
 	\centering
-	\label{fig:SR-TCM-walklength-boundary-nonboundary-entropydiff}
 	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png}
 	\caption{Model prediction differences between the SR and the TCM after different walk lengths. SR predicts that entropy of boundary nodes will scale with walk lengths whereas TCM does not.}
+	\label{fig:SR-TCM-walklength-boundary-nonboundary-entropydiff}
 \end{figure}
 
 
-The predictive nature of SR (as modeled by the future discount, $\gamma$ parameter) allows for a representation of nodes in the neighboring cluster to impact entropy on the boundary node of the current cluster that leads to that neighboring cluster. This effect is unique on boundary nodes of a cluster as non-boundary nodes of the second cluster are closer to the immediate neighbor of the current cluster (i.e. the boundary node that serves as an entry point to the second cluster) Since TCM is associative (as opposed to predictive), each node activates its immediate and two-step neighbors with equal weight. associative nature of TCM does not transfer representations of nodes of the neighboring cluster to the boundary node of the current cluster. Rescaled heatmap in figure \ref{fig:zoomed-in-SRTCM-boundary-entropy} presents this effect.
+The predictive nature of SR (as modeled by the future discount, $\gamma$ parameter) allows for a representation of nodes in the neighboring cluster to impact entropy on the boundary node of the current cluster that leads to that neighboring cluster. This effect is unique on boundary nodes of a cluster as non-boundary nodes of the second cluster are closer to the immediate neighbor of the current cluster (i.e. the boundary node that serves as an entry point to the second cluster) Since TCM is associative (as opposed to predictive), only nodes that are `active' in representation impact the representation of the just experienced node thereby. This mechanism thus reduces the impact of the non-boundary nodes in neighboring cluster. Rescaled heatmap in figure \ref{fig:zoomed-in-SRTCM-boundary-entropy} presents this effect.
 
 \begin{figure}[ht]
 	\centering
-	\label{fig:zoomed-in-SRTCM-boundary-entropy}
 	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png}
 	\caption{Rescaled SR and TCM matrices depict differences between context representations of the two models. Boundaries in SR incorporate more information than those in TCM.}
+	\label{fig:zoomed-in-SRTCM-boundary-entropy}
 \end{figure}
 
 The SR-based predictive context representation in particular shows that boundary nodes carry more information than non-boundary nodes whereas the associative context representation does not produce this effect. \footnote{The activity in the lower third of both matrices is due to recency; while these are interesting patterns, and seem to indicate that SR can account for the recency effects in memory which was the primary motivation behind introduction of the TCM \cite{gershman2012successor,howard2005temporal}. Investigating recency effects in this implicit statistical learning context is out of scope for this dissertation.}
 
-Thus, both SR and TCM models would predict slow down in cross-cluster transitions relative to within cluster transitions, and that this slow down will increase with walk length. However predictive context representations through SR is unique in predicting the scaled slow down at boundary nodes with random walk length, \textit{independent} of transitions. While lack of a scaled slow down to boundary nodes does not invalidate the SR model (because some values of the parameters allows SR to not scale the slowed reactions with walk length), the presence of such a slow down provides evidence for predictive representations in such statistical learning tasks. The study presented next, thus tests this prediction. 
+Thus, both SR and TCM models would predict slow down in cross-cluster transitions relative to within cluster transitions, and that this slow down will increase with walk length. However predictive context representations through SR are unique in predicting the scaled slow down at boundary nodes with random walk length, \textit{independent} of transitions. While lack of a scaled slow down to boundary nodes does not invalidate the SR model (because some values of the parameters allows SR to not scale the slowed reactions with walk length), the presence of such a slow down provides evidence for predictive representations in such statistical learning tasks. The study presented next, thus tests this prediction. 
+\section{Experiment 1: Testing Context Representations for implicit event boundaries}
+\subsection{Methods}
 
-\section{Methods}
-
-\subsection*{Participants}
+\subsubsection*{Participants}
 113 undergraduate students at the University of Massachusetts Amherst participated in this study for course credit. All study protocols were approved by the university institutional review board. 
 
-\subsection*{Design and Procedure}
+\subsubsection*{Design and Procedure}
 Participants were randomly assigned into one of four between-subject groups. All procedures for participants in all groups remained the same except for experimentally defined walk-lengths. Participants were sat in an isolated room with an LCD computer screen operated by Windows 7. The experiment was designed using Psychopy \cite{peirce2007psychopy}. 
 
 As shown in figure \ref{fig:exp1-design}, at the beginning of the study, participants were instructed to place their right hand on the computer keyboard such that their fingers aligned on the appropriate keys. On each trial, participants were presented with five grey boxes. One or two of the five grey boxes were highlighted using green borders. Participants were instructed to hit the combination of keys corresponding to the highlighted boxes as fast as possible without making any errors. A trial did not end until participants hit the correct combination of keys. Participants were informed of their incorrect key presses and a trial where participants did not hit the correct combination of keys on the first try was marked as an inaccurate trial. The experiment lasted for 1400 trials, or 1 hour, whichever came first. To prevent fatigue, participants were given self-paced breaks after 200 trials. Data from participants who did not complete all 1400 trials was discarded and not used for further analyses. At the end of the study, participants were debriefed about the research question of the study.
 
 \begin{figure}
 	\centering
-	\label{fig:exp1-design}
 	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/exp1_task_design.png}
 	\caption{Task design for experiment 1. \textit{Left panel} modular graph used to generate random walks. \textit{Middle panel} Each node is randomly assigned to a combination of one or two highlighted boxes. \textit{Right panel} Participants place their hands on the keyboard as shown and are instructed to press keys that correspond to highlighted boxes.}
+	\label{fig:exp1-design}
 \end{figure}
 
 Each of the 15 possible key combinations (where one or two of the grey boxes are highlighted) were randomly assigned to a node of the graph in \ref{fig:modular_graph}. Trial sequences were generated based on walk lengths. For all walk lengths, the first trial was selected at random. For walk lengths of 1399 (29 participants), the subsequent trials followed a random walk through the graph structure along the edges with edges connected. For walk lengths of 3 and 6, trials proceeded on a similar random walk for 3 (29 participants) and 6 (29 participants) edges respectively (thus visiting 4 and 7 nodes) before resetting to any of the fifteen nodes. Finally for random walk of length 0 (29 participants), each node of the 15 was picked with equal probability on each trial. 
 
 
-\subsection*{Data Processing and Preliminary analyses}
+\subsubsection*{Data Processing and Preliminary analyses}
 All inaccurate trials were removed from further analyses. Furthermore, trials with response times beyond 3 standard deviations of the global response times were removed from further analyses as well. In all, 10\% of the total trials were discarded. 
 
-\section{Results}
+\subsection{Results}
 Table \ref{tab:exp1-rt-stats} shows the descriptive statistics of response time for each node and transition types. 
 
 \begin{table}	
 	\centering
-	\label{tab:exp1-rt-stats}
 	\caption{Response time descriptive statistics for experiment 1.}
+	\label{tab:exp1-rt-stats}
 	\begin{tabular}{lllrrr}
 		\toprule
 		 &  &  & \multicolumn{3}{r}{rt} \\
@@ -190,20 +190,50 @@ As expected, response times decreased with practice for all nodes in all conditi
 
 \begin{figure}
 	\centering
-	\label{fig:rt-walklength-nodes}
 	\includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/median_rts_nodetype.png}
 	\caption{Median response times for each walk length separated by node types.}
+	\label{fig:rt-walklength-nodes}
 \end{figure}
 
 Response time graphs show the overall expected pattern -- cross cluster transitions are slower in longer walk lenghts than within cluster transitions. Similarly, responses to boundary nodes are slower at longer walk lengths than responses to non-boundary nodes. 
 
-\subsection*{Modeling}
-The key question of interest is whether response times to boundary nodes slow down further \textit{after} accounting for slowdowns due to transitions. However the effects of node type (comparing to non boundary nods) will necessarily include effects of transition type since boundary nodes are accessed through both within cluster and across cluster transitions. Therefore, in order to isolate the effects of node type,  
+\subsubsection*{Modeling}
+The key question of interest is whether response times to boundary nodes slow down further \textit{after} accounting for slowdowns due to transitions. However the effects of node type (comparing to non boundary nods) will necessarily include effects of transition type since boundary nodes are accessed through both within cluster and across cluster transitions. Therefore, in order to isolate the effects of node type, response time differences between boundary and non boundary nodes for within cluster transitions will be compared; thereby removing the effects of cross cluster transitions. Since transitions for walk length of 0 were random, this condition was removed from further analyses. Similarly, all reset transitions in walk lengths of 3 and 6 which were \textit{not} a part of the random walk were discarded from further analyses.
 
+Each block in the experiment consisted of 200 trials. Thus, by the end of the first block, participants in longer walk length conditions may have already experienced the graph structure sufficiently enough to acquire knowledge of the graph, thereby slowing down at the boundary nodes. While  characterizing the entire 1400 trial learning curve should the expected differences, fitting a learning curve model (such as an exponential decay in response times) leads to the decrease mapping onto different aspects of the learning curve (see Appendix for models of the entire learning curve) across different walk length; making across walk length comparisons difficult.
+Thus, to assess acquired patterns, first two blocks of the data are compared using the following Bayesian model where standardized log response times were fit as a skewed normal distribution, separately for each walk length.
+\begin{equation}
+	\begin{aligned}
+		node\ transition\ type : block \sim \mathcal{N}(0, 0.5) \\ 
+		transition\ experience \sim \mathcal{N}(0, 0.2) \\  
+		lag \sim \mathcal{N}(0, 0.2) \\ 
+		\mu = node\ transition\ type : block + lag + transition\ experience \\
+		\sigma \sim Exponential(1) \\ 
+		skewness \sim \mathcal{N}(0, 3) \\ 
+		log(RT) \sim Skew\mathcal{N}(mu, sigma, skewness)
+	\end{aligned}
+\end{equation} 
+
+Where $node\ transition\ type$ is either non-boundary to non-boundary or non-boundary to boundary; block is 0 or 1, lag is the number of trials before which the current key combination was seen and transition experience is the number of times a particular transition leading into the current node was previously experienced. Figure \ref{fig:bayesmodel-firsttwoblocks} shows the differences between walk lengths. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{chapter_notebooks/chapter_2/figures/nb_b_diff.png}
+	\caption{Posterior parameter differences between non boundary to non boundary and non boundary to boundary transitions in the first two blocks of the experiment across conditions}
+	\label{fig:bayesmodel-firsttwoblocks}
+\end{figure}
+
+In particular, participants in walk length of 1399 experienced the largest gains in response times of non boundary to non boundary transitions relative to those of non boundary to boundary transitions from the first block to the second. As expected from the Successor Representation (SR) model, these gains were reduced for walk length of 6 and further so for walk length of 3 implying varying levels of structure acquisition depending on walk length. This pattern, which is uniquely expected in the SR model and not the TCM, thus provides support for predictive representations driving the formation of implicit event boundaries. 
 
 \section{Discussion}
 
-%The SR model, while underlies the reinforcement learning principle does not rely on the availability of explicit rewards at the end to build a predictive representation for each step. For this dissertation, I will similarly assume that predictive representations are learned from experience through the environment without the need for an explicit goal state.
+The primary aim of this chapter was to characterize the creation of implicitly operationalized event boundaries as a function of context representations. In particular, two models of context representations were contrasted: the associative TCM model and the predictive SR model. Both models express an increase in reaction time when crossing boundary nodes into a new cluster in the three-module graph structure (Figure \ref{fig:modular_graph}) as available context at boundary nodes across clusters drastically differs with each boundary node strongly representing events within its own cluster. However, the SR model is unique in expressing the importance of boundary node as carrying additional information (measured by information theoretic entropy). The SR model predicts that as the `quality' of exposure (here operationalized by length of random walk) increases, the apparent importance of boundary nodes increases as well. 
 
+To test this qualitative prediction of the SR (and thereby compare it with the TCM representation), a serial reaction time task was conducted with participants experiencing the modular graph at 4 different lengths of a random walk. As predicted by the SR, response times at boundary nodes slowed down the most for the longest random walk, and less so for shorter random walks. 
 
+The experimental findings in this chapter thus provide support for maintaining a predictive representation of our environment. This error-driven predictive representation, which does not rely on explicit rewards, naturally leads to learning the statistical regularities in the environment and is thus crucial in informing our understanding of statistical learning and pattern acquisition. 
 
+In the current work parameters of the SR (or the TCM) model are not directly estimated as SR and TCM do not provide a direct measure of reaction times. While the assumption of reaction times scaling with increased available information (entropy) is logical, this assumption needs further testing. Future tests of such predictive representation should incorporate parameter estimation and hence also check the validity of the relationship between reaction time and information entropy. Similarly, a simpler model comparing two blocks was used to make inference in this task. More complex models (such as the exponential or the multi-rate state space models \cite{savalia2024leap, smith2006interacting, mcdougle2015explicit}) should aim to characterize the entire learning curve to understand when participants start to acquire (and use) existing patterns.  
+
+\section{Conclusion}
+The findings in this chapter provide evidence in favor of using predictive representations (as opposed to associative representations) to account for event boundaries that are operationalized implicitly. Findings in the current chapter do not distinguish between specific algorithms that lead to predictive representations; future work could contrast potential differences in these algorithms. It however remains unclear whether `boundary' nodes are truly so in context of event cognition -- the experiment presented in this chapter (and similar past literature) does not test whether stimuli at boundary nodes follow similar properties as stimuli at boundaries when events are operationalized through explicit context change. In the next chapter, I explore how such implicitly operationalized boundaries share properties with boundaries that are operationalized explicitly. 

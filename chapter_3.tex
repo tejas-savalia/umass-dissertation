@@ -10,7 +10,8 @@ Consistent findings across most studies in explicitly operationalized event boun
 
 In this chapter, I present two tests on implicitly operationalized boundaries to assess whether they elicit the same behavioral properties as the explicitly operationalized boundaries. In particular, I use the paradigm and graph structure previously used in Schapiro et al. \cite{schapiro2013neural} to test whether participants recall boundary items better (or worse) than non-boundary items. I then use a two module graph structure in Figure \ref{fig:two_module_graph} to test whether items across the two clusters appear farther than items within a cluster (similar to findings in explicitly operationalized boundary paradigms). 
 
-\section{Modeling Boundary Memory Benefits}
+\section{Experiment 2a: Boundary Memory}
+\subsection*{Modeling Boundary memory benefits}
 Event segmentation theory suggests that the segmentation of the continuous sensory experience occurs automatically and through prediction errors\cite{zacks2007event,zacks2007eventp, swallow2009event}. According to the event segmentation theory, we maintain an ongoing `context' which is predictive of upcoming events. Event boundaries are created when this prediction breaks. More recent work has shown that prediction errors are not necessary for creation of event boundaries; a change in uncertainty of the upcoming events can also produce event boundaries \cite{shin2021structuring}. Prediction errors particularly lose their value in learning new information when the explored environment is uncertain\cite{behrens2007learning}. Nevertheless, under environments with high regularities, prediction errors remain the key mechanisms driving boundary formation. 
 
 As reviewed above, prediction errors need not be explicitly operationalized for an event boundary to be learned. Prediction errors which imply shifts in ongoing context, similar to implicitly operationalized event boundaries may be implicit. In chapter \ref{chapter-2-walk-lengths-modulate-statistical-learning} show that context models can be used to estimate representations of implicitly operationalized event boundaries. Particularly, predictive representations such as the SR provide a natural representation of event boundaries which form bottlenecks in transitioning between clusters in modular graphs in figure \ref{fig:modular_graph}. I propose that the same predictive context-representation framework using the Successor Representation model of Reinforcement Learning \cite{dayan1993improving, momennejad2017successor, russek2017predictive, momennejad2020learning,gershman2012successor} can be used to model differences in memory representations. 
@@ -29,20 +30,34 @@ The GCM model for recognition memory can be formalized with the following equati
 
 where $d_{ij}$ is the psychological distance between test item $i$ and examplar $j$, $w_k$ is the weight a participant may place on the $k^{th}$ dimensions (and $k \in K$). The distance metric is thus computed as an euclidean distance between exemplars in memory and the test item weighted by where each feature is allowed to have a different weight to reflect differentially important features. $s{ij}$ is the similarity between test item $i$ and exemplar $j$ which decreases exponentially with psychological distance. $c_j$ is a scaling factor determining how much the similarity falls off for a unit of distance for each exemplar. $a_{ij}$ is the activation of exemplar $j$ when compared with test item $i$ and is scaled by the memory strength of the exemplar $m_j$. 
 
-To demonstrate the potential role of temporal structure, a few simplifying assumptions are  made to the recognition memory model. Specifically, in simulations presented below, it is assumed that the each feature dimension of the studied (and test) items is weighted equally. Furthermore, the scaling parameter $c$ is assumed to be 1 for all exemplars. To simulate the differences between boundary and non-boundary nodes in memory, it is assumed that the memory strength of an item associated with each node is proportional to the entropy in its successor representation of that node. While evidence for relating memory strength to context based entropy is scarce, past work has shown that entropy (as a measure of uncertainty) has been a helpful factor in motivated learning and is a contributing factor in hippocampal activation \cite{davis2012striatal}. Furthermore, the slow down associated with increased entropy as demonstrated in previous statistical learning tasks \cite{lynn2020abstract,lynn2020human,lynn2020humans} implies that participants at the least spend more time on such high-entropy boundary nodes, thereby allowing for a better chance of remembering these nodes better. 
+To demonstrate the potential role of temporal structure, a few simplifying assumptions are  made to the recognition memory model. Specifically, in simulations presented below, it is assumed that the each feature dimension of the studied (and test) items is weighted equally. Furthermore, the scaling parameter $c$ is assumed to be 1 for all exemplars. To simulate the differences between boundary and non-boundary nodes in memory, it is assumed that the memory strength of an item associated with each node is proportional to the entropy in its successor representation of that node. Formally, 
+
+Formally,
+
+\begin{equation}
+    \begin{aligned}
+        M_{i,j} \leftarrow \hat{M}_{i,j} + \alpha[\delta(s_{t+1},j) + \gamma*\hat{M}_{s_{t+1},j} - \hat{M}_{s_t,j}] \\ 
+        Entropy(s) = \sum_{s' \in S} \hat{M}(s, s') * log(\hat{M}
+        m_s \sim Entropy(s) 
+    \end{aligned}
+\end{equation}
+
+where $M_{i,j}$ of the matrix represents the expected future visits to state $j$ from state $i$. $\delta(., .)$ equates to 1 if both arguments are equal otherwise it equates to 0. Thus, the matrix increases the probability of visiting a state $j$ from state $i$ if state $j$ is visited in the current experience and it decreases the probability of visiting all other states from state $i$. Parameter $\alpha$ is a learning rate parameter that determines how much of the previous estimate of visiting state $j$ from $i$ is factored into the current update. Parameter $\gamma$ is a future discount parameter that dictates how much in the future the agent sees -- specifically, a higher value of $\gamma$ indicates future visitations to state $j$ are weighed high in the current update.
+
+While evidence for relating memory strength to context based entropy is scarce, past work has shown that entropy (as a measure of uncertainty) has been a helpful factor in motivated learning and is a contributing factor in hippocampal activation \cite{davis2012striatal}. Furthermore, the slow down associated with increased entropy as demonstrated in previous statistical learning tasks \cite{lynn2020abstract,lynn2020human,lynn2020humans} implies that participants at the least spend more time on such high-entropy boundary nodes, thereby allowing for a better chance of remembering these nodes better. 
 
 Given these assumptions, simulating recognition memory on the final SR representation provides an expected comparison of recognition memory acccuracy for old boundary, old non-boundary and new items. Figure \ref{fig:recog_memory_sims_with_criterion} shows the what this modeling approach expects. On average, implicitly operationalized boundaries are expected to be remembered better than non-boundaries. This benefit is expected to be apparent for participants who are exposed to the temporal structure (right panel) relative to participants who are not (left panel).
 
 \begin{figure}[ht]
-    \label{fig:recog_memory_sims_with_criterion}
     \centering
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png}
     \caption{Simulated recognition memory test performances for walk lengths of 1 and walk lengths of 1000 on modular graph in Figure \ref{fig:modular_graph}. On average, recognition memory performance is expected to be better for boundary items than non-boundary items.}
+    \label{fig:recog_memory_sims_with_criterion}
 \end{figure}
 
 
 
-\section{Methods}
+\subsection{Methods}
 \subsubsection*{Participants}
 57 undergraduate students at the University of Massachusetts Amherst participated in this study. Participants were at least 18 years of age and were compensated via course credit. All procedures were approved by the University Institutional Review Board. 
 
@@ -55,9 +70,9 @@ Each polygon with its border was associated with a node in the three-module grap
 
 \begin{figure}[ht]
     \centering
-    \label{fig:exp2-design}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/exp2_design.png}
     \caption{Design schematic for Experiment 2a. Three alternating blocks of exposure and recognition test were presented. A Stroop task was conducted prior to the final recognition test.}
+    \label{fig:exp2-design}
 \end{figure}
 
 After each block of the exposure phase, participants went through a recognition memory test (Figure \ref{fig:exp2-design}). They were shown the 15 items they made rotation judgments on (in their canonical orientation) in addition to 15 new random polygon items and were asked to determine whether each of these items was old or new. Order of presentation of old and new items was randomized during the recognition memory test. Of the three recognition tests, the final test was conducted after a short Stroop task to washout any effects of short term memory. 
@@ -65,12 +80,12 @@ After each block of the exposure phase, participants went through a recognition 
 After the final recognition memory test, participants went through a source memory test. Each of the 15 studied items were shown without the colored borders that surrounded them during exposure. Participants were asked to choose which of the three colored borders, provided as on-screen options, surrounded any particular item. This source memory task was added to provide an additional signal for memory in case of ceiling effects of recognition memory tasks. However, no analyses have been done on this source memory task. 
 
 
-\section{Results}
+\subsection{Results}
 Table \ref{tab:exp2-rt-accuracy-stats} provides the means and standard deviations for response times and accuracies across each block for all stimuli types for both conditions. 
 \begin{table}
     \centering
-    \label{tab:exp2-rt-accuracy-stats}
     \caption{Accuracy and Response time Means and Standard Deviations for exposure and recognition phases in experiment 2}    
+    \label{tab:exp2-rt-accuracy-stats}
     \begin{tabular}{llllrrrr}
         \toprule
          &  &  &  & \multicolumn{2}{r}{accuracy} & \multicolumn{2}{r}{rt} \\
@@ -130,51 +145,64 @@ As expected, accuracies for old stimuli increase with increased exposure (Figure
 
 \begin{figure}
     \centering
-    \label{fig:exp2-accuracies}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png}
     \caption{Mean accuracies for both participant groups (structured and unstructured) across blocks, for different stimulus types and phases of the experiment}
+    \label{fig:exp2-accuracies}
 \end{figure}
 
 
 \begin{figure}
     \centering
-    \label{fig:exp2-rts}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png}
     \caption{Median response times for both participant groups (structured and unstructured) across blocks, for different stimulus types and phases of the experiment}
+    \label{fig:exp2-rts}
 \end{figure}
 
-To assess differences between stimulus types (boundary vs non boundary) on recognition memory, a signal detection (SDT) model was first fit separately for boundary and non boundary items. The model for boundary items describes the probability of responding `old' to old boundary stimuli relative to new stimuli. Similarly, the model for non boundary items describes the probability of responding `old' to old non-boundary items relative to new stimuli. A participant intercept term allows for each participant to have their own decision criterion. Finally, accuracy at exposure was included as a factor in the SDT model. Exposure accuracy factor for old items was computed by averaging the rotation judgment accuracy for each of the old items in the block immediately before the recognition memory block. For new items, this factor was computed by averaging the rotation judgment accuracy for all exposure items in the exposure block before that recognition phase. The model fits relatively well as shown in figure \ref{fig:exp2-sdt-fits}.
+To assess differences between stimulus types (boundary vs non boundary) on recognition memory, a signal detection (SDT) model was first fit separately for boundary and non boundary items. The model for boundary items describes the probability of responding `old' to old boundary stimuli relative to new stimuli. Similarly, the model for non boundary items describes the probability of responding `old' to old non-boundary items relative to new stimuli. A participant intercept term allows for each participant to have their own decision criterion. Finally, accuracy at exposure was included as a factor in the SDT model. Exposure accuracy factor for old items was computed by averaging the rotation judgment accuracy for each of the old items in the block immediately before the recognition memory block. For new items, this factor was computed by averaging the rotation judgment accuracy for all exposure items in the exposure block before that recognition phase. The SDT model can be described as: 
+
+\begin{equation}
+    \begin{aligned}
+        accuracy\ exposure \sim \mathcal{N}(0, 13.87) \\
+        true\ old | condition \sim Normal(mu: 0.0, Half\mathcal{N}(sigma: 5.5)) \\ 
+        participant\ criterion \sim \mathcal{N}(0, Half\mathcal{N}(sigma: 11.5)) \\
+        \mu = (true\ old | condition) + accuracy\ exposure + participant\ criterion \\ 
+        p(resp\ old) \sim Bernoulli(\mu)        
+    \end{aligned}
+\end{equation}
+
+
+% The model fits relatively well as shown in figure \ref{fig:exp2-sdt-fits}.
+
+% \begin{figure}
+%     \centering
+%     \label{fig:exp2-sdt-fits}
+%     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/ppc_sdt_model.png}
+%     \caption{SDT Model Posterior Predictive Distributions for boundary and non boundary items}
+% \end{figure}
+
+$d'$, the coefficient for $true\ old | condition$ in the linear model above, measures the distance between distributions of old and new items. Parameter estimates of $d'$ for structured relative to unstructured for boundary and non boundary nodes for the final recognition block are shown in figure \ref{fig:sdt-params}. Parameter statistics are reported in appendix tables \ref{tab:exp3-bayesmodel-boundary-sdt} and \ref{tab:exp3-bayesmodel-nonboundary-sdt}
 
 \begin{figure}
     \centering
-    \label{fig:exp2-sdt-fits}
-    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/ppc_sdt_model.png}
-    \caption{SDT Model Posterior Predictive Distributions for boundary and non boundary items}
-\end{figure}
-
-$d'$ measures the distance between distributions of old and new items. Parameter estimates of $d'$ for structured relative to unstructured for boundary and non boundary nodes for the final recognition block are shown in figure \ref{fig:sdt-params}. Parameter statistics are reported in appendix tables \ref{tab:exp3-bayesmodel-boundary-sdt} and \ref{tab:exp3-bayesmodel-nonboundary-sdt}
-
-\begin{figure}
-    \centering
-    \label{fig:sdt-params}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/sdt_d_results.png}
     \caption{Differences in $d'$ for models fit to separately boundary and non boundary nodes for both structured and unstructured exposure conditions}
+    \label{fig:sdt-params}
 \end{figure}
 
-The SDT modeling implies that while there are no differences in recognition memory for boundary nodes based on exposure, non boundary nodes become less recognizable under structured exposure condition. However, 
+The SDT modeling implies that while there are no differences in recognition memory for boundary nodes based on exposure, non boundary nodes become less recognizable under structured exposure condition. 
 
-\subsection*{Diffusion Modeling}
-However, the model used above fails to account for ceiling effects -- accuracy for old items is near perfect or could have reached an asymptote. Those models also do not account for encoding accuracy during exposure -- participants may fail to recognize old items if they did not study those items well as indicated by the rotation judgement task. Models were also fit separately to derive $d'$ for boundary and non-boundary items, thus losing shared variability within the participant.
+\subsubsection*{Diffusion Modeling}
+The SDT model used above fails to account for ceiling effects -- accuracy for old items is near perfect or could have reached an asymptote. Those models also do not account for encoding accuracy during exposure -- participants may fail to recognize old items if they did not study those items well as indicated by the rotation judgement task. Models were also fit separately to derive $d'$ for boundary and non-boundary items, thus losing shared variability within the participant.
 
-To be able to account for both ceiling effects and effects of exposure, we can use additional information available in form of response times during the recognition memory task. For example, for participants equally accurate in recognizing boundary and non-boundary participants, being able to recognize boundary items faster may provide additional evidence for better memorability of these items relative to slower recognized non-boundary items. Figure \ref{fig:recognition-rts} shows median response times across three blocks of recognition test. 
+To be able to account for both ceiling effects and effects of exposure, we can use additional information available in form of response times during the recognition memory task. For example, for participants equally accurate in recognizing boundary and non-boundary participants, being able to recognize boundary items faster may provide additional evidence for better memorability of these items relative to slower recognized non-boundary items. Figure \ref{fig:exp2-rts} shows median response times across three blocks of recognition test. 
 
-To understand recognition memory differences between boundary and non-boundary items in context of response accuracy and response time distributions, we use the Drift Diffusion Model \(DDM\). The DDM, which falls under a class of sequential sampling models, has been a widely successful model in modeling two-choice tasks in recognition memory \cite{ratcliff2004diffusion, ratcliff2022discriminating, starns2014using, starns2014validating, ratcliff2009modeling}. The function of the DDM is depicted in Figure \ref{fig:ddm-model}. 
+To understand recognition memory differences between boundary and non-boundary items in context of response accuracy and response time distributions, we use the Drift Diffusion Model (DDM). The DDM, which falls under a class of sequential sampling models, has been a widely successful model in modeling two-choice tasks in recognition memory \cite{ratcliff2004diffusion, ratcliff2022discriminating, starns2014using, starns2014validating, ratcliff2009modeling}. The function of the DDM is depicted in Figure \ref{fig:ddm-model}. 
 
 \begin{figure}[ht]
-    \label{fig:ddm-model}
     \centering
     \includegraphics[width = 0.75\textwidth]{chapter_notebooks/chapter_3/figures/ddm.png}
     \caption{The Drift Diffusion Model of Choice Response Times for Old/New recognition memory tasks.}
+    \label{fig:ddm-model}
 \end{figure}
 
 Briefly, the DDM assumes that at choice time, evidence from two presented options accumulates sequentially over time towards one of the two boundaries. For a previously studied item presented at test, the evidence from the item accumulates slowly towards the `old' boundary whereas for a non-studied item, the evidence accumulates towards the `new' boundary. The rate of evidence accumulation is controlled by the drift rate parameter, `$v$'. Participants may be biased towards making an old or a new response at test; this bias is measured by the starting point parameter, `$z$'. THe boundary separation between the two responses is modeled by a parameter `$a$'. Finally, the observed response consists of cognitive processes not affiliated with decision making (such as time it takes to visually process the test item, time for the motor systems to click the relevant key) which are modeled by a non-decision time parameter `$t_{er}$'. \footnote{Note that this version of the DDM is a simplified model. More complex DDMs account for trial-to-trial variability in each parameters as well.} 
@@ -186,39 +214,40 @@ The DDM thus allows us circumvent ceiling effects by modeling response time dist
 For the recognition task in the current study, the DDM was parameterized as follows: 
 \begin{equation}
     \begin{aligned}
-        v \sim 0 + node type:condition:block + accuracy exposure \\
+        v \sim 0 + node type:condition:block + accuracy\ exposure \\
         z \sim 0 + block \\
         a \sim 0 + condition:block \\
-        t = 0.25
+        t_{er} = 0.25
     \end{aligned}
 \end{equation}
 
 The fixed value of the non decision time parameter $t$ was derived by first fitting the DDM over a range of possible $t$ values (i.e. a grid search) and picking value with the best fitting model in that range. DDM models were fit using the HSSM package \cite{fengler2022beyond}. \footnote{Unfortunately the non decision time parameter is too difficult to fit -- this is a known problem with the HSSM package} 
 
-\subsubsection*{DDM Results}
+\paragraph*{DDM Results}
 The modeling framework above allows incorporating response times during recognition memory tasks. In particular, if an item has quickly and accurately recognized as old or new, in addition to good accuracy, such recognition would result into faster reaction times. This effect is captured by the drift rate parameter of the DDM. 
 
 \begin{figure}
     \centering
-    \label{fig:ddm-drift-rates}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png}
     \caption{Drift rate differences. \textit{Left Panel.} Differences between boundary and non boundary nodes for structured and unstructured exposure conditions. \textit{Right Panel} Differences between drift rates between structured and unstructured conditions for each type of recognition memory stimulus. Figure text over each difference distribution depicts the proportion of posterior samples below 0.}
+    \label{fig:ddm-drift-rates}
 \end{figure}
 
 Figure \ref{fig:ddm-drift-rates} shows the differences between drift rate parameters. The left panel shows that boundary nodes have a higher drift rate than non boundary nodes in the structured conditions relative to the unstructured conditions. The right panel shows the same effect within conditions. New items appear to have better drift rates than old items in the structured condition than the unstructured conditions. Finally, all drift rate differences are the lowest in the middle block indicating improved memory after 500 trials of exposure to the same stimuli relative to 250 trials after the first block. Increased differences in after the final block are likely owed to the Stroop distracter task prior to the final recognition test. 
 
 
 
-\section{Modeling Boundary Distance Effects}
+\section{Experiment 2b: Boundary Distance Effects}
+\subsection*{Modeling Boundary distance effects}
 Another replicated finding in explicitly operationalized event boundary literature is an apparent increased separation of events across boundaries \cite{horner2016role,brunec2018boundaries,dubrow2013influence, ezzyat2011constitutes, heusser2018perceptual}. This separation of events across boundaries helps shape narratives in long term memory \cite{clewett2019transcending}.
 
 It is unknown, however, whether the increased temporal separation across event boundaries generalizes to boundaries operationalized implicitly as well. Context models such as SR provide a mechanism to directly estimate perceived distance between events. Specifically, each cell in the SR matrix $M(s, s')$ indicates the future expected visit probabilities from state $s$ to state $s'$. Under the assumption that states closer to the current state are visited more often in a random walk than state farther, the probability $M(s, s')$ provides a direct estimate of perceived distance from node $s$ to $s'$. 
 
 \begin{figure}[ht]
     \centering
-    \label{fig:two_module_graph}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/two_module_graph.png}
     \caption{Two module graph used for distance judgments.}
+    \label{fig:two_module_graph}
 \end{figure}
 
 To test whether cross boundary events are perceived to be farther from each other relative to within-boundary events graph in figure \ref{fig:two_module_graph} is used. The key transitions of interest that are compared in this graph are transitions at equal distances. Below I specify example transitions at 3 different distances however, for simulations and the experiment, all symmetrical transitions at those distances were tested. 
@@ -230,24 +259,24 @@ To test whether cross boundary events are perceived to be farther from each othe
 
 \begin{figure}
     \centering
-    \label{fig:SR-distance-estimate}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/distance_predictions.png}
     \caption{SR predictions of distances across boundaries relative to distances within boundaries for nodes at true distance of 1, 2, and 3 and different parameter combinations.}
+    \label{fig:SR-distance-estimate}
 \end{figure}
 
 SR estimate of distances is shown in figure \ref{fig:SR-distance-estimate}. Simulations predict that while boundary nodes themselves get perceptually farther with increased discount rate, neither of node-pairs at distance 2 or 3 that involve boundary nodes reliably show an increased cross-cluster distance.
 
 \begin{figure}
     \centering
-    \label{fig:SR-distance-estimate-entropy-boost}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png}
     \caption{SR predictions of distances across boundaries when boosted by node entropies relative to distances within boundaries for nodes at true distance of 1, 2, and 3 and different parameter combinations.}
+    \label{fig:SR-distance-estimate-entropy-boost}
 \end{figure}
 
 However, in a typical experience of the random walk, participants are shown to be slow at responding to boundary nodes; both due to higher entropy at boundary nodes (from chapter \ref{chapter-2-walk-lengths-modulate-statistical-learning}) and previously shown increased response times during transitions across temporal clusters \cite{lynn2020abstract,kahn2018network}. On average, a participant would typically spend more time at boundary nodes than non-boundary nodes thereby leading; thereby leading to increased perceived \textit{time} while crossing boundary nodes relative to staying within the cluster. Following the findings in chapter \ref{chapter-2-walk-lengths-modulate-statistical-learning}, this increased perceived time can be modeled through entropy difference between boundary and non-boundary nodes based on learned SR representations. This slowdown is simulated by multiplying average SR entropy of boundary nodes where they transitions cross boundaries and by multiplying the average SR entropy of non-boundary nodes where transitions stay within a cluster. predictions of differences in perceived distance are shown in figure \ref{fig:SR-distance-estimate-entropy-boost}.
 
 
-Regardless of whether the distance measure is boosted by increased entropy at boundary nodes, it appears that boundary nodes themselves appear farther from each other relative to nodes within a cluster from that cluster's boundary node. Model predictions at other distances are mixed and dependent on parameters of the SR model. The next experiment tests whether the typical finding of increased perceived separation between cross cluster nodes (relative to within cluster nodes) is replicated in implicitly operationalized event boundary paradigms. A rigorous test of this formulation of the SR model is out of the scope of this dissertation. Furthermore, a lack of increased cross-cluster distance will provide no evidence for or against the current formulation of the SR model's role in representing distances between nodes. However, if such an increased cross-cluster distance is found, such an effect will serve as evidence \textit{against} the current formulation of the SR model's role in estimating temporal distances. 
+Regardless of whether the distance measure is boosted by increased entropy at boundary nodes, it appears that boundary nodes themselves appear farther from each other relative to nodes within a cluster from that cluster's boundary node. Model predictions at other distances are mixed and dependent on parameters of the SR model. The next experiment tests whether the typical finding of increased perceived separation between cross cluster nodes (relative to within cluster nodes) is replicated in implicitly operationalized event boundary paradigms. A rigorous test of this formulation of the SR model is out of the scope of this dissertation. Furthermore, a lack of increased cross-cluster distance will provide no evidence for or against the current formulation of the SR model's role in representing distances between nodes. However, if such an increased cross-cluster distance is found for nodes at true distance of 2 or if the opposite is found for nodes at true distance of 1, such an effect will serve as evidence \textit{against} the current formulation of the SR model's role in estimating temporal distances. 
 
 \subsection{Methods}
 \subsubsection*{Participants}
@@ -260,22 +289,36 @@ Participants were first introduced to 10 randomly generated polygons and informe
 
 The order of trials in exposure phase was determined based on a participant's group. 27 participants in the structured exposure condition were exposed to a stimulus stream generated by a random walk through the graph in figure \ref{fig:two_module_graph}. 18 participants in the unstructured exposure condition were shown a stimulus stream generated by randomly choosing any of the 10 polygons to be shown on any trial. The exposure phase lasted for 300 trials or 30 minutes, whichever came first. Participants were provided with an opportunity to take a self-paced break after 150 trials. 
 
+\begin{figure}
+    \centering
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/exp3_design.png}
+    \caption{Design schematic for experiment 2b. After exposure through the graph structured (based on a random walk through the connected nodes or a random selection between all 15 nodes), participants went through a distance judgment phase}
+    \label{fig:exp3-design}
+\end{figure}
+
+
 During the test phase, participants were shown a triplet of polygons (see figure \ref{fig:exp3-design}). For each top polygon, participants were asked which of the bottom polygons was likely to appear first after seeing the polygon at the top in the stream they had experienced during exposure. The distance judgment phase lasted for 20 trials where 10 trials were consisted of the critical pairs (examples listed in the previous section) and 10 filler trials were based on randomly generated (non repeated) triplets. Responses to these filler trials were not analyzed.
 
 \subsection{Results}
 
-Figure \ref{fig:exp3-choice-results} provides an overview of the proportion of choices participants made to indicate a within cluster item is closer to the top item than a between cluster item. Descriptive statistics in table \ref{tab:exp3-choice-stats}
+Figure \ref{fig:exp3-choice-results} provides an overview of the proportion of choices participants made to indicate a within cluster item is closer to the top item than a between cluster item. Descriptive statistics in table \ref{tab:exp3-choice-stats} and figure \ref{fig:exp3-bayesmodel_results} gives provides a bayesian estimate of the difference in proportion of within cluster option chosen relative to the between cluster option when participants are exposed to a structured, random walk presentation order compared to when they were exposed to unstructured presentation order.
 
 \begin{figure}
     \centering
-    \label{fig:exp3-choice-results}
     \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/exp3_choice_results.png}
     \caption{Proportion of trials where the within cluster option was chosen when the distance between and within clusters were equal (ranging from a distance of 1, 2, and 3 connections).}
+    \label{fig:exp3-choice-results}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \caption{Posterior estimates of the differences between structured and unstructured exposure condition for the proportion of times when the option within cluster was chosen more often as being closer than the option across the cluster at the same shortest distance.}
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_3/figures/exp3_bayesmodel_results.png}
+    \label{fig:exp3-bayesmodel_results}
 \end{figure}
 
 \begin{table}
     \centering
-    \label{tab:exp3-choice-stats}
     \begin{tabular}{llrr}
         \toprule
          &  & \multicolumn{2}{r}{within chosen} \\
@@ -293,10 +336,11 @@ Figure \ref{fig:exp3-choice-results} provides an overview of the proportion of c
         \bottomrule
     \end{tabular}
      \caption{Proportions of trials where within cluster option at the same distance as the between cluster option was chosen.}   
+     \label{tab:exp3-choice-stats}
 \end{table}
 
 
-\subsection{Discussion}
+\section{Discussion}
 
 The primary goal of this chapter was to test whether findings in classical explicitly operationalized event boundary literature replicate when boundaries are operationalized implicitly, through temporal statistics. Shared properties between these two boundaries imply shared representations in memory thereby providing a framework for future research to study shared algorithmic processes that lead to formation of event boundaries. 
 
@@ -306,4 +350,7 @@ The SR-based modeling approach provides a two advantages. First, qualitative pat
 
 Results of experiments 3a and 3b thus provide support for an SR representation of implicit event boundaries. Furthermore, better memory for boundary items provides evidence in favor of similar representations of implicit boundary events compared to explicit boundary events. On the other hand, however, distance judgment results in this implicit event boundary task do not directly compare with findings from explicit boundary literature. It is possible that lack of an ongoing verbalizable narrative in randomly generated polygons impacts how well neighboring items are bound with each other thereby not allowing us to detect an effect.
 
-DDM is one (highly successful) model of memory that incorporates response time. Other models incorporating response in choice reaction tasks. Several other sequential sampling models can be used in this formulation to provide evidence of better memory strength for boundary items. Most notably, a direct extension of the GCM model for recognition memory is the Exemplar Based Random Walk (EBRW) model \cite{nosofsky2011short}. 
+DDM is one (highly successful) model of memory that incorporates response time. Other models incorporating response in choice reaction tasks. Several other sequential sampling models can be used in this formulation to provide evidence of better memory strength for boundary items. Most notably, a direct extension of the GCM model for recognition memory is the Exemplar Based Random Walk (EBRW) model \cite{nosofsky2011short} which assumes that evidence towards old/new recognition choice options is accumulated made in proportion to background activation of all items in memory. Further work is needed to understand how extensions to other choice reaction time models can be extended to incorporate effects of temporal order.
+
+\section{Conclusion}
+In this chapter, I aimed to assess whether implicitly operationalized boundaries lead to the same behavioral properties as explicitly operationalized boundaries. Implicitly operationalized boundaries are indeed remembered better. However, evidence from the distance judgment is mixed. Future experimental paradigms should investigate whether more regular graphs (without remote nodes, for example) lead to the increased cross boundary distance. 

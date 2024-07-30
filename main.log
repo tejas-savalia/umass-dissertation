@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.9)  28 JUL 2024 19:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.9)  29 JUL 2024 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -329,9 +329,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 [6
 
 
-] (./main.toc
+]
 
-[7
+[7] (./main.toc
+
+[8
 
 ])
 \tf@toc=\write4
@@ -339,27 +341,29 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 
 
-[8] (./main.lot)
+[9] (./main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
 
 
-[9
+[10
 
 ] (./main.lof
 
-[10
+[11
 
 ]
 
-[11])
+[12]
+
+[13])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
 
 
-[12]
+[14]
 Chapter 1.
 (./introduction.tex
 
@@ -381,7 +385,7 @@ Chapter 2.
 [6
 
 ]
-<chapter_notebooks/chapter_2/figures/modular_graph.png, id=464, 462.528pt x 346.896pt>
+<chapter_notebooks/chapter_2/figures/modular_graph.png, id=509, 462.528pt x 346.896pt>
 File: chapter_notebooks/chapter_2/figures/modular_graph.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/modular_graph.png>
 Package pdftex.def Info: chapter_notebooks/chapter_2/figures/modular_graph.png  used on input line 16.
@@ -395,388 +399,420 @@ Package pdftex.def Info: chapter_notebooks/chapter_2/figures/modular_graph.png  
 [9]
 
 [10]
-<chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png, id=535, 722.7pt x 289.08pt>
+<chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png, id=580, 722.7pt x 289.08pt>
 File: chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png>
-Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png  used on input line 60.
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png  used on input line 59.
 (pdftex.def)             Requested size: 390.25534pt x 156.10086pt.
 
 
 [11 <./chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices.png>]
 
 [12]
-<chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png, id=554, 1156.32pt x 578.16pt>
+<chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png, id=601, 1156.32pt x 578.16pt>
 File: chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png>
-Package pdftex.def Info: chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png  used on input line 89.
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png  used on input line 88.
 (pdftex.def)             Requested size: 433.62pt x 216.80946pt.
-<chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png, id=558, 1529.9559pt x 722.7pt>
+<chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png, id=605, 1529.9559pt x 722.7pt>
 File: chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png>
-Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png  used on input line 97.
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png  used on input line 96.
 (pdftex.def)             Requested size: 433.62pt x 204.82477pt.
 
 
 [13 <./chapter_notebooks/chapter_2/figures/walk_length_SR_TCM_matrices.png>]
-<chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png, id=567, 1537.1829pt x 722.7pt>
+<chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png, id=613, 1537.1829pt x 722.7pt>
 File: chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png>
-Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png  used on input line 107.
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png  used on input line 106.
 (pdftex.def)             Requested size: 433.62pt x 203.86539pt.
 
 
 [14 <./chapter_notebooks/chapter_2/figures/SR_TCM_boundary_nonboundary_jsdist.png>]
-<chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png, id=574, 722.7pt x 289.08pt>
+<chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png, id=620, 722.7pt x 289.08pt>
 File: chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png>
-Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png  used on input line 117.
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png  used on input line 116.
 (pdftex.def)             Requested size: 433.62pt x 173.44933pt.
 
 
 [15 <./chapter_notebooks/chapter_2/figures/SR_TCM_walklength_boundary_nonboundary_entropydiff.png>]
 
 [16 <./chapter_notebooks/chapter_2/figures/SR_vs_TCM_Matrices_zoomed.png>]
-<chapter_notebooks/chapter_2/figures/exp1_task_design.png, id=596, 741.753pt x 271.341pt>
+<chapter_notebooks/chapter_2/figures/exp1_task_design.png, id=640, 741.753pt x 271.341pt>
 File: chapter_notebooks/chapter_2/figures/exp1_task_design.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/exp1_task_design.png>
-Package pdftex.def Info: chapter_notebooks/chapter_2/figures/exp1_task_design.png  used on input line 138.
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/exp1_task_design.png  used on input line 137.
 (pdftex.def)             Requested size: 433.62pt x 158.61998pt.
 
 
-[17 <./chapter_notebooks/chapter_2/figures/exp1_task_design.png>]
-<chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png, id=607, 1579.3404pt x 337.7418pt>
+[17]
+<chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png, id=652, 1579.3404pt x 337.7418pt>
 File: chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png>
 Package pdftex.def Info: chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png  used on input line 186.
 (pdftex.def)             Requested size: 433.62pt x 92.72725pt.
-<chapter_notebooks/chapter_2/figures/median_rts_nodetype.png, id=608, 1588.9764pt x 337.7418pt>
+<chapter_notebooks/chapter_2/figures/median_rts_nodetype.png, id=653, 1588.9764pt x 337.7418pt>
 File: chapter_notebooks/chapter_2/figures/median_rts_nodetype.png Graphic file (type png)
 <use chapter_notebooks/chapter_2/figures/median_rts_nodetype.png>
-Package pdftex.def Info: chapter_notebooks/chapter_2/figures/median_rts_nodetype.png  used on input line 194.
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/median_rts_nodetype.png  used on input line 193.
 (pdftex.def)             Requested size: 433.62pt x 92.16551pt.
 
 
-[18]
+[18 <./chapter_notebooks/chapter_2/figures/exp1_task_design.png>]
 
-[19 <./chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png> <./chapter_notebooks/chapter_2/figures/median_rts_nodetype.png>])
+[19 <./chapter_notebooks/chapter_2/figures/median_rts_transitiontype.png> <./chapter_notebooks/chapter_2/figures/median_rts_nodetype.png>]
 
 [20]
-Chapter 3.
-(./chapter_3.tex
+<chapter_notebooks/chapter_2/figures/nb_b_diff.png, id=672, 462.528pt x 346.896pt>
+File: chapter_notebooks/chapter_2/figures/nb_b_diff.png Graphic file (type png)
+<use chapter_notebooks/chapter_2/figures/nb_b_diff.png>
+Package pdftex.def Info: chapter_notebooks/chapter_2/figures/nb_b_diff.png  used on input line 221.
+(pdftex.def)             Requested size: 346.89731pt x 260.18723pt.
 
-[21
 
-]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22]
+
+
+[21]
+
+[22 <./chapter_notebooks/chapter_2/figures/nb_b_diff.png>])
 
 [23]
 
 [24]
-<chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png, id=760, 825.5643pt x 361.35pt>
-File: chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png  used on input line 39.
-(pdftex.def)             Requested size: 433.62pt x 189.7998pt.
+Chapter 3.
+(./chapter_3.tex
 
-
-[25]
-
-[26 <./chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png>]
-<chapter_notebooks/chapter_3/figures/exp2_design.png, id=777, 609.915pt x 224.037pt>
-File: chapter_notebooks/chapter_3/figures/exp2_design.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/exp2_design.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exp2_design.png  used on input line 59.
-(pdftex.def)             Requested size: 433.62pt x 159.27931pt.
-
-
-[27 <./chapter_notebooks/chapter_3/figures/exp2_design.png>]
-<chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png, id=788, 1236.0579pt x 722.7pt>
-File: chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png  used on input line 134.
-(pdftex.def)             Requested size: 433.62pt x 253.53323pt.
-<chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png, id=789, 1236.0579pt x 722.7pt>
-File: chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png  used on input line 142.
-(pdftex.def)             Requested size: 433.62pt x 253.53323pt.
-
-
-[28 <./chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png>]
-
-[29]
-<chapter_notebooks/chapter_3/figures/ppc_sdt_model.png, id=801, 867.24pt x 361.35pt>
-File: chapter_notebooks/chapter_3/figures/ppc_sdt_model.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/ppc_sdt_model.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/ppc_sdt_model.png  used on input line 151.
-(pdftex.def)             Requested size: 433.62pt x 180.67456pt.
-<chapter_notebooks/chapter_3/figures/sdt_d_results.png, id=805, 722.7pt x 361.35pt>
-File: chapter_notebooks/chapter_3/figures/sdt_d_results.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/sdt_d_results.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/sdt_d_results.png  used on input line 160.
-(pdftex.def)             Requested size: 433.62pt x 216.81168pt.
-
-
-[30 <./chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png>]
-
-[31 <./chapter_notebooks/chapter_3/figures/ppc_sdt_model.png> <./chapter_notebooks/chapter_3/figures/sdt_d_results.png>]
-
-LaTeX Warning: Reference `fig:recognition-rts' on page 32 undefined on input line 169.
-
-
-Overfull \hbox (8.43652pt too wide) in paragraph at lines 171--172
-[]\OT1/cmr/m/n/12 To un-der-stand recog-ni-tion mem-ory dif-fer-ences be-tween bound-ary and non-boundary
- []
-
-<chapter_notebooks/chapter_3/figures/ddm.png, id=824, 411.063pt x 321.711pt>
-File: chapter_notebooks/chapter_3/figures/ddm.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/ddm.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/ddm.png  used on input line 176.
-(pdftex.def)             Requested size: 325.215pt x 254.54161pt.
-
-
-[32]
-
-[33 <./chapter_notebooks/chapter_3/figures/ddm.png>]
-<chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png, id=846, 853.881pt x 461.214pt>
-File: chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png  used on input line 204.
-(pdftex.def)             Requested size: 433.62pt x 234.20966pt.
-
-
-[34]
-
-[35 <./chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png>]
-<chapter_notebooks/chapter_3/figures/two_module_graph.png, id=868, 462.528pt x 346.896pt>
-File: chapter_notebooks/chapter_3/figures/two_module_graph.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/two_module_graph.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/two_module_graph.png  used on input line 220.
-(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
-
-
-[36]
-<chapter_notebooks/chapter_3/figures/distance_predictions.png, id=876, 1142.5887pt x 361.35pt>
-File: chapter_notebooks/chapter_3/figures/distance_predictions.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/distance_predictions.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/distance_predictions.png  used on input line 234.
-(pdftex.def)             Requested size: 433.62pt x 137.13246pt.
-<chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png, id=878, 1142.5887pt x 361.35pt>
-File: chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png  used on input line 243.
-(pdftex.def)             Requested size: 433.62pt x 137.13246pt.
-
-
-[37 <./chapter_notebooks/chapter_3/figures/two_module_graph.png>]
-
-[38 <./chapter_notebooks/chapter_3/figures/distance_predictions.png> <./chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png>]
-
-[39]
-
-LaTeX Warning: Reference `fig:exp3-design' on page 40 undefined on input line 263.
-
-
-
-[40]
-<chapter_notebooks/chapter_3/figures/exp3_choice_results.png, id=909, 482.2818pt x 361.35pt>
-File: chapter_notebooks/chapter_3/figures/exp3_choice_results.png Graphic file (type png)
-<use chapter_notebooks/chapter_3/figures/exp3_choice_results.png>
-Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exp3_choice_results.png  used on input line 272.
-(pdftex.def)             Requested size: 433.62pt x 324.90874pt.
-
-
-[41 <./chapter_notebooks/chapter_3/figures/exp3_choice_results.png>]
-
-[42])
-
-[43]
-Chapter 4.
-(./chapter_4.tex
-
-[44
+[25
 
 ]
 
-[45]
+[26]
 
-[46]
-<chapter_notebooks/chapter_4/figures/cat_graphs.png, id=982, 722.7pt x 361.35pt>
-File: chapter_notebooks/chapter_4/figures/cat_graphs.png Graphic file (type png)
-<use chapter_notebooks/chapter_4/figures/cat_graphs.png>
-Package pdftex.def Info: chapter_notebooks/chapter_4/figures/cat_graphs.png  used on input line 28.
+[27]
+
+[28]
+
+[29]
+<chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png, id=841, 825.5643pt x 361.35pt>
+File: chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png  used on input line 53.
+(pdftex.def)             Requested size: 433.62pt x 189.7998pt.
+
+
+[30 <./chapter_notebooks/chapter_3/figures/recog_memory_with_criterion.png>]
+<chapter_notebooks/chapter_3/figures/exp2_design.png, id=851, 897.462pt x 316.017pt>
+File: chapter_notebooks/chapter_3/figures/exp2_design.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/exp2_design.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exp2_design.png  used on input line 73.
+(pdftex.def)             Requested size: 433.62pt x 152.6894pt.
+
+
+[31]
+<chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png, id=862, 1236.0579pt x 722.7pt>
+File: chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png  used on input line 148.
+(pdftex.def)             Requested size: 433.62pt x 253.53323pt.
+
+
+[32 <./chapter_notebooks/chapter_3/figures/exp2_design.png>]
+
+[33]
+<chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png, id=873, 1236.0579pt x 722.7pt>
+File: chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png  used on input line 156.
+(pdftex.def)             Requested size: 433.62pt x 253.53323pt.
+
+
+[34 <./chapter_notebooks/chapter_3/figures/exposure_recog_accuracy_allphases.png>]
+
+[35 <./chapter_notebooks/chapter_3/figures/exposure_recog_rt_allphases.png>]
+<chapter_notebooks/chapter_3/figures/sdt_d_results.png, id=890, 722.7pt x 361.35pt>
+File: chapter_notebooks/chapter_3/figures/sdt_d_results.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/sdt_d_results.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/sdt_d_results.png  used on input line 187.
 (pdftex.def)             Requested size: 433.62pt x 216.81168pt.
 
 
-[47]
-<chapter_notebooks/chapter_4/figures/category-sr-sims.png, id=994, 1011.78pt x 361.35pt>
+[36 <./chapter_notebooks/chapter_3/figures/sdt_d_results.png>]
+Overfull \hbox (8.43652pt too wide) in paragraph at lines 199--200
+[]\OT1/cmr/m/n/12 To un-der-stand recog-ni-tion mem-ory dif-fer-ences be-tween bound-ary and non-boundary
+ []
+
+<chapter_notebooks/chapter_3/figures/ddm.png, id=904, 411.063pt x 321.711pt>
+File: chapter_notebooks/chapter_3/figures/ddm.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/ddm.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/ddm.png  used on input line 203.
+(pdftex.def)             Requested size: 325.215pt x 254.54161pt.
+
+
+[37]
+
+[38 <./chapter_notebooks/chapter_3/figures/ddm.png>]
+<chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png, id=925, 853.881pt x 461.214pt>
+File: chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png  used on input line 231.
+(pdftex.def)             Requested size: 433.62pt x 234.20966pt.
+
+
+[39]
+
+[40 <./chapter_notebooks/chapter_3/figures/ddm_vdiff_comb.png>]
+<chapter_notebooks/chapter_3/figures/two_module_graph.png, id=946, 462.528pt x 346.896pt>
+File: chapter_notebooks/chapter_3/figures/two_module_graph.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/two_module_graph.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/two_module_graph.png  used on input line 248.
+(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
+<chapter_notebooks/chapter_3/figures/distance_predictions.png, id=948, 1142.5887pt x 361.35pt>
+File: chapter_notebooks/chapter_3/figures/distance_predictions.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/distance_predictions.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/distance_predictions.png  used on input line 262.
+(pdftex.def)             Requested size: 433.62pt x 137.13246pt.
+<chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png, id=950, 1142.5887pt x 361.35pt>
+File: chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png  used on input line 271.
+(pdftex.def)             Requested size: 433.62pt x 137.13246pt.
+
+
+[41]
+
+[42 <./chapter_notebooks/chapter_3/figures/two_module_graph.png>]
+
+[43 <./chapter_notebooks/chapter_3/figures/distance_predictions.png> <./chapter_notebooks/chapter_3/figures/distance_predictions_entropyboost.png>]
+
+[44]
+<chapter_notebooks/chapter_3/figures/exp3_design.png, id=982, 840.741pt x 337.26pt>
+File: chapter_notebooks/chapter_3/figures/exp3_design.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/exp3_design.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exp3_design.png  used on input line 294.
+(pdftex.def)             Requested size: 433.62pt x 173.94557pt.
+
+
+[45 <./chapter_notebooks/chapter_3/figures/exp3_design.png>]
+<chapter_notebooks/chapter_3/figures/exp3_choice_results.png, id=992, 482.2818pt x 361.35pt>
+File: chapter_notebooks/chapter_3/figures/exp3_choice_results.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/exp3_choice_results.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exp3_choice_results.png  used on input line 308.
+(pdftex.def)             Requested size: 433.62pt x 324.90874pt.
+<chapter_notebooks/chapter_3/figures/exp3_bayesmodel_results.png, id=993, 462.528pt x 346.896pt>
+File: chapter_notebooks/chapter_3/figures/exp3_bayesmodel_results.png Graphic file (type png)
+<use chapter_notebooks/chapter_3/figures/exp3_bayesmodel_results.png>
+Package pdftex.def Info: chapter_notebooks/chapter_3/figures/exp3_bayesmodel_results.png  used on input line 316.
+(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
+
+
+[46]
+
+[47 <./chapter_notebooks/chapter_3/figures/exp3_choice_results.png>]
+
+[48 <./chapter_notebooks/chapter_3/figures/exp3_bayesmodel_results.png>]
+
+[49])
+
+[50]
+Chapter 4.
+(./chapter_4.tex
+
+[51
+
+]
+
+[52]
+
+[53]
+
+[54]
+<chapter_notebooks/chapter_4/figures/cat_graphs.png, id=1096, 722.7pt x 361.35pt>
+File: chapter_notebooks/chapter_4/figures/cat_graphs.png Graphic file (type png)
+<use chapter_notebooks/chapter_4/figures/cat_graphs.png>
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/cat_graphs.png  used on input line 29.
+(pdftex.def)             Requested size: 433.62pt x 216.81168pt.
+<chapter_notebooks/chapter_4/figures/category-sr-sims.png, id=1098, 1011.78pt x 361.35pt>
 File: chapter_notebooks/chapter_4/figures/category-sr-sims.png Graphic file (type png)
 <use chapter_notebooks/chapter_4/figures/category-sr-sims.png>
-Package pdftex.def Info: chapter_notebooks/chapter_4/figures/category-sr-sims.png  used on input line 37.
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/category-sr-sims.png  used on input line 38.
 (pdftex.def)             Requested size: 433.62pt x 154.86469pt.
 
 
-[48 <./chapter_notebooks/chapter_4/figures/cat_graphs.png>]
+[55 <./chapter_notebooks/chapter_4/figures/cat_graphs.png>]
 
-[49 <./chapter_notebooks/chapter_4/figures/category-sr-sims.png>]
-<chapter_notebooks/chapter_4/figures/cat_simulations.png, id=1015, 462.0462pt x 361.35pt>
+[56 <./chapter_notebooks/chapter_4/figures/category-sr-sims.png>]
+
+[57]
+<chapter_notebooks/chapter_4/figures/cat_simulations.png, id=1126, 462.0462pt x 361.35pt>
 File: chapter_notebooks/chapter_4/figures/cat_simulations.png Graphic file (type png)
 <use chapter_notebooks/chapter_4/figures/cat_simulations.png>
-Package pdftex.def Info: chapter_notebooks/chapter_4/figures/cat_simulations.png  used on input line 68.
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/cat_simulations.png  used on input line 69.
 (pdftex.def)             Requested size: 433.62pt x 339.12871pt.
 
 
-[50]
+[58 <./chapter_notebooks/chapter_4/figures/cat_simulations.png>]
 
-[51 <./chapter_notebooks/chapter_4/figures/cat_simulations.png>]
-Overfull \hbox (21.1377pt too wide) in paragraph at lines 89--108
+[59]
+Overfull \hbox (21.1377pt too wide) in paragraph at lines 92--111
  [][] 
  []
 
 
 
-[52]
+[60]
+<chapter_notebooks/chapter_4/figures/exp45_design.png, id=1150, 818.184pt x 345.144pt>
+File: chapter_notebooks/chapter_4/figures/exp45_design.png Graphic file (type png)
+<use chapter_notebooks/chapter_4/figures/exp45_design.png>
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp45_design.png  used on input line 125.
+(pdftex.def)             Requested size: 433.62pt x 182.92017pt.
 
-[53]
-<chapter_notebooks/chapter_4/figures/exp4_proportion_results.png, id=1043, 513.3579pt x 361.35pt>
+
+[61 <./chapter_notebooks/chapter_4/figures/exp45_design.png>]
+<chapter_notebooks/chapter_4/figures/exp4_proportion_results.png, id=1157, 513.3579pt x 361.35pt>
 File: chapter_notebooks/chapter_4/figures/exp4_proportion_results.png Graphic file (type png)
 <use chapter_notebooks/chapter_4/figures/exp4_proportion_results.png>
-Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp4_proportion_results.png  used on input line 129.
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp4_proportion_results.png  used on input line 137.
 (pdftex.def)             Requested size: 433.62pt x 305.23016pt.
-<chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png, id=1044, 462.528pt x 346.896pt>
+
+Overfull \hbox (468.6388pt too wide) detected at line 149
+[][][][][]
+ []
+
+<chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png, id=1159, 462.528pt x 346.896pt>
 File: chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png Graphic file (type png)
 <use chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png>
-Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png  used on input line 137.
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png  used on input line 155.
 (pdftex.def)             Requested size: 433.62pt x 325.23007pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[62 <./chapter_notebooks/chapter_4/figures/exp4_proportion_results.png>]
 
-
-
-[54 <./chapter_notebooks/chapter_4/figures/exp4_proportion_results.png>]
-<chapter_notebooks/chapter_4/figures/exp5_proportion_results.png, id=1052, 443.7378pt x 361.35pt>
+[63 <./chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png>]
+<chapter_notebooks/chapter_4/figures/exp5_proportion_results.png, id=1173, 443.7378pt x 361.35pt>
 File: chapter_notebooks/chapter_4/figures/exp5_proportion_results.png Graphic file (type png)
 <use chapter_notebooks/chapter_4/figures/exp5_proportion_results.png>
-Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp5_proportion_results.png  used on input line 154.
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp5_proportion_results.png  used on input line 175.
 (pdftex.def)             Requested size: 433.62pt x 353.1226pt.
 
 
-[55 <./chapter_notebooks/chapter_4/figures/exp4_bayesmodel_res.png>]
-<chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png, id=1060, 462.528pt x 346.896pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[64]
+<chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png, id=1181, 722.7pt x 361.35pt>
 File: chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png Graphic file (type png)
 <use chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png>
-Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png  used on input line 161.
-(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png  used on input line 182.
+(pdftex.def)             Requested size: 433.62pt x 216.81168pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[56 <./chapter_notebooks/chapter_4/figures/exp5_proportion_results.png>])
+[65 <./chapter_notebooks/chapter_4/figures/exp5_proportion_results.png>]
 
-[57 <./chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png>]
+[66 <./chapter_notebooks/chapter_4/figures/exp5_bayesmodel_res.png>]
+<chapter_notebooks/chapter_4/figures/cat_simulations_baseweights.png, id=1195, 823.3962pt x 361.35pt>
+File: chapter_notebooks/chapter_4/figures/cat_simulations_baseweights.png Graphic file (type png)
+<use chapter_notebooks/chapter_4/figures/cat_simulations_baseweights.png>
+Package pdftex.def Info: chapter_notebooks/chapter_4/figures/cat_simulations_baseweights.png  used on input line 214.
+(pdftex.def)             Requested size: 433.62pt x 190.29605pt.
+
+
+[67 <./chapter_notebooks/chapter_4/figures/cat_simulations_baseweights.png>])
+
+[68]
 Chapter 5.
 
 
-[58
+[69
 
 ]
-Chapter 6.
-(./appendix.tex
 
-[59
+[70] (./appendix.tex
 
-]
+[71]
 Appendix A.
 
 Package hyperref Warning: bookmark level for unknown Appendix defaults to 0.
 
 
 
-[60
+[72
 
 ]
 Appendix B.
 
 
-[61
+[73
 
 ]
-
-[62]
-
-[63]
-Appendix C.
-) (./main.bbl
-
-[64
-
-]
-
-[65]
-
-[66
-
-]
-
-[67]
-
-[68]
-
-[69]
-
-[70]
-
-[71]
-
-[72]
-
-[73]
-Underfull \hbox (badness 1337) in paragraph at lines 369--372
-[]\OT1/cmr/m/n/12 Russek, Evan M, Mo-men-ne-jad, Ida, Botvinick, Matthew M, Ger-sh-man,
- []
-
-
 
 [74]
 
 [75]
-Underfull \hbox (badness 1043) in paragraph at lines 424--427
-[]\OT1/cmr/m/n/12 Tremblay, Pierre-Luc, Be-dard, Marc-Andre, Lan-glois, Do-minic, Blanchet,
- []
+Appendix C.
+) (./main.bbl
 
+[76
 
+]
 
-[76])
+[77]
 
-[77] (./main.aux)
+[78
+
+]
+
+[79]
+
+[80]
+
+[81]
+
+[82]
+
+[83]
+
+[84]
+
+[85]
+
+[86]
+
+[87]
+
+[88]
+
+[89])
+
+[90] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1F1DD4A5FCB6F4E6602EEE9C7F816DF0;6105.
+(rerunfilecheck)             Checksum: 80FD5CB2F5EC62983329EBCE7C652605;6615.
  ) 
 Here is how much of TeX's memory you used:
- 9990 strings out of 475543
- 167930 string characters out of 5775460
+ 10064 strings out of 475543
+ 170355 string characters out of 5775460
  1964908 words of memory out of 5000000
- 32207 multiletter control sequences out of 15000+600000
+ 32246 multiletter control sequences out of 15000+600000
  563529 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,13n,79p,1544b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/tejas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (89 pages, 6827843 bytes).
+Output written on main.pdf (104 pages, 7614906 bytes).
 PDF statistics:
- 1304 PDF objects out of 1440 (max. 8388607)
- 1112 compressed objects within 12 object streams
- 295 named destinations out of 1000 (max. 500000)
- 453 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1447 PDF objects out of 1728 (max. 8388607)
+ 1231 compressed objects within 13 object streams
+ 330 named destinations out of 1000 (max. 500000)
+ 497 words of extra memory for PDF output out of 10000 (max. 10000000)
 
