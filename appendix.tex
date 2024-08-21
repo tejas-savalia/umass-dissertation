@@ -1,11 +1,192 @@
-\chapter{Chapter 2 Modeling Results}
+\chapter{Chapter 2}
 
-\chapter{Chapter 3 Modeling Results}
+\section{Comparing first and the last blocks}
 
-\begin{table}
+Similar to comparisons done in the main text, the response times between the boundary and non boundary nodes for the first and last blocks were compared when transitions leading into those nodes were within cluster (i.e. from another non-boundary nodes).
+
+\begin{figure}[H]
     \centering
-    \label{tab:exp3-bayesmodel-boundary-sdt}
+    \includegraphics[width = 0.75\textwidth]{chapter_notebooks/chapter_2/figures/nb_b_diff_block60.png}
+    \caption{Posterior estimates of comparisons the slowed down reaction times for boundary nodes relative to non boundary nodes. Reaction times slowed down more with larger walk lengths.}
+    \label{fig:bayesmodel-firstlastblocks}
+\end{figure}
+
+Figure \ref{fig:bayesmodel-firstlastblocks} provides further evidence in support of the SR model. Reaction times decrease across the board. The decrease is lower for boundary nodes than non boundary nodes and this difference increases with walk length providing support for the SR model. 
+
+\section{Fitting the entire learning curve}
+The entire learning curve was fit using a linear model to estimate differences in decreased response times between boundary and non boundary nodes over time. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_2/figures/allblocks_lrmodel_trial_ppt_lag.png}
+    \caption{Intercept (\textit{Left panel}) and Slope (\textit{Right panel}) differences of the linear model fit to all trials.}
+    \label{fig:alltrial-lrmodel}
+\end{figure}
+
+As shown in figure \ref{fig:alltrial-lrmodel}, boundary and non boundary intercepts differed across walk lengths. This difference is likely due to randomly assigned response keys. The key metric of differences is the reduction in response times over time as measured by the slopes. As expected (from the SR model), walk lengths of 3 and 1399 lead to slower decrease in response times for boundary nodes than non boundary nodes (when transitioned to from another within cluster (non boundary) node). 
+
+Interestingly, it appears that these slope differences are not meaningfully different between walk lengths of 6 and 1399. However, the findings reported in the main text (Figure \ref{fig:bayesmodel-firsttwoblocks}), it is likely that these differences were apparent earlier in the learning process for the walk length of 1399 than for walk length of 6. Conflicting results with the main text likely implies a need for a more complex model (such as a dual rate model \cite{mcdougle2015explicit, smith2006interacting, savalia2022leap}) which allows for a quick initial decrease in reaction times followed by a slow asymptote. Future modeling work should investigate the impact of walk lengths on different aspects of the learning process.
+
+\section{Model Statistics}
+
+\subsection*{Stats for comparisons between the RTs for the first two blocks}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 2.5\% & hdi 97.5\% \\
+        \midrule
+        beta block[0.0] & -0.066 & 0.176 & -0.409 & 0.269 \\
+        beta block[1.0] & -0.080 & 0.177 & -0.417 & 0.271 \\
+        beta lag & 0.039 & 0.007 & 0.026 & 0.053 \\
+        beta transition exp & -0.018 & 0.004 & -0.025 & -0.011 \\
+        beta trial ntr[boundary, 0.0] & -0.555 & 0.024 & -0.602 & -0.508 \\
+        beta trial ntr[boundary, 1.0] & -0.629 & 0.028 & -0.685 & -0.574 \\
+        beta trial ntr[nonboundary, 0.0] & -0.596 & 0.023 & -0.639 & -0.548 \\
+        beta trial ntr[nonboundary, 1.0] & -0.650 & 0.028 & -0.702 & -0.596 \\
+        \bottomrule
+        \end{tabular}        
+        \caption{Posterior parameter statistics for model fit to walk length 3 data comparing the first two blocks}
+        \label{tab:first-two-blocks-3}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 2.5\% & hdi 97.5\% \\
+        \midrule
+        beta block[0.0] & 0.143 & 0.173 & -0.191 & 0.482 \\
+        beta block[1.0] & 0.124 & 0.181 & -0.225 & 0.475 \\
+        beta lag & 0.043 & 0.008 & 0.028 & 0.058 \\
+        beta transition exp & -0.031 & 0.004 & -0.038 & -0.023 \\
+        beta trial ntr[boundary, 0.0] & 0.252 & 0.033 & 0.190 & 0.319 \\
+        beta trial ntr[boundary, 1.0] & 0.184 & 0.037 & 0.111 & 0.257 \\
+        beta trial ntr[nonboundary, 0.0] & 0.316 & 0.033 & 0.252 & 0.383 \\
+        beta trial ntr[nonboundary, 1.0] & 0.241 & 0.037 & 0.165 & 0.310 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Posterior parameter statistics for model fit to walk length 6 data comparing the first two blocks}
+    \label{tab:first-two-blocks-6}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 2.5\% & hdi 97.5\% \\
+        \midrule
+        beta block[0.0] & -0.043 & 0.172 & -0.378 & 0.294 \\
+        beta block[1.0] & -0.076 & 0.177 & -0.427 & 0.267 \\
+        beta lag & 0.066 & 0.007 & 0.053 & 0.080 \\
+        beta transition exp & -0.010 & 0.003 & -0.016 & -0.005 \\
+        beta trial ntr[nonboundary, 0.0] & -0.476 & 0.023 & -0.522 & -0.431 \\
+        beta trial ntr[nonboundary, 1.0] & -0.635 & 0.027 & -0.688 & -0.581 \\
+        beta trial ntr[boundary, 0.0] & -0.499 & 0.024 & -0.546 & -0.455 \\
+        beta trial ntr[boundary, 1.0] & -0.602 & 0.027 & -0.655 & -0.548 \\
+        \bottomrule
+        \end{tabular}   
+        \caption{Posterior parameter statistics for model fit to walk length 1399 data comparing the first two blocks}
+        \label{tab:first-two-blocks-1399}    
+\end{table}
+
+\subsection*{Stats for comparisons between the RTs for the first and last blocks}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 2.5\% & hdi 97.5\% \\
+        \midrule
+        beta block[0.0] & -0.070 & 0.173 & -0.392 & 0.274 \\
+        beta block[6.0] & -0.100 & 0.172 & -0.431 & 0.236 \\
+        beta lag & 0.029 & 0.006 & 0.017 & 0.041 \\
+        beta transition exp & -0.007 & 0.002 & -0.010 & -0.003 \\
+        beta trial ntr[boundary, 0.0] & -0.561 & 0.020 & -0.601 & -0.523 \\
+        beta trial ntr[boundary, 6.0] & -0.704 & 0.037 & -0.778 & -0.634 \\
+        beta trial ntr[nonboundary, 0.0] & -0.604 & 0.020 & -0.642 & -0.563 \\
+        beta trial ntr[nonboundary, 6.0] & -0.730 & 0.039 & -0.808 & -0.656 \\
+        \bottomrule
+    \end{tabular}        
+    \caption{Posterior parameter statistics for model fit to walk length 3 data comparing the first and the last blocks}
+    \label{tab:first-last-blocks-3}    
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 2.5\% & hdi 97.5\% \\
+        \midrule
+        beta block[0.0] & -0.054 & 0.175 & -0.406 & 0.279 \\
+        beta block[6.0] & -0.099 & 0.178 & -0.460 & 0.228 \\
+        beta lag & 0.038 & 0.006 & 0.026 & 0.050 \\
+        beta transition exp & -0.006 & 0.002 & -0.010 & -0.003 \\
+        beta trial ntr[boundary, 0.0] & -0.538 & 0.019 & -0.574 & -0.501 \\
+        beta trial ntr[boundary, 6.0] & -0.734 & 0.038 & -0.809 & -0.660 \\
+        beta trial ntr[nonboundary, 0.0] & -0.528 & 0.020 & -0.568 & -0.489 \\
+        beta trial ntr[nonboundary, 6.0] & -0.700 & 0.038 & -0.777 & -0.629 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Posterior parameter statistics for model fit to walk length 6 data comparing the first and the last blocks}
+    \label{tab:first-last-blocks-6}    
+    
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 2.5\% & hdi 97.5\% \\
+        \midrule
+        beta block[0.0] & -0.053 & 0.178 & -0.404 & 0.306 \\
+        beta block[6.0] & -0.122 & 0.176 & -0.458 & 0.230 \\
+        beta lag & 0.060 & 0.006 & 0.049 & 0.072 \\
+        beta transition exp & -0.003 & 0.001 & -0.006 & -0.001 \\
+        beta trial ntr[nonboundary, 0.0] & -0.515 & 0.019 & -0.553 & -0.478 \\
+        beta trial ntr[nonboundary, 6.0] & -0.845 & 0.034 & -0.910 & -0.778 \\
+        beta trial ntr[boundary, 0.0] & -0.538 & 0.020 & -0.576 & -0.499 \\
+        beta trial ntr[boundary, 6.0] & -0.825 & 0.034 & -0.891 & -0.762 \\
+        \bottomrule
+    \end{tabular}        
+    \caption{Posterior parameter statistics for model fit to walk length 1399 data comparing the first and the last blocks}
+    \label{tab:first-last-blocks-1399}    
+\end{table}
+
+
+\subsection*{Parameter statistics for linear model including all trials}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+         & mean & sd & hdi 2.5\% & hdi 97.5\% \\
+        \midrule
+        alpha ntr[3, boundary] & 0.466 & 0.138 & 0.215 & 0.760 \\
+        alpha ntr[3, nonboundary] & 0.376 & 0.138 & 0.106 & 0.650 \\
+        alpha ntr[6, boundary] & 0.440 & 0.138 & 0.166 & 0.699 \\
+        alpha ntr[6, nonboundary] & 0.539 & 0.138 & 0.261 & 0.789 \\
+        alpha ntr[1400, boundary] & 0.489 & 0.134 & 0.281 & 0.826 \\
+        alpha ntr[1400, nonboundary] & 0.484 & 0.133 & 0.263 & 0.802 \\
+        beta ntr[3, boundary] & -0.000 & 0.000 & -0.001 & -0.000 \\
+        beta ntr[3, nonboundary] & -0.000 & 0.000 & -0.001 & -0.000 \\
+        beta ntr[6, boundary] & -0.000 & 0.000 & -0.001 & -0.000 \\
+        beta ntr[6, nonboundary] & -0.001 & 0.000 & -0.001 & -0.000 \\
+        beta ntr[1400, boundary] & -0.001 & 0.000 & -0.001 & -0.001 \\
+        beta ntr[1400, nonboundary] & -0.001 & 0.000 & -0.001 & -0.001 \\
+        \bottomrule
+    \end{tabular}        
+    \caption{Parameter statistics for linear model fitting all trials. Parameter `alpha' is the intercept, and parameter `beta' is the slope of the linear model.}
+    \label{tab:allblocks-trial-ppt-lag}         
+\end{table}
+
+\chapter{Chapter 3}
+
+\begin{table}[H]
+    \centering
     \caption{Bayesian SDT Model results for boundary nodes from experiment 3a. }
+    \label{tab:exp3-bayesmodel-boundary-sdt}
     \begin{tabular}{lrrrr}
         \toprule
          & mean & sd & hdi 3\% & hdi 97\% \\
@@ -18,10 +199,10 @@
         \end{tabular}        
 \end{table}
 
-\begin{table}
+\begin{table}[H]
     \centering
-    \label{tab:exp3-bayesmodel-nonboundary-sdt}
     \caption{Bayesian SDT Model results for non boundary nodes from experiment 3a. }
+    \label{tab:exp3-bayesmodel-nonboundary-sdt}
     \begin{tabular}{lrrrr}
         \toprule
          & mean & sd & hdi 3\% & hdi 97\% \\
@@ -35,10 +216,10 @@
         
 \end{table}
 
-\begin{table}
+\begin{table}[H]
     \centering
-    \label{tab:exp3-ddm-params}
     \caption{Drift diffusion model parameters for experiment 3a.}
+    \label{tab:exp3-ddm-params}
     \begin{tabular}{lrrrrrrrrr}
         \toprule
         parameter, condition, block & mean & sd & hdi 3\% & hdi 97\% \\
@@ -75,10 +256,10 @@
         
 \end{table}
 
-\begin{table}
+\begin{table}[H]
     \centering
-    \label{lab:exp3-bayesmodel-stats}
     \caption{Bayesian model results for Experiment 3b.}
+    \label{lab:exp3-bayesmodel-stats}
     \begin{tabular}{lrrrr}
         \toprule
         True Distance, Condition & mean & sd & hdi 3\% & hdi 97\% \\
@@ -94,12 +275,12 @@
         
 \end{table}
 
-\chapter{Chapter 4 Modeling Results}
-
-\begin{table}
+\chapter{Chapter 4}
+\section{Model Statistics}
+\begin{table}[H]
     \centering
-    \label{tab:exp4-bayes-model-results}
     \caption{Bayesian model statistics for experiment 4a}
+    \label{tab:exp4-bayes-model-results}
     \begin{tabular}{lrrrr}
         \toprule
         Num Features, Condition & mean & sd & hdi 3\% & hdi 97\% \\
@@ -117,10 +298,10 @@
         
 \end{table}
 
-\begin{table}
+\begin{table}[H]
     \centering
-    \label{tab:exp5-bayes-model-results}
     \caption{Bayesian model statistics for experiment 4b.}
+    \label{tab:exp5-bayes-model-results}
     \begin{tabular}{lrrrr}
         \toprule
          Num Features, Category Determinant & mean & sd & hdi 3\% & hdi 97\% \\
@@ -137,3 +318,17 @@
         \end{tabular}
         
 \end{table}
+
+\section{Feature Differences}
+Experiment 3b provides an indication that categorization (regardless of if it is dependent on temporal consistency) depends on the importance of each visual feature of the stimuli. At test, participants categorized the previously seen stimulus by matching its feature to the two on-screen options. On each test trial, the on-screen options differ from each other in one to four features such that for the `category' option all the category diagnostic features (those that remained temporally consistent during exposure) remained the same as the test stimulus. For the `non category' option, the features that were not category diagnostic (those that frequently changed during exposure) remained the same as the test stimulus. Thus, in order to categorize based on category diagnostic features, participants must \textit{ignore} the different valued non-category diagnostic features in the category option. Furthermore, participants must use the different category diagnostic feature in the non-category option to decide to not pick that option. 
+
+A logistic regression model was fit where each feature was coded as whether it was identical in the non-category option (relative to the test stimulus). If a feature changed in the non category option, (hence was identical in the category option), it was coded as '1' otherwise it was coded as '0'. Fitting this model thus provided a measure of the weights a participant placed on that feature to select the category option. Figure 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \textwidth]{chapter_notebooks/chapter_4/figures/feat_importances.png}
+    \caption{Relative weights placed by participants to categorize test stimuli. Values above 0 indicate features that are category diagnostic (i.e. remained consistent during exposure) are chosen more often to categorize whereas values below 0 indicate features that are category non-diagnostic (i.e. changed frequently) are used to categorize.}
+    \label{fig:feat-importances}
+\end{figure}
+
+As seen in figure \ref{fig:feat-importances}, some features are grouped together for being temporally consistent whereas some features are grouped together for being temporally inconsistent. Interestingly, this is true even in the unstructured case. Regardless of the temporal exposure, participants will group aliens together if they have the same head color or nose shape. On average, features that were chosen to be category diagnostic for Category A participants in experiment 3b (head, eyes, foot, and nose), were inherently grouped together for sharing feature values. Whereas features that were chosen to be category diagnostic for Category B participants in experiment 3b (torso, arms, antenna, bellybutton) were inherently grouped together if the did \textit{not} share feature values. While this analysis does not address covariances among features, it provides a possible explanation for patterns in Experiment 3b -- visual features carry different weights in categorization. Based on their weights, attention may be drawn to them either for being temporally consistent or for being temporally inconsistent. Future modeling will aim to assess whether attention weights modulate 

@@ -4,19 +4,26 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Response time descriptive statistics for experiment 1.}}{19}{table.2.1}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Response times descriptive statistics (in seconds) for experiment 1.}}{23}{table.2.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Accuracy and Response time Means and Standard Deviations for exposure and recognition phases in experiment 2}}{33}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Proportions of trials where within cluster option at the same distance as the between cluster option was chosen.}}{46}{table.3.2}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Accuracy and Response time Means and Standard Deviations for exposure and recognition phases in experiment 2}}{40}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Proportions of trials where within cluster option at the same distance as the between cluster option was chosen.}}{53}{table.3.2}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces An example set of stimuli with Antenna Orientation, Eye size, Head Color and Nose shape are category diagnostic based on proximity of occurrence.}}{60}{table.4.1}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces An example set of stimuli with Antenna Orientation, Eye size, Head Color and Nose shape are category diagnostic based on proximity of occurrence.}}{66}{table.4.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Posterior parameter statistics for model fit to walk length 3 data comparing the first two blocks}}{81}{table.A.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Posterior parameter statistics for model fit to walk length 6 data comparing the first two blocks}}{81}{table.A.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Posterior parameter statistics for model fit to walk length 1399 data comparing the first two blocks}}{82}{table.A.3}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Posterior parameter statistics for model fit to walk length 3 data comparing the first and the last blocks}}{82}{table.A.4}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces Posterior parameter statistics for model fit to walk length 6 data comparing the first and the last blocks}}{82}{table.A.5}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces Posterior parameter statistics for model fit to walk length 1399 data comparing the first and the last blocks}}{83}{table.A.6}%
+\contentsline {table}{\numberline {A.7}{\ignorespaces Parameter statistics for linear model fitting all trials. Parameter `alpha' is the intercept, and parameter `beta' is the slope of the linear model.}}{83}{table.A.7}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Bayesian SDT Model results for boundary nodes from experiment 3a. }}{73}{table.B.1}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces Bayesian SDT Model results for non boundary nodes from experiment 3a. }}{74}{table.B.2}%
-\contentsline {table}{\numberline {B.3}{\ignorespaces Drift diffusion model parameters for experiment 3a.}}{74}{table.B.3}%
-\contentsline {table}{\numberline {B.4}{\ignorespaces Bayesian model results for Experiment 3b.}}{75}{table.B.4}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Bayesian SDT Model results for boundary nodes from experiment 3a. }}{84}{table.B.1}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Bayesian SDT Model results for non boundary nodes from experiment 3a. }}{84}{table.B.2}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces Drift diffusion model parameters for experiment 3a.}}{85}{table.B.3}%
+\contentsline {table}{\numberline {B.4}{\ignorespaces Bayesian model results for Experiment 3b.}}{85}{table.B.4}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Bayesian model statistics for experiment 4a}}{76}{table.C.1}%
-\contentsline {table}{\numberline {C.2}{\ignorespaces Bayesian model statistics for experiment 4b.}}{77}{table.C.2}%
+\contentsline {table}{\numberline {C.1}{\ignorespaces Bayesian model statistics for experiment 4a}}{86}{table.C.1}%
+\contentsline {table}{\numberline {C.2}{\ignorespaces Bayesian model statistics for experiment 4b.}}{86}{table.C.2}%

@@ -55,16 +55,24 @@ def create_adjacency_matrix_for_modular_graph(num_nodes, num_modules, module_siz
 
 
 
-def plot_graph(graph, savefig_path = None):
+def plot_graph(graph, savefig_path = None, boundary_color = True):
     G = nx.Graph() 
+    color_map = []
     for i in range(graph.shape[0]):
         for j in range(graph.shape[1]):
             if graph[i][j]:
                 G.add_edge(i, j)
-
-    nx.draw(G, with_labels = True)
+    if boundary_color:
+        for node in G:
+            if node in [0, 4, 5, 9, 10, 14]:
+                color_map.append('C1')
+            else:
+                color_map.append('C0')
+    else:
+        color_map = ['C0']*len(G)
+    nx.draw(G, node_color = color_map, with_labels = True)
     if savefig_path:
-        plt.savefig(savefig_path)
+        plt.savefig(savefig_path, dpi = 300, transparent = True)
     plt.show()
 
 def random_walk(graph, hop_step = 1000, path_length = 1000, start_state = None, p = None):

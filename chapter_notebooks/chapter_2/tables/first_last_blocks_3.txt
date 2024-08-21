@@ -1,0 +1,14 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & mean & sd & hdi_2.5% & hdi_97.5% \\
+\midrule
+beta_block[0.0] & -0.070 & 0.173 & -0.392 & 0.274 \\
+beta_block[6.0] & -0.100 & 0.172 & -0.431 & 0.236 \\
+beta_lag & 0.029 & 0.006 & 0.017 & 0.041 \\
+beta_transition_exp & -0.007 & 0.002 & -0.010 & -0.003 \\
+beta_trial_ntr[nb_to_b, 0.0] & -0.561 & 0.020 & -0.601 & -0.523 \\
+beta_trial_ntr[nb_to_b, 6.0] & -0.704 & 0.037 & -0.778 & -0.634 \\
+beta_trial_ntr[nb_to_nb, 0.0] & -0.604 & 0.020 & -0.642 & -0.563 \\
+beta_trial_ntr[nb_to_nb, 6.0] & -0.730 & 0.039 & -0.808 & -0.656 \\
+\bottomrule
+\end{tabular}

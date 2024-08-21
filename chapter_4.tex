@@ -141,9 +141,9 @@ The following bayesian model was used to estimate the effect sizes for categoriz
 
 \begin{equation}
     \begin{aligned}
-        1|participant \sim \mathcal{N}(0, Half\mathcal{N}(3.65))
-        C(num\_feats):graph\_type \sim \mathcal{N}(0, 7.5)
-        \mu = 0  + C(num\_feats):graph\_type + (1|participant)
+        1|participant \sim \mathcal{N}(0, Half\mathcal{N}(3.65)) \\
+        C(num\_feats):graph\_type \sim \mathcal{N}(0, 7.5) \\ 
+        \mu = 0  + C(num\_feats):graph\_type + (1|participant) \\
         p(category\ diagnostic\ option) \sim Bernoulli(\mu) 
     \end{aligned}
 \end{equation}

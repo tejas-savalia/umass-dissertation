@@ -163,17 +163,29 @@
 %% One way of formatting the epigraph/frontispiece is to use this package.
 %\usepackage{epigraph}
 % \usepackage{biblatex}
+\usepackage{xcolor}
+\usepackage{float}
 \usepackage{amsmath}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{multirow}
+\usepackage{soul}
+
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\newcommand{\ac}[1]{\textcolor{cyan}{#1}}
+\newcommand{\js}[1]{\textcolor{magenta}{#1}}
+\newcommand{\yk}[1]{\textcolor{brown}{#1}}
+\newcommand{\mh}[1]{\textcolor{orange}{#1}}
+
 % \usepackage{tikz}
 % \usepackage{subcaption}
 
 
 % \bibliographystyle{umassthesis}
-%\usepackage{apa7}
+% \usepackage{apa7}
 
 \begin{document}
 	
@@ -361,11 +373,11 @@ It has been argued that boundaries separating events temporally and spatially sh
 
 \interlinepenalty=10000  % prevent split bibliography entries
 
-\bibliography{references}
-\bibliographystyle{umassthesis}
+% \bibliography{references}
+% \bibliographystyle{umassthesis}
 
 	
-% \printbibliography
+\printbibliography
 
 \end{document}
 

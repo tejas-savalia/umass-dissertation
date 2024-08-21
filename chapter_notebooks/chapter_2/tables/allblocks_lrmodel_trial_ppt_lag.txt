@@ -1,0 +1,18 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & mean & sd & hdi_2.5% & hdi_97.5% \\
+\midrule
+alpha_ntr[3, nb_to_b] & 0.466 & 0.138 & 0.215 & 0.760 \\
+alpha_ntr[3, nb_to_nb] & 0.376 & 0.138 & 0.106 & 0.650 \\
+alpha_ntr[6, nb_to_b] & 0.440 & 0.138 & 0.166 & 0.699 \\
+alpha_ntr[6, nb_to_nb] & 0.539 & 0.138 & 0.261 & 0.789 \\
+alpha_ntr[1400, nb_to_b] & 0.489 & 0.134 & 0.281 & 0.826 \\
+alpha_ntr[1400, nb_to_nb] & 0.484 & 0.133 & 0.263 & 0.802 \\
+beta_ntr[3, nb_to_b] & -0.000 & 0.000 & -0.001 & -0.000 \\
+beta_ntr[3, nb_to_nb] & -0.000 & 0.000 & -0.001 & -0.000 \\
+beta_ntr[6, nb_to_b] & -0.000 & 0.000 & -0.001 & -0.000 \\
+beta_ntr[6, nb_to_nb] & -0.001 & 0.000 & -0.001 & -0.000 \\
+beta_ntr[1400, nb_to_b] & -0.001 & 0.000 & -0.001 & -0.001 \\
+beta_ntr[1400, nb_to_nb] & -0.001 & 0.000 & -0.001 & -0.001 \\
+\bottomrule
+\end{tabular}
