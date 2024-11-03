@@ -2,7 +2,7 @@
 \toprule
  &  & \multicolumn{2}{r}{within chosen} \\
  &  & mean & std \\
-condition & true distance &  &  \\
+condition & right distance &  &  \\
 \midrule
 \multirow[t]{3}{*}{structured} & 1.0 & 0.565 & 0.497 \\
  & 2.0 & 0.505 & 0.501 \\

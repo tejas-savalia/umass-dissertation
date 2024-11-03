@@ -1,0 +1,9 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & mean & sd & hdi_2.5% & hdi_97.5% \\
+\midrule
+Intercept & 1.193 & 0.195 & 0.821 & 1.583 \\
+condition[unstructured] & 0.326 & 0.268 & -0.215 & 0.824 \\
+1|participant_sigma & 0.998 & 0.096 & 0.810 & 1.186 \\
+\bottomrule
+\end{tabular}

@@ -38,27 +38,28 @@ if __name__ == '__main__':
     # result = np.array(p.map(compute_node_entropies, node_entropy_params))
     # result = np.array(p.map(compute_node_distances, node_distance_params))
     # result = np.array(p.map(compute_node_distances_entropyboost, node_distance_params))
+    result = np.array(p.map(compute_node_vertical_entropies, node_entropy_params))
     
-    # entropy_df = pd.DataFrame({'iteration': np.repeat(iterations, len(a)*len(b)*len(walk_length)*len(models)*graph.shape[0]),
-    #                                 'param_a': np.tile(np.repeat(a, len(b)*len(walk_length)*len(models)*graph.shape[0]), len(iterations)),
-    #                                  'param_b': np.tile(np.repeat(b, len(walk_length)*len(models)*graph.shape[0]), len(a)*len(iterations)),
-    #                                  'walk_length': np.tile(np.repeat(walk_length, len(models)*graph.shape[0]), len(a)*len(b)*len(iterations)),
-    #                                  'model': np.tile(np.repeat(models, graph.shape[0]), len(walk_length)*len(a)*len(b)*len(iterations)),
-    #                                  'node': np.tile(np.arange(graph.shape[0]), len(models)*len(walk_length)*len(a)*len(b)*len(iterations)),
-    #                                  'entropy': np.ravel(result)
-    #                                  })
-    # entropy_df.to_csv('simulation_results/3module_SRTCM_comp_simplertcm.csv')
-    result = np.array(p.map(compute_node_surprisal, node_entropy_params))
-
-    entropy_df = pd.DataFrame({'iteration': np.repeat(iterations, len(a)*len(b)*len(walk_length)*len(models)*3),
-                                    'param_a': np.tile(np.repeat(a, len(b)*len(walk_length)*len(models)*3), len(iterations)),
-                                     'param_b': np.tile(np.repeat(b, len(walk_length)*len(models)*3), len(a)*len(iterations)),
-                                     'walk_length': np.tile(np.repeat(walk_length, len(models)*3), len(a)*len(b)*len(iterations)),
-                                     'model': np.tile(np.repeat(models, 3), len(walk_length)*len(a)*len(b)*len(iterations)),
-                                     'node comp': np.tile(['nbnb', 'nbb', 'bb'], len(models)*len(walk_length)*len(a)*len(b)*len(iterations)),
+    entropy_df = pd.DataFrame({'iteration': np.repeat(iterations, len(a)*len(b)*len(walk_length)*len(models)*graph.shape[0]),
+                                    'param_a': np.tile(np.repeat(a, len(b)*len(walk_length)*len(models)*graph.shape[0]), len(iterations)),
+                                     'param_b': np.tile(np.repeat(b, len(walk_length)*len(models)*graph.shape[0]), len(a)*len(iterations)),
+                                     'walk_length': np.tile(np.repeat(walk_length, len(models)*graph.shape[0]), len(a)*len(b)*len(iterations)),
+                                     'model': np.tile(np.repeat(models, graph.shape[0]), len(walk_length)*len(a)*len(b)*len(iterations)),
+                                     'node': np.tile(np.arange(graph.shape[0]), len(models)*len(walk_length)*len(a)*len(b)*len(iterations)),
                                      'entropy': np.ravel(result)
                                      })
-    entropy_df.to_csv('simulation_results/3module_SRTCM_comp_simplertcm_surprisal.csv')
+    entropy_df.to_csv('simulation_results/3module_SRTCM_comp_simplertcm_vertical.csv')
+    # result = np.array(p.map(compute_node_surprisal, node_entropy_params))
+
+    # entropy_df = pd.DataFrame({'iteration': np.repeat(iterations, len(a)*len(b)*len(walk_length)*len(models)*4),
+    #                                 'param_a': np.tile(np.repeat(a, len(b)*len(walk_length)*len(models)*4), len(iterations)),
+    #                                  'param_b': np.tile(np.repeat(b, len(walk_length)*len(models)*4), len(a)*len(iterations)),
+    #                                  'walk_length': np.tile(np.repeat(walk_length, len(models)*4), len(a)*len(b)*len(iterations)),
+    #                                  'model': np.tile(np.repeat(models, 4), len(walk_length)*len(a)*len(b)*len(iterations)),
+    #                                  'node comp': np.tile(['nbnb', 'nbb', 'bnb', 'bb'], len(models)*len(walk_length)*len(a)*len(b)*len(iterations)),
+    #                                  'entropy': np.ravel(result)
+    #                                  })
+    # entropy_df.to_csv('simulation_results/3module_SRTCM_comp_simplertcm_surprisal.csv')
 
 
     # entropy_df = pd.DataFrame({'iteration': np.repeat(iterations, len(a)*len(b)*len(walk_length)*len(models)*len(graphs)),

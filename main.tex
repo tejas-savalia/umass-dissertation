@@ -175,10 +175,10 @@
 \usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource{references.bib}
 
-\newcommand{\ac}[1]{\textcolor{cyan}{#1}}
-\newcommand{\js}[1]{\textcolor{magenta}{#1}}
-\newcommand{\yk}[1]{\textcolor{brown}{#1}}
-\newcommand{\mh}[1]{\textcolor{orange}{#1}}
+\newcommand{\ac}[1]{\textcolor{black}{#1}}
+\newcommand{\js}[1]{\textcolor{black}{#1}}
+\newcommand{\yk}[1]{\textcolor{black}{#1}}
+\newcommand{\mh}[1]{\textcolor{black}{#1}}
 
 % \usepackage{tikz}
 % \usepackage{subcaption}
@@ -257,11 +257,11 @@
 
 %%
 %% Dedication is optional -- but this is how you create it
-\begin{dedication}              % Dedication page
-\begin{center}
-	\emph{To those little lost sheep.}
-\end{center}
-\end{dedication}
+% \begin{dedication}              % Dedication page
+% \begin{center}
+% 	\emph{To those little lost sheep.}
+% \end{center}
+% \end{dedication}
 
 %%
 %% Epigraph (aka frontispiece) is also optional, but this is one way you
@@ -301,19 +301,12 @@
 %%
 %% Acknowledgements are optional...yeah, right.
 \chapter{Acknowledgments}             % Acknowledgements page
-Many people. 
+\input{acknowledgments}
 
 %%
 %% Abstract is MANDATORY. -- Except for MS theses
 \begin{abstract}                % Abstract
-We make sense of the world by extracting meaningful information from a continuous sensory stream. Extracting meaningful information involves first segmenting this continuous sensory stream into shorter, processable chunks. How do we algorithmically segment information into meaningful chunks? 
-
-In this dissertation, I present an algorithmic predictive representational account of event segmentation. Maintaining a `context' representation where the context is defined by an expectation of upcoming future events naturally leads to separation of temporally disjoint events. I contrast this predictive account to an associative account and provide behavioral evidence in support for the predictive representational account. 
-
-I then use the predictive representations as a common framework to understand cognitive processes of event cognition and categorization. Specifically, I first assess whether implicitly operationalized event boundaries (where changes in ongoing context that mark boundaries are not perceptually salient) provide the same behavioral properties as explicitly operationalized event boundaries thereby providing evidence for shared representations between the two. Finally, I apply the representation framework to understand the cognitive processes behind implicit category learning. I show that predictive representations can modulate category learning by providing on-going context information to items in each category.
-
-Work in this dissertation thus advocates for predictive representations as a framework for understanding cognitive processes. In particular, if a cognitive process involves learning patterns, or summarizing information, I argue that predictive representations can serve as the common representational base upon which different operations lead to different cognitive processes. 
-
+\input{abstract}
 \end{abstract}
 
 %%
@@ -358,15 +351,7 @@ Work in this dissertation thus advocates for predictive representations as a fra
 \input{chapter_4}
 
 \chapter{General Discussion and Conclusion}
-We experience a stream of continuous information daily. For ease of reference and recall, we break this stream down and store it in meaningful chunks. Event segmentation is a cognitive process that provides mechanisms to break down this temporal stream of information and integrate it across multiple chunks. Prior work has focused on understanding the event cognition process. In the spirit of decomposing cognitive processes into representations and operations on those representations \cite{cowell2019roadmap}, in this dissertation I explore how this process can be assessed through shared representations of temporal structure in memory and operations on these representations. 
-
-In the first chapter, I investigate how representations of ongoing context can produce behavioral patterns in response times. To that end, I contrast two models of context -- the Successor Representation (SR) as a predictive model that maintains context as an expectation of the future and follows error-driven learning with the Temporal Context Model (TCM) as an associative model that maintains representation as current activity and follows Hebbian learning. I show that the two models produce qualitatively different predictions when exposed to varying amounts of limited information about the environment. I then test these predictions in a serial reaction time task and show that data are more consistent with predictions from the SR model.
-
-Prior research and findings in event cognition are often limited to tasks where event boundaries are defined by explicit context changes (e.g. change of scene in a movie). Recently, event boundaries have also been shown to be formed without such explicit context changes but through an underlying temporal structure. However, these implicit event boundary tasks are not typically tested using the same tests used for explicit event boundaries. In the second chapter, across two experiments I assess whether implicitly operationalized boundaries share behavioral properties with explicit event boundaries by (1) Testing whether they are remembered better than non-boundaries and (2) Testing whether events across boundaries are perceived farther than those within. Results from the experiment recognition memory experiment provide support for shared representations between implicit and explicit boundaries. Results from the distance judgment experiment do not provide sufficient evidence for such shared representations. However, combined results from both experiments provide support for SR-based context representations for implicit event boundaries.
-
-In the final chapter, I show that predictive representation of temporal events (such as SR) can be further used to understand the cognitive process of category learning. Prior findings have suggested that there is a differential benefit to presenting different category exemplars in an interleaved fashion vs blocked fashion in category learning. The SR model provides a representational account for this temporal order of presentation effects by modulating attention towards category diagnostic features. While the precise nature of this modulation operation further depends on the specific visual features that define categories, implicit visual category learning tasks in this chapter show, as predicted by SR, that the temporal order of presentation of category exemplars indeed matters in how categories are learned.
-
-It has been argued that boundaries separating events temporally and spatially share representations. This dissertation further advocates for shared (algorithmic) representations across different processes in cognitive psychology. I show that a common predictive representation framework can be useful in understanding and relating implicit statistical and motor learning (chapter 1), event cognition and memory (chapter 2), and categorization (chapter 3). Using a common representation can provide an important algorithmic constraint in understanding different cognitive processes. Future work in cognitive psychology can therefore focus on testing operations on these common representations that may account for observed behavior.
+\input{general_discussion_conclusion}
 
 \appendix
 \input{appendix.tex}

@@ -1,0 +1,9 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & mean & sd & hdi_2.5% & hdi_97.5% \\
+\midrule
+Intercept & 1.624 & 0.012 & 1.603 & 1.649 \\
+block & -0.268 & 0.009 & -0.287 & -0.251 \\
+rt_sigma & 1.544 & 0.005 & 1.534 & 1.555 \\
+\bottomrule
+\end{tabular}

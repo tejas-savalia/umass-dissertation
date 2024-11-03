@@ -288,6 +288,28 @@ def compute_node_entropies(params):
 
     return node_entropy
 
+def compute_node_vertical_entropies(params):
+    #params is three parameters. a (alpha_SR, alpha_tcm), b(gamma, beta), hop_step
+    if params[0]%10 == 0:
+        print("iteration: ", params[0])
+    a = params[1]
+    b = params[2]
+    graph = params[4]
+    model = params[5]
+    node_entropy = np.zeros(graph.shape[0])
+    if model == 'SR':
+        context_matrix = run_SR(random_walk(graph, hop_step=params[3]).astype(int), graph, a, b, plot=False)[0].T
+    else:
+        context_matrix = run_tcm(random_walk(graph, hop_step=params[3]).astype(int), graph, a, b, plot=False).T
+
+            
+    # graph_entropy = -np.sum(SR*np.log(SR))
+    for node in range(graph.shape[0]):
+        node_entropy[node] = -np.sum(context_matrix[node]*np.log(context_matrix[node]))
+
+    return node_entropy
+
+
 def compute_node_jsdist(params):
     #params is three parameters. a (alpha_SR, alpha_tcm), b(gamma, beta), hop_step
     if params[0]%10 == 0:
@@ -315,6 +337,34 @@ def compute_node_jsdist(params):
 
     return np.array([nonb_nonb_js, nonb_b_js, b_b_js])
 
+# def compute_surprisal(params):
+#     #params is three parameters. a (alpha_SR, alpha_tcm), b(gamma, beta), hop_step
+#     if params[0]%10 == 0:
+#         print("iteration: ", params[0])
+#     a = params[1]
+#     b = params[2]
+#     graph = params[4]
+#     model = params[5]
+#     node_entropy = np.zeros(graph.shape[0])
+#     if model == 'SR':
+#         context_matrix = run_SR(random_walk(graph, hop_step=params[3]), graph, a, b, plot=False)
+#     else:
+#         context_matrix = run_tcm(random_walk(graph, hop_step=params[3]).astype(int), graph, a, b, plot=False)
+#     node_surprisal = np.log(context_matrix)
+#     # node_entropy = np.array([[jensenshannon(i, j) for i in context_matrix] for j in context_matrix]).reshape(15, 15)            
+#     # graph_entropy = -np.sum(SR*np.log(SR))
+#     # for node in range(graph.shape[0]):
+#     #     node_entropy[node] = -np.sum(context_matrix[node]*np.log(context_matrix[node]))
+#     nonb_nonb_idx = [i for i in itertools.combinations([1, 2, 3], 2)] + [i for i in itertools.combinations([6, 7, 8], 2)] + [i for i in itertools.combinations([11, 12, 13], 2)]
+#     nonb_b_idx = [i for i in itertools.product([0, 4], [1, 2, 3])] + [i for i in itertools.product([5, 9], [6, 7, 8])] + [i for i in itertools.product([10, 14], [11, 12, 13])]
+    
+#     nonb_nonb_surprisal = np.mean([node_surprisal[i] for i in nonb_nonb_idx])
+#     nonb_b_surprisal = np.mean([node_surprisal[i] for i in nonb_b_idx])
+#     b_b_surprisal = np.mean([node_surprisal[i] for i in [(0, 14), (4, 5), (9, 10)]])
+
+#     return np.array([nonb_nonb_js, nonb_b_js, b_b_js])
+
+
 def compute_node_surprisal(params):
     #params is three parameters. a (alpha_SR, alpha_tcm), b(gamma, beta), hop_step
     if params[0]%10 == 0:
@@ -334,13 +384,17 @@ def compute_node_surprisal(params):
     # for node in range(graph.shape[0]):
     #     node_entropy[node] = -np.sum(context_matrix[node]*np.log(context_matrix[node]))
     nonb_nonb_idx = [i for i in itertools.combinations([1, 2, 3], 2)] + [i for i in itertools.combinations([6, 7, 8], 2)] + [i for i in itertools.combinations([11, 12, 13], 2)]
-    nonb_b_idx = [i for i in itertools.product([0, 4], [1, 2, 3])] + [i for i in itertools.product([5, 9], [6, 7, 8])] + [i for i in itertools.product([10, 14], [11, 12, 13])]
+    nonb_b_idx = [i for i in itertools.product([1, 2, 3], [0, 4])] + [i for i in itertools.product([6, 7, 8], [5, 9])] + [i for i in itertools.product([11, 12, 13], [10, 14])]
+    b_nonb_idx = [i for i in itertools.product([0, 4], [1, 2, 3])] + [i for i in itertools.product([5, 9], [6, 7, 8])] + [i for i in itertools.product([10, 14], [11, 12, 13])]
+
     # print(context_matrix)
     nonb_nonb_js = np.mean([-np.log(context_matrix[i[0], i[1]]) for i in nonb_nonb_idx])
     nonb_b_js = np.mean([-np.log(context_matrix[i[0], i[1]]) for i in nonb_b_idx])
+    b_nonb_js = np.mean([-np.log(context_matrix[i[0], i[1]]) for i in b_nonb_idx])
     b_b_js = np.mean([-np.log(context_matrix[i[0], i[1]]) for i in [(0, 14), (4, 5), (9, 10)]])
 
-    return np.array([nonb_nonb_js, nonb_b_js, b_b_js])
+    return np.array([nonb_nonb_js, nonb_b_js, b_b_js, b_nonb_js])
+
 
 
 def compute_node_distances(params):

@@ -1233,6 +1233,47 @@
       \field{pages}{458}
       \range{pages}{1}
     \endentry
+    \entry{fitts1964information}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=78942c1ea89c8a736460fb0ca45cbd4e}{%
+           family={Fitts},
+           familyi={F\bibinitperiod},
+           given={Paul\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41889df2efa5841f0a0213d7024cfa7c}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={James\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{fullhash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{fullhashraw}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{bibnamehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authorbibnamehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authornamehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authorfullhash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authorfullhashraw}{774536fe5b83f547ab7144a35ab79d03}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of experimental psychology}
+      \field{number}{2}
+      \field{title}{Information capacity of discrete motor responses.}
+      \field{volume}{67}
+      \field{year}{1964}
+      \field{pages}{103}
+      \range{pages}{1}
+    \endentry
     \entry{gabay2015incidental}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=266373b8aff1c87dfd9904f35b21a98f}{%
@@ -1455,6 +1496,47 @@
       \field{year}{1979}
       \field{pages}{95\bibrangedash 112}
       \range{pages}{18}
+    \endentry
+    \entry{griffiths2020event}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ddb4a60a14395136a0b5c8d1d27040ed}{%
+           family={Griffiths},
+           familyi={G\bibinitperiod},
+           given={Benjamin\bibnamedelima J},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab0177c19c0e13fdbee45e68972734ef}{%
+           family={Fuentemilla},
+           familyi={F\bibinitperiod},
+           given={Lluís},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{fullhash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{fullhashraw}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{bibnamehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authorbibnamehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authornamehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authorfullhash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authorfullhashraw}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hippocampus}
+      \field{number}{2}
+      \field{title}{Event conjunction: How the hippocampus integrates episodic memories across event boundaries}
+      \field{volume}{30}
+      \field{year}{2020}
+      \field{pages}{162\bibrangedash 171}
+      \range{pages}{10}
     \endentry
     \entry{hahamy2023human}{article}{}{}
       \name{author}{3}{}{%
@@ -2033,6 +2115,52 @@
       \field{pages}{498}
       \range{pages}{1}
     \endentry
+    \entry{kriegeskorte2008representational}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d994ee9a00ec4dcc000b2c91ac22ede1}{%
+           family={Kriegeskorte},
+           familyi={K\bibinitperiod},
+           given={Nikolaus},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebc8ad42c4e4036a7cb54e92bdfb89cd}{%
+           family={Mur},
+           familyi={M\bibinitperiod},
+           given={Marieke},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f48be34fcc00c13dc51992c51abb50f4}{%
+           family={Bandettini},
+           familyi={B\bibinitperiod},
+           given={Peter\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers}%
+      }
+      \strng{namehash}{9ff161159b5e1d85cd45ef2527bc2478}
+      \strng{fullhash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{fullhashraw}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{bibnamehash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{authorbibnamehash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{authornamehash}{9ff161159b5e1d85cd45ef2527bc2478}
+      \strng{authorfullhash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{authorfullhashraw}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in systems neuroscience}
+      \field{title}{Representational similarity analysis-connecting the branches of systems neuroscience}
+      \field{volume}{2}
+      \field{year}{2008}
+      \field{pages}{249}
+      \range{pages}{1}
+    \endentry
     \entry{kruschke2020alcove}{inbook}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81a0481c4d0c2f7a95cdc42fda92af07}{%
@@ -2224,6 +2352,41 @@
       \field{pages}{309}
       \range{pages}{1}
     \endentry
+    \entry{luce1977choice}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dd9e779e2a247fb49248955ba369e52}{%
+           family={Luce},
+           familyi={L\bibinitperiod},
+           given={R\bibnamedelima Duncan},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{fullhash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{fullhashraw}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{bibnamehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authorbibnamehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authornamehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authorfullhash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authorfullhashraw}{9dd9e779e2a247fb49248955ba369e52}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of mathematical psychology}
+      \field{number}{3}
+      \field{title}{The choice axiom after twenty years}
+      \field{volume}{15}
+      \field{year}{1977}
+      \field{pages}{215\bibrangedash 233}
+      \range{pages}{19}
+    \endentry
     \entry{lynn2020humans}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=7602245632c9317be9a92d3f27046a6e}{%
@@ -2411,6 +2574,46 @@
       \field{year}{2015}
       \field{pages}{551}
       \range{pages}{1}
+    \endentry
+    \entry{mcdougle2021modeling}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=352891725e7f5809177e273909f5c4f8}{%
+           family={McDougle},
+           familyi={M\bibinitperiod},
+           given={Samuel\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08c0cdf24c56b8f53c4fd01a823e10ab}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Anne\bibnamedelima GE},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{fullhash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{fullhashraw}{665a8a0b729126f08075e82b67f4306d}
+      \strng{bibnamehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authorbibnamehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authornamehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authorfullhash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authorfullhashraw}{665a8a0b729126f08075e82b67f4306d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychonomic bulletin \& review}
+      \field{title}{Modeling the influence of working memory, reinforcement, and action uncertainty on reaction time and choice during instrumental learning}
+      \field{volume}{28}
+      \field{year}{2021}
+      \field{pages}{20\bibrangedash 39}
+      \range{pages}{20}
     \endentry
     \entry{mcdougle2015explicit}{article}{}{}
       \name{author}{3}{}{%
@@ -5982,6 +6185,47 @@
       \field{pages}{458}
       \range{pages}{1}
     \endentry
+    \entry{fitts1964information}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=78942c1ea89c8a736460fb0ca45cbd4e}{%
+           family={Fitts},
+           familyi={F\bibinitperiod},
+           given={Paul\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41889df2efa5841f0a0213d7024cfa7c}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={James\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{fullhash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{fullhashraw}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{bibnamehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authorbibnamehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authornamehash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authorfullhash}{774536fe5b83f547ab7144a35ab79d03}
+      \strng{authorfullhashraw}{774536fe5b83f547ab7144a35ab79d03}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of experimental psychology}
+      \field{number}{2}
+      \field{title}{Information capacity of discrete motor responses.}
+      \field{volume}{67}
+      \field{year}{1964}
+      \field{pages}{103}
+      \range{pages}{1}
+    \endentry
     \entry{gabay2015incidental}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=266373b8aff1c87dfd9904f35b21a98f}{%
@@ -6204,6 +6448,47 @@
       \field{year}{1979}
       \field{pages}{95\bibrangedash 112}
       \range{pages}{18}
+    \endentry
+    \entry{griffiths2020event}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ddb4a60a14395136a0b5c8d1d27040ed}{%
+           family={Griffiths},
+           familyi={G\bibinitperiod},
+           given={Benjamin\bibnamedelima J},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab0177c19c0e13fdbee45e68972734ef}{%
+           family={Fuentemilla},
+           familyi={F\bibinitperiod},
+           given={Lluís},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{fullhash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{fullhashraw}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{bibnamehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authorbibnamehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authornamehash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authorfullhash}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \strng{authorfullhashraw}{22eabcaf993c72ac22f7b6efe54b51cd}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hippocampus}
+      \field{number}{2}
+      \field{title}{Event conjunction: How the hippocampus integrates episodic memories across event boundaries}
+      \field{volume}{30}
+      \field{year}{2020}
+      \field{pages}{162\bibrangedash 171}
+      \range{pages}{10}
     \endentry
     \entry{hahamy2023human}{article}{}{}
       \name{author}{3}{}{%
@@ -6782,6 +7067,52 @@
       \field{pages}{498}
       \range{pages}{1}
     \endentry
+    \entry{kriegeskorte2008representational}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d994ee9a00ec4dcc000b2c91ac22ede1}{%
+           family={Kriegeskorte},
+           familyi={K\bibinitperiod},
+           given={Nikolaus},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebc8ad42c4e4036a7cb54e92bdfb89cd}{%
+           family={Mur},
+           familyi={M\bibinitperiod},
+           given={Marieke},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f48be34fcc00c13dc51992c51abb50f4}{%
+           family={Bandettini},
+           familyi={B\bibinitperiod},
+           given={Peter\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers}%
+      }
+      \strng{namehash}{9ff161159b5e1d85cd45ef2527bc2478}
+      \strng{fullhash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{fullhashraw}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{bibnamehash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{authorbibnamehash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{authornamehash}{9ff161159b5e1d85cd45ef2527bc2478}
+      \strng{authorfullhash}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \strng{authorfullhashraw}{9c9aa79245dcc248d3e83c5f8a91b3af}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in systems neuroscience}
+      \field{title}{Representational similarity analysis-connecting the branches of systems neuroscience}
+      \field{volume}{2}
+      \field{year}{2008}
+      \field{pages}{249}
+      \range{pages}{1}
+    \endentry
     \entry{kruschke2020alcove}{inbook}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81a0481c4d0c2f7a95cdc42fda92af07}{%
@@ -6972,6 +7303,41 @@
       \field{year}{2004}
       \field{pages}{309}
       \range{pages}{1}
+    \endentry
+    \entry{luce1977choice}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dd9e779e2a247fb49248955ba369e52}{%
+           family={Luce},
+           familyi={L\bibinitperiod},
+           given={R\bibnamedelima Duncan},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{fullhash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{fullhashraw}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{bibnamehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authorbibnamehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authornamehash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authorfullhash}{9dd9e779e2a247fb49248955ba369e52}
+      \strng{authorfullhashraw}{9dd9e779e2a247fb49248955ba369e52}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of mathematical psychology}
+      \field{number}{3}
+      \field{title}{The choice axiom after twenty years}
+      \field{volume}{15}
+      \field{year}{1977}
+      \field{pages}{215\bibrangedash 233}
+      \range{pages}{19}
     \endentry
     \entry{lynn2020humans}{article}{}{}
       \name{author}{2}{}{%
@@ -7207,6 +7573,46 @@
       \field{year}{2015}
       \field{pages}{9568\bibrangedash 9579}
       \range{pages}{12}
+    \endentry
+    \entry{mcdougle2021modeling}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=352891725e7f5809177e273909f5c4f8}{%
+           family={McDougle},
+           familyi={M\bibinitperiod},
+           given={Samuel\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08c0cdf24c56b8f53c4fd01a823e10ab}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Anne\bibnamedelima GE},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{fullhash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{fullhashraw}{665a8a0b729126f08075e82b67f4306d}
+      \strng{bibnamehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authorbibnamehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authornamehash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authorfullhash}{665a8a0b729126f08075e82b67f4306d}
+      \strng{authorfullhashraw}{665a8a0b729126f08075e82b67f4306d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychonomic bulletin \& review}
+      \field{title}{Modeling the influence of working memory, reinforcement, and action uncertainty on reaction time and choice during instrumental learning}
+      \field{volume}{28}
+      \field{year}{2021}
+      \field{pages}{20\bibrangedash 39}
+      \range{pages}{20}
     \endentry
     \entry{medin1994presentation}{article}{}{}
       \name{author}{2}{}{%
@@ -9516,6 +9922,7 @@
       \range{pages}{5}
     \endentry
   \enddatalist
+  \missing{polyn2009contex}
 \endrefsection
 \endinput
 
